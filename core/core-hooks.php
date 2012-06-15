@@ -426,17 +426,8 @@ function response_after_search() {
 *
 * @since 1.0
 */
-function response_blog_slider_lite() {
-	do_action('response_blog_slider_lite');
-}
-
-/**
-* Generates the Twitter Bar page element. 
-*
-* @since 1.0
-*/
-function response_twitterbar_section() {
-	do_action ('response_twitterbar_section');
+function response_blog_slider() {
+	do_action('response_blog_slider');
 }
 
 /**
