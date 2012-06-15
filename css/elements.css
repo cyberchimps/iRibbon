@@ -1,0 +1,370 @@
+/* Page Elements */
+
+/*============================*/
+/*===== Carousel Styles ======*/
+/*============================*/
+/* Elastislide Style */
+.es-carousel-wrapper{
+	padding:0 37px;
+	position:relative;
+	margin-bottom: 15px;
+}
+.es-carousel{
+	overflow:hidden;
+}
+.es-carousel ul{
+	display:none;
+}
+.es-carousel ul li{
+	height:100%;
+	float:left;
+  display: relative;
+  list-style: none;
+}
+.es-carousel ul li .image-container {
+ -webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.es-carousel ul li a{
+	display:block;
+}
+.es-carousel ul li a img{
+	display:block;
+	border:none;
+	max-height:100%;
+	max-width:100%;
+ -webkit-border-radius: 49%;
+	border-radius: 49%;
+}
+.es-nav span{
+	position:absolute;
+	top:50%;
+	left:-25px;
+	width:50px;
+	height:42px;
+	margin-top:-35px;
+	text-indent:-9000px;
+	cursor:pointer;
+	opacity:0.8;
+}
+.es-nav span.es-nav-next{
+	right:-25px;
+	left:auto;
+	background-position:top right;
+}
+.es-nav span:hover{
+	opacity:1.0;
+}
+.carousel_caption {font-family: 'Lobster', cursive;font-size: 1.5em;text-align: center; margin-top: 20px;color: #333; width: 100%; position: relative; }
+/*============================*/
+/*======= Twitter Bar ========*/
+/*============================*/
+
+#twitterbar {
+	overflow: hidden;
+	margin: auto;
+  padding-left: 130px;
+}
+#twitter-image {
+  float:left;
+}
+.twittertext {
+  float: left;
+ 	position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0..5);
+}
+.twittertext:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  border-width: 20px 20px 0;
+  border-style: solid;
+  display: block;
+  width: 0;
+}
+.twittertext:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 47px;
+  border-width: 13px 13px 0;
+  border-style: solid;
+  display: block;
+  width: 0;
+}
+.twittertriangle {
+ margin-left: 30px; 
+}
+.twittertriangle:before {
+  top: 10px;
+  bottom: auto;
+  left: -30px;
+  border-width: 15px 30px 15px 0;
+}
+.twittertriangle:after {
+  top: 16px;
+  bottom: auto;
+  left: -21px;
+  border-width: 9px 21px 9px 0;
+}
+
+/*============================*/
+/*===== Callout Section ======*/
+/*============================*/
+.calloutrow {
+  width:100%;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.calloutrow .row-fluid {
+  margin-bottom: 0;
+}
+#calloutwrap {
+	overflow: hidden;
+	position:relative;
+	display: block;
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+#callout_text {
+	font-size: 14px;
+  font-style: italic;
+	margin-left: 0;
+	padding: 15px;
+}
+
+.callout_title {
+	font-size: 20px;
+}
+
+#calloutbutton {
+	padding: 10px 5px 10px 5px;
+	margin-top: 28px;
+	background: #333;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	
+}
+
+#calloutimg{
+	padding-top: 10px;
+	
+	float:right;
+}
+
+.callout_link {text-align: center; margin-bottom: 0px;}
+
+#calloutbutton:hover{
+	background: #222;
+}
+
+#calloutbutton a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+/*============================*/
+/*====== Widgitized Boxes =====*/
+/*============================*/
+
+.boxes-row {
+  
+}
+.box_outer_container.span4 {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+.box-widget-title {
+  font-family: 'Lobster', cursive;
+	line-height: 40px;
+	font-size: 18px;
+  margin-left: 10px;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+  filter: dropshadow(color=rgba(0,0,0,0.5), offx=1, offy=2);
+}
+.box_outer_container .textwidget {
+  margin: 0;
+  padding: 15px;
+  min-height: 200px;
+}
+
+.boxes ul { padding-left: 15px; }
+
+.boxes-row div.ribbon-top {
+  position:relative;
+  width:100%;
+  margin-left: -15px;
+  padding-top:5px;
+  padding-left: 15px;
+  z-index: 100;
+}
+
+.boxes-row div.ribbon-top:after {
+  content: ' ';
+  position:absolute;
+  width:0;
+  height:0;
+  top:100%;
+  left: 0;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+}
+
+.boxes-row div.ribbon-top div.ribbon-shadow {
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  margin-top: -5px;
+  height: 5px;
+  width: 100%;
+  -webkit-box-shadow:  0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:  0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.boxes-row div.ribbon-top-end {
+  position:absolute;
+  top:0;
+  right:-15px;
+  height:100%;
+  width:15px;
+}
+
+.boxes-row div.ribbon-top-end:after {
+  content: ' ';
+  position:absolute;
+  width:0;
+  height:0;
+  top:100%;
+  right:0;
+  border-width:0 0 15px 15px;
+  border-style: solid;
+}
+/* bottom ribbons used in boxes */ 
+
+.ribbon-bottom {
+  position:relative;
+  height:45px;
+  width:100%;
+  margin-left: -15px;
+  padding-left: 15px;
+}
+.ribbon-bottom:before {
+  content: ' ';
+  position:absolute;
+  width:0;
+  height:0;
+  top:-15px;
+  left:0;
+  border-width:15px 15px 0 0;
+  border-style: solid;
+}
+.ribbon-bottom div.ribbon-shadow {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 5px;
+  width: 100%;
+  -webkit-box-shadow:  0px -5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:  0px -5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px -5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.ribbon-bottom-end {
+  position:absolute;
+  top:0;
+  right:-15px;
+  height:45px;
+  width:15px;
+}
+.ribbon-bottom-end:before {
+  content: ' ';
+  position:absolute;
+  width:0;
+  height:0;
+  top:-15px;
+  left:0;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+}
+
+
+/*============================*/
+/*====== Tabbed Widgit =====*/
+/*============================*/
+
+/* Tabs */
+
+.response-tabbed-header li {
+	float: left;
+}
+
+.response-tabbed-popular-posts li, .response-tabbed-recent-posts li {
+	padding: 10px;
+	border-bottom: 1px solid #E2E2E2;
+	padding-bottom: 20px;
+}
+
+.response-tabbed-comments li {
+	padding: 10px 10px 25px 10px;
+	border-bottom: 1px solid #E2E2E2; 
+	padding-bottom: 35px;
+}
+
+.response-tabbed-tab {
+	clear: both;
+}
+
+.ui-tabs-hide {
+	display: none;
+}
+
+.response-tabbed-widget {
+	margin: -10px 0 0 0;
+}
+
+.response-tabbed-header {
+
+}
+
+.tab-image {float: left; margin-right: 10px; border: 2px solid #444; }
+
+.ui-state-default {
+	background: #f4f4f4;
+	border-bottom: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+
+}
+
+li.ui-state-default  {
+	margin-left: 0px !important; padding-left: 5px; padding-right: 5px;
+}
+
+.ui-state-active {
+	background: #fff;
+	border-bottom: none;
+}
+
+#tab-4 {padding: 10px;}
+
+#tab-4 a {
+	padding: 3px 8px; background: #f4f4f4; font-size: 12px; margin: 0 4px 4px 0; border-radius: 3px;
+}
+.tabbed-title {font-size: 14px; margin-top: 4px;}
+
+.tabbed-date {font-size: 12px; font-style: italic;}
+
+div.timer {display: none !important;}

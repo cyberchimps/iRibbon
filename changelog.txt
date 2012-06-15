@@ -1,0 +1,46 @@
+Response Changelog
+
+****************************
+
+Version 1.0.6 (04-17-12)
+-Fix for third box in mobile view.
+
+Version 1.0.5 (04-11-12)
+-Fixed error in breadcrumbs function. 
+-Clear fix.
+
+Version 1.0.4 (04-10-12)
+-IE quirks issue should be fixed now.
+-Added French, Hebrew and Romanian language files.
+-Removed unecessary translations from several po files, updated necessary mo files.
+-CSS tweak for Box Element for iPad display. 
+-Twitter Bar no longer requires Twitter for WordPress plugin.
+-Removed ereg_replace from Google Font code for PHP 5.3 compatibility. 
+
+Version 1.0.3 (03-22-12)
+-Adjustment to post pagination container.
+-Updated default font family.
+-Minor copy fix in page options.
+-IE Fix for boxes.
+-Updated response.pot.
+-Added Croatian language files.
+
+Version 1.0.2 (03-08-12)
+-Responsive design tweak.
+-Fixed Google Font library call for SSL support.
+-Added browser specific HTML classes for IE.
+-Conditional to stop breadcrumb links from appearing on attachment pages.
+-Additional code and script cleanup.
+
+Version 1.0.1 (03-03-12)
+-Margin fix for HTML tables.
+-Updated Foundation CSS.
+-Adjusted doctype. 
+-CSS tweak.
+-Fixed typo in theme options.
+-Fixed IE quirks mode bug. 
+-Fixed page titles not showing up by default.
+
+Version 1.0 (02-24-12)
+-Initial release.
+
