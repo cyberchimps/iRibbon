@@ -50,7 +50,13 @@ function iribbon_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support('automatic-feed-links');
 	add_editor_style();
-	add_custom_background();
+	
+	if ( function_exists('get_custom_header')) {
+        add_theme_support('custom-background');
+	} 
+	else {
+       	add_custom_background(); //For WP 3.3 and below.	
+	}
 }
 add_action( 'after_setup_theme', 'iribbon_theme_setup' );
 
