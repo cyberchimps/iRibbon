@@ -93,6 +93,33 @@ function response_loop_content($content) {
 					 ?>
 				</div><!--end entry-->
         
+        <!-- Start containing styling if any of the links below are selected -->
+        <?php if( iRibbon_post_meta() != 0 ): ?>
+        <div class="iRibbon-post-meta">
+        <?php endif; ?>
+        
+				<!--Begin @response post tags hook-->
+					<?php response_post_bar(); ?>
+				<!--End @response post tags hook-->
+        
+        <!--Begin @response link pages hook-->
+					<?php response_link_pages(); ?>
+				<!--End @response link pages hook-->
+					
+							
+				<!--Begin @response post tags hook-->
+					<?php response_post_tags(); ?>
+				<!--End @response post tags hook-->
+        
+				<!--Begin @response post edit link hook-->
+					<?php response_edit_link(); ?>
+				<!--End @response post edit link hook-->
+        
+        <!-- end containing styling for links above -->
+         <?php if( iRibbon_post_meta() != 0 ): ?>
+        </div>
+        <?php endif; ?>
+							
 			</article><!--end post container-->
 		<div class='clear'>&nbsp;</div>
 		<?php	

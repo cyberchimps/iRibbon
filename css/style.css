@@ -624,6 +624,7 @@ header {
 	width: 50px;
 }
 #comments {
+  float: right;
   text-align:left;
   padding-top: 3px;
   font-size: 12px;
@@ -809,6 +810,13 @@ ol, ul {
 }
 .nav-next{
   text-align:right
+}
+.iRibbon-post-meta {
+  clear: both;
+  background: #EEE;
+  padding: 10px;
+  -webkit-border-radius: 3px;    
+  border-radius: 3px;
 }
 .meta {
   color: #989898;
