@@ -174,16 +174,16 @@ global $themeslug, $options; //Call global variables
 <link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
 
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lobster' type='text/css'>
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/bootstrap/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/bootstrap/bootstrap-responsive.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/core/css/orbit/orbit.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/shortcode.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/elements.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/style.css" type="text/css" />
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/color/<?php echo $color; ?>.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/bootstrap/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/bootstrap/bootstrap-responsive.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/orbit/orbit.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/shortcode.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/elements.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/color/<?php echo $color; ?>.css" type="text/css" />
 
 <?php if (is_child_theme()) :  //add support for child themes?>
-	<link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory') ; ?>/style.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css" />
 <?php endif; ?>
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />

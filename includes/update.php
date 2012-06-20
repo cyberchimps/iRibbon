@@ -8,7 +8,7 @@
 
 add_filter('pre_set_site_transient_update_themes', 'response_check_for_update');
 
-$theme_data = get_theme_data( TEMPLATEPATH . '/style.css');
+$theme_data = get_theme_data( get_template_directory() . '/style.css');
 $theme_version = $theme_data['Version'];
 $theme_base = get_option('stylesheet');
 
@@ -29,7 +29,7 @@ function response_check_for_update($checked_data)
 		'body' => array(
 			'action' => 'theme_update', 
 			'request' => serialize($request),
-			'api-key' => md5(get_bloginfo('url'))
+			'api-key' => md5(home_url())
 		),
 		'user-agent' => 'WordPress/' . $wp_version . '; ' . get_bloginfo('url')
 	);

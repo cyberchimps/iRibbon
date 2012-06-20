@@ -21,10 +21,10 @@
 * @since 1.0
 */
 function response_text_domain() {
-	load_theme_textdomain( 'response', TEMPLATEPATH . '/core/languages' );
+	load_theme_textdomain( 'response', get_template_directory() . '/core/languages' );
 
 	    $locale = get_locale();
-	    $locale_file = TEMPLATEPATH . "/core/languages/$locale.php";
+	    $locale_file = get_template_directory() . "/core/languages/$locale.php";
 	    if ( is_readable( $locale_file ) )
 		    require_once( $locale_file );
 		
@@ -146,7 +146,7 @@ function response_breadcrumbs() {
     echo '<div class="row-fluid"><div id="crumbs" class="span12"><div class="crumbs_text">';
  
     global $post;
-    $homeLink = get_bloginfo('url');
+    $homeLink = home_url();
     echo '<a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
  
     if ( is_category() ) {
