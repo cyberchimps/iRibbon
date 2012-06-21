@@ -37,21 +37,21 @@ $terms2 = get_terms('category', 'hide_empty=0');
         }
 $options
 	->section("Welcome")
-		->info("<h1>Response</h1>
+		->info("<h1>iRibbon</h1>
 		
-<p><strong>A Free Responsive Starter WordPress Theme Framework</strong></p>
+<p><strong>An elegant Responsive Wordpress Theme Framework that looks great on big and small screens alike.</strong></p>
 
-<p><a href='http://cyberchimps.com/responsepro/' target='_blank'>Upgrade to Response Pro for just $25!</a></p>
+<p><a href='http://cyberchimps.com/iribbonpro/' target='_blank'>Upgrade to iRibbon Pro for just $25!</a></p>
 
-<p>Response includes a Responsive Design (which magically adjusts to mobile devices such as the iPhone and iPad), Responsive Slider, Drag & Drop Header Elements, Page and Blog Elements, simplified Theme Options, and is built with HTML5 and CSS3. Upgrade to Response Pro for even more Drag & Drop Elements.</p>
+<p>iRibbon is based around a Responsive Design (which magically adjusts to mobile devices such as the iPhone and iPad), Responsive Navigation, Responsive Slider, Drag & Drop Header Elements, Page and Blog Elements, simplified Theme Options, and is built with HTML5 and CSS3. Upgrade to iRibbon Pro for even more Drag & Drop Elements.</p>
 
 <p>To get started simply work your way through the options below, add your content, and always remember to hit save after making any changes.</p>
 
-<p>The Response Slider options are under the Response Page Options which are available below the Page content entry area in WP-Admin when you edit a page. This way you can configure each page individually. You will also find the Drag & Drop Page Elements editor within the response Pro Page Options as well.</p>
+<p>The Main iRibbon Slider options are under the iRibbon Blog Options below, this will set the Slider up for your blog page. However you can also add a Slider to every page you have by changing the options in the relevant page edit screen. This way you can configure each page individually. You will also find the Drag & Drop Page Elements editor within the iRibbon Page Options as well.</p>
 
-<p>We tried to make Response as easy to use as possible, but if you still need help please read the <a href='http://cyberchimps.com/response/docs/' target='_blank'>documentation</a>, and visit our <a href='http://cyberchimps.com/forum/' target='_blank'>support forum</a>.</p>
+<p>We tried to make iRibbon as easy to use as possible, but if you still need help please read the <a href='http://cyberchimps.com/iribbon/docs/' target='_blank'>documentation</a>, and visit our <a href='http://cyberchimps.com/forum/' target='_blank'>support forum</a>.</p>
 
-<p>Thank you for using Response.</p>
+<p>Thank you for choosing iRibbon and enjoy using it.</p>
 ")
 	->section("Design")
 		->open_outersection()
