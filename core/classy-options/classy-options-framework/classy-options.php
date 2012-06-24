@@ -93,6 +93,8 @@ class ClassyOptions {
 				<div class="logo">
 				<h2><?php echo $themenamefull; ?> Options</h2>
 				</div>
+				<div class="upgradepro"><a href="http://cyberchimps.com/iribbonpro/" target="_blank">Upgrade to iRibbon Pro</a>
+				</div>
 				<div class="clear"></div>
 					<p class="submit">
 						<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options' ); ?>" />
@@ -101,7 +103,7 @@ class ClassyOptions {
 					<ul class="buttons">
 						<li><a href="http://cyberchimps.com/store/" target="_blank"><?php printf( __( 'CyberChimps Store', 'ifeature' )); ?></a></li>
 						<li><a href="http://cyberchimps.com/support" target="_blank"><?php printf( __( 'Support', 'ifeature' )); ?></a></li>
-						<li><a href="http://cyberchimps.com/ifeaturepro/docs/" target="_blank"> <?php printf( __( 'Documentation', 'ifeature' )); ?></a></li>
+						<li><a href="http://cyberchimps.com/iribbon/docs/" target="_blank"> <?php printf( __( 'Documentation', 'ifeature' )); ?></a></li>
 						<li><a href="http://cyberchimps.com/forum/" target="_blank"><?php printf( __( 'Forum', 'ifeature' )); ?></a></li>
 						<li><a href="http://twitter.com/#!/cyberchimps" target="_blank"><?php printf( __( 'Twitter', 'ifeature' ));?></a></li>
 						<li><a href="http://facebook.com/cyberchimps/" target="_blank"><?php printf( __( 'Facebook', 'ifeature' ));?></a></li>
