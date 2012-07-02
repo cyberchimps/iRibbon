@@ -23,6 +23,28 @@ body {background: url( '../images/backgrounds/texture-background.jpg' )}
 
 .container-fluid {max-width: 980px; margin-left: auto; margin-right: auto; padding-left:0px; padding-right: 0px;}
 
+/* For sticky footer */
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	margin:0px !important;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0px auto -236px auto; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push{
+	height: 236px;
+	clear:both;
+}
+
 /* Half Nav  */
 
 #main_wrap {margin-left:20px; margin-right: 20px;}
@@ -117,7 +139,7 @@ body {background: url( '../images/backgrounds/texture-background.jpg' )}
 /* Header  */
 
 header {
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 #header_contact{ 

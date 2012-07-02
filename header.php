@@ -25,6 +25,10 @@
 <?php wp_head(); ?> <!-- wp_head();-->
 	
 </head><!-- closing head tag-->
+
+<!-- Adding wrapper class for sticky footer -->
+<div class="wrapper">
+
 <div class="iribbon-content-margin"><!-- creates container for whole site and creates left right margin -->
 <!-- Begin @response after_head_tag hook content-->
 	<?php response_after_head_tag(); ?>
