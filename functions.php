@@ -248,7 +248,7 @@ add_action('wp_head', 'iribbon_custom_scripts');
 */ 
 function iribbon_register_menus() {
 	register_nav_menus(
-	array( 'header-menu' => __( 'Header Menu' ), 'footer-menu' => __( 'Footer Menu' ), 'sub-menu' => __( 'Sub Menu' ), 'mobile-menu' => __( 'Mobile Menu' ) )
+	array( 'header-menu' => __( 'Header Menu', 'response' ), 'footer-menu' => __( 'Footer Menu', 'response' ), 'sub-menu' => __( 'Sub Menu', 'response' ), 'mobile-menu' => __( 'Mobile Menu', 'response' ) )
 	);
 }
 add_action( 'init', 'iribbon_register_menus' );
