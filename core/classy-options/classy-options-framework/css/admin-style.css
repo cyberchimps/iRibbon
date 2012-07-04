@@ -5,6 +5,25 @@
 .upload {max-width: 350px;}
 .nav {margin-top: -1px;}
 
+.upgradepro a{
+	font-family: Helvetica, Arial, Serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px;
+    background-color: #000;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #777;
+    float:right;
+    margin-top: 10px;
+  	}
+ 
+.upgradepro a:hover{
+    color: #fff;
+    background-color:#444;
+    border: 1px solid #777; }
+
 .jetpack-message .squeezer {display: none;}
 #message.updated.jetpack-message.jp-connect {display: none;}
 

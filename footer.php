@@ -22,6 +22,8 @@
 <?php if ($options->get($themeslug.'_disable_footer') != "0"):?>	
 
 </div><!--end container wrap-->
+
+<div class="footer"> <!-- Footer class for sticky footer -->
 <footer class="footer-container">
     <div class="container-fluid">
      		<div class="row-fluid">
@@ -48,6 +50,8 @@
 	<?php endif;?>
 	
 	<?php wp_footer(); ?>	
+	
+	</div>  <!--End of footer class for sticky footer -->
 </body>
 </div><!-- closes iribbon-content-margin found in header.php -->
 </html>
