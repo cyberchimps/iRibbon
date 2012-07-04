@@ -82,8 +82,6 @@ function response_meta_tags() { ?>
 	if(!$post) return; // in case of 404 page or something?>
 
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-<meta name="distribution" content="global" />
-<meta name="language" content="en" /> 
 <meta name="viewport" content="initial-scale=1.6; maximum-scale=1.0; width=device-width; "/><?php
 }
 
@@ -173,7 +171,6 @@ global $themeslug, $options; //Call global variables
 	
 <link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
 
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lobster' type='text/css'>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/bootstrap/bootstrap.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/bootstrap/bootstrap-responsive.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/orbit/orbit.css" type="text/css" />
