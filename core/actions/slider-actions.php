@@ -54,7 +54,8 @@ function response_slider_lite_content() {
 
 	}
 ?>
-	<div class="row">
+	<div class="row-fluid">
+  <div class="span12 slider-padding">
 		<div id="orbitDemo">
 			<a href="<?php echo $link1; ?>">
 	   			<img src="<?php echo $slide1 ;?>" alt="Slider" />
@@ -66,6 +67,7 @@ function response_slider_lite_content() {
 	   			<img src="<?php echo $slide3 ;?>" alt="Slider" />
 	    	</a>
 		</div>
+  </div>  
 	</div>
 
 <script type="text/javascript">

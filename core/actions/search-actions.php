@@ -30,7 +30,7 @@ function response_search_content() {
 	$results = apply_filters( 'response_search_results_message', 'Search Results For: %s' ); 
 	$noresults = apply_filters( 'response_no_search_results_message', 'No posts found.' ); ?>
 
-		<h5 class="iribbon-search-term"><?php printf( __( $results ), '<span>' . get_search_query() . '</span>' ); ?></h5>
+		<h5 class="iribbon-search-term"><?php printf( $results, '<span>' . get_search_query() . '</span>' ); ?></h5>
 		<?php if (have_posts()) : ?>
 			<div class="post_outer_container">
   
