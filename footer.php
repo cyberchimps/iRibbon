@@ -15,11 +15,11 @@
 * @since 1.0
 */
 
-	global $options, $themeslug // call globals
+	global $options, $ir_themeslug // call globals
 
 ?>
 	
-<?php if ($options->get($themeslug.'_disable_footer') != "0"):?>	
+<?php if ($options->get($ir_themeslug.'_disable_footer') != "0"):?>	
 
 </div><!--end container wrap-->
 
@@ -36,7 +36,7 @@
 			</div><!--row-->
       </div><!-- container -->
 
-<?php if ($options->get($themeslug.'_disable_afterfooter') != "0"):?>
+<?php if ($options->get($ir_themeslug.'_disable_afterfooter') != "0"):?>
 
 	<div id="afterfooter" class="container-fluid">
 		<div class="row-fluid" id="afterfooterwrap">	

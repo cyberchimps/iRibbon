@@ -27,7 +27,7 @@ add_action ('response_page_slider', 'response_slider_lite_content' );
 */
 function response_slider_lite_content() {
 
-	global $themename, $themeslug, $options, $wp_query, $post, $slider_default, $root;
+	global $ir_themename, $ir_themeslug, $options, $wp_query, $post, $slider_default, $ir_root;
 		
 	if (is_page()) {
 		$slide1 = get_post_meta($post->ID, 'page_slide_one_image' , true);
@@ -40,17 +40,17 @@ function response_slider_lite_content() {
 	}
 	
 	else {
-		$slide1source = $options->get($themeslug.'_blog_slide_one_image');
-		$slide2source = $options->get($themeslug.'_blog_slide_two_image');
-		$slide3source = $options->get($themeslug.'_blog_slide_three_image');
+		$slide1source = $options->get($ir_themeslug.'_blog_slide_one_image');
+		$slide2source = $options->get($ir_themeslug.'_blog_slide_two_image');
+		$slide3source = $options->get($ir_themeslug.'_blog_slide_three_image');
 		
 		$slide1 = $slide1source['url'];
 		$slide2 = $slide2source['url'];
 		$slide3 = $slide3source['url'];
 	
-		$link1 = $options->get($themeslug.'_blog_slide_one_url');
-		$link2 = $options->get($themeslug.'_blog_slide_two_url');
-		$link3 = $options->get($themeslug.'_blog_slide_three_url');
+		$link1 = $options->get($ir_themeslug.'_blog_slide_one_url');
+		$link2 = $options->get($ir_themeslug.'_blog_slide_two_url');
+		$link3 = $options->get($ir_themeslug.'_blog_slide_three_url');
 
 	}
 ?>

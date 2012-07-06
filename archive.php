@@ -15,7 +15,7 @@
 * @since 1.0
 */
 
-	global $options, $themeslug, $post, $sidebar, $content_grid; // call globals
+	global $options, $ir_themeslug, $post, $sidebar, $content_grid; // call globals
 	response_sidebar_init(); // sidebar init
 	get_header(); // call header
 
@@ -23,7 +23,7 @@
 
 <div class="container-fluid">
 
-		<?php if ($options->get($themeslug.'_archive_breadcrumbs') == "1") { response_breadcrumbs();}?>
+		<?php if ($options->get($ir_themeslug.'_archive_breadcrumbs') == "1") { response_breadcrumbs();}?>
 
 	<div class="row-fluid">
 	<!--Begin @response before content sidebar hook-->

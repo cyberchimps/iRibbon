@@ -18,7 +18,7 @@ add_action('init', 'initialize_the_meta_boxes');
 
 function initialize_the_meta_boxes() {
 
-	global  $themename, $themeslug, $themenamefull, $options; // call globals.
+	global  $ir_themename, $ir_themeslug, $ir_themenamefull, $options; // call globals.
 	
 	// Call taxonomies for select options
 	
@@ -34,7 +34,7 @@ function initialize_the_meta_boxes() {
 	
 	$meta_boxes = array();
 
-	$mb = new Chimps_Metabox('pages', $themenamefull.' Page Options', array('pages' => array('page')));
+	$mb = new Chimps_Metabox('pages', $ir_themenamefull.' Page Options', array('pages' => array('page')));
 	$mb
 		->tab("Page Options")
 			->image_select('page_sidebar', 'Select Page Layout', '',  array('options' => array(TEMPLATE_URL . '/images/options/right.png' , TEMPLATE_URL . '/images/options/left.png', TEMPLATE_URL . '/images/options/rightleft.png', TEMPLATE_URL . '/images/options/tworight.png', TEMPLATE_URL . '/images/options/none.png')))
@@ -49,7 +49,7 @@ function initialize_the_meta_boxes() {
 				))
 
 			->pagehelp('', 'Need Help?', '')
-		->tab($themenamefull." Slider Options")
+		->tab($ir_themenamefull." Slider Options")
 			->single_image('page_slide_one_image', 'Slide One Image', '', array('std' =>  TEMPLATE_URL . '/images/responseslider.jpg'))
 			->text('page_slide_one_url', 'Slide One Link', '', array('std' => 'http://cyberchimps.com'))
 			->single_image('page_slide_two_image', 'Slide Two Image', '', array('std' =>  TEMPLATE_URL . '/images/responseslider.jpg'))

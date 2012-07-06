@@ -105,9 +105,9 @@ function response_link_pages_content() {
 * @since 1.0
 */
 function response_post_pagination_content() {
-	global $options, $themeslug?>
+	global $options, $ir_themeslug?>
 	
-	<?php if ($options->get($themeslug.'_post_pagination') != "0"):?>
+	<?php if ($options->get($ir_themeslug.'_post_pagination') != "0"):?>
 	<?php previous_post_link(); ?><span style="float: right"><?php next_post_link(); ?></span>
 	<?php endif; 
 }

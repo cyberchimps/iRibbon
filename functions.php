@@ -19,13 +19,13 @@
 /**
 * Define global theme functions.
 */ 
-	$themename = 'iribbon';
-	$themenamefull = 'iRibbon';
-	$themeslug = 'ir';
-	$pagedocs = 'http://cyberchimps.com/question/using-the-iribbon-page-options/';
-	$sliderdocs = 'http://cyberchimps.com/question/using-the-feature-slider-in-iribbon/';
-	$root = get_template_directory_uri();
-	$content_width = 608;
+	$ir_themename = 'iribbon';
+	$ir_themenamefull = 'iRibbon';
+	$ir_themeslug = 'ir';
+	$ir_pagedocs = 'http://cyberchimps.com/question/using-the-iribbon-page-options/';
+	$ir_sliderdocs = 'http://cyberchimps.com/question/using-the-feature-slider-in-iribbon/';
+	$ir_root = get_template_directory_uri();
+	$ir_content_width = 608;
 	
 /**
 * Assign new default font.
@@ -41,7 +41,7 @@ add_filter( 'response_default_font', 'ribbon_default_font' );
 * Basic theme setup.
 */ 
 function iribbon_theme_setup() {
-	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
+	if ( ! isset( $ir_content_width ) ) $ir_content_width = 608; //Set content width
 	
 	add_theme_support(
 		'post-formats',
@@ -82,8 +82,8 @@ add_action( 'admin_bar_menu', 'iribbon_admin_link', 113 );
 * Custom markup for gallery posts in main blog index.
 */ 
 function iribbon_custom_gallery_post_format( $content ) {
-	global $options, $themeslug, $post;
-	$root = get_template_directory_uri(); 
+	global $options, $ir_themeslug, $post;
+	$ir_root = get_template_directory_uri(); 
 	
 	ob_start();?>
 			<div class="ribbon-top">
@@ -94,7 +94,7 @@ function iribbon_custom_gallery_post_format( $content ) {
          </div><!-- ribbon top -->
 			<article class="post_container">
       <div class="ribbon-shadow"></div><!-- ribbon shadow -->
-		<?php if ($options->get($themeslug.'_post_formats') == '1') : ?>
+		<?php if ($options->get($ir_themeslug.'_post_formats') == '1') : ?>
 			<div class="postformats"><!--begin format icon-->
 				<img src="<?php echo get_template_directory_uri(); ?>/images/formats/gallery.png" />
 			</div><!--end format-icon-->
@@ -102,7 +102,7 @@ function iribbon_custom_gallery_post_format( $content ) {
 					<!--Call @Core Meta hook-->
 			<?php response_post_byline(); ?>
 				<?php
-				if ( has_post_thumbnail() && $options->get($themeslug.'_show_featured_images') == '1' && !is_single() ) {
+				if ( has_post_thumbnail() && $options->get($ir_themeslug.'_show_featured_images') == '1' && !is_single() ) {
  		 			echo '<div class="featured-image">';
  		 			echo '<a href="' . get_permalink($post->ID) . '" >';
  		 				the_post_thumbnail();
@@ -110,7 +110,7 @@ function iribbon_custom_gallery_post_format( $content ) {
   					echo '</div>';
 				}
 			?>	
-				<div class="entry" <?php if ( has_post_thumbnail() && $options->get($themeslug.'_show_featured_images') == '1' ) { echo 'style="min-height: 115px;" '; }?>>
+				<div class="entry" <?php if ( has_post_thumbnail() && $options->get($ir_themeslug.'_show_featured_images') == '1' ) { echo 'style="min-height: 115px;" '; }?>>
 				
 				<?php if (!is_single()): ?>
 				<?php $images = get_children( array( 'post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'numberposts' => 999 ) );
@@ -147,13 +147,13 @@ add_filter('iribbon_post_formats_gallery_content', 'iribbon_custom_gallery_post_
 */ 
 function iribbon_excerpt_link($more) {
 
-	global $themename, $themeslug, $options, $post;
+	global $ir_themename, $ir_themeslug, $options, $post;
     
-    	if ($options->get($themeslug.'_excerpt_link_text') == '') {
+    	if ($options->get($ir_themeslug.'_excerpt_link_text') == '') {
     		$linktext = '(Read More...)';
    		}
     	else {
-    		$linktext = $options->get($themeslug.'_excerpt_link_text');
+    		$linktext = $options->get($ir_themeslug.'_excerpt_link_text');
    		}
 
 	return '<a href="'. get_permalink($post->ID) . '"> <br /><br /> '.$linktext.'</a>';
@@ -165,13 +165,13 @@ add_filter('excerpt_more', 'iribbon_excerpt_link');
 */ 
 function iribbon_excerpt_length($length) {
 
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 	
-		if ($options->get($themeslug.'_excerpt_length') == '') {
+		if ($options->get($ir_themeslug.'_excerpt_length') == '') {
     		$length = '55';
     	}
     	else {
-    		$length = $options->get($themeslug.'_excerpt_length');
+    		$length = $options->get($ir_themeslug.'_excerpt_length');
     	}
     	
 	return $length;
@@ -184,19 +184,19 @@ add_filter('excerpt_length', 'iribbon_excerpt_length');
 function iribbon_featured_image() {	
 	if ( function_exists( 'add_theme_support' ) ) {
 	
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 	
-	if ($options->get($themeslug.'_featured_image_height') == '') {
+	if ($options->get($ir_themeslug.'_featured_image_height') == '') {
 		$featureheight = '100';
 	}		
 	else {
-		$featureheight = $options->get($themeslug.'_featured_image_height'); 
+		$featureheight = $options->get($ir_themeslug.'_featured_image_height'); 
 	}
-	if ($options->get($themeslug.'_featured_image_width') == "") {
+	if ($options->get($ir_themeslug.'_featured_image_width') == "") {
 			$featurewidth = '100';
 	}		
 	else {
-		$featurewidth = $options->get($themeslug.'_featured_image_width'); 
+		$featurewidth = $options->get($ir_themeslug.'_featured_image_width'); 
 	} 
 	set_post_thumbnail_size( $featurewidth, $featureheight, true );
 	}	
@@ -224,9 +224,9 @@ add_action('wp_head', 'iribbon_pie', 8);
 * Add Google Analytics support based on theme option.
 */ 
 function iribbon_google_analytics() {
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 	
-	echo stripslashes ($options->get($themeslug.'_ga_code'));
+	echo stripslashes ($options->get($ir_themeslug.'_ga_code'));
 
 }
 add_action('wp_head', 'iribbon_google_analytics');
@@ -235,9 +235,9 @@ add_action('wp_head', 'iribbon_google_analytics');
 * Add custom header scripts support based on theme option.
 */ 
 function iribbon_custom_scripts() {
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 	
-	echo stripslashes ($options->get($themeslug.'_custom_header_scripts'));
+	echo stripslashes ($options->get($ir_themeslug.'_custom_header_scripts'));
 
 }
 add_action('wp_head', 'iribbon_custom_scripts');
@@ -309,21 +309,21 @@ add_action ('widgets_init', 'iribbon_widgets_init');
 
 function iRibbon_post_meta()
 {
-	global $options, $themeslug; //call globals.  
+	global $options, $ir_themeslug; //call globals.  
 	if (is_single()) {
-		$hidden = $options->get($themeslug.'_single_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_single_hide_byline'); 
 	}
 	elseif (is_archive()) {
-		$hidden = $options->get($themeslug.'_archive_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_archive_hide_byline'); 
 	}
 	else {
-		$hidden = $options->get($themeslug.'_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_hide_byline'); 
 	}
 	$link_pages = wp_link_pages( array( 'echo' => 0 ) );
 	
-	if( $hidden[$themeslug.'_hide_comments'] != '0' ||
+	if( $hidden[$ir_themeslug.'_hide_comments'] != '0' ||
 			$link_pages != '' ||
-			$hidden[$themeslug.'_hide_tags'] != 0 && has_tag()
+			$hidden[$ir_themeslug.'_hide_tags'] != 0 && has_tag()
 		)
 		{
 			return 1;

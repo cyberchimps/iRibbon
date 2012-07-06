@@ -42,14 +42,14 @@ add_action( 'response_banner', 'response_banner_content');
 * @since 1.0
 */
 function response_font() {
-	global $themeslug, $options; //Call global variables
+	global $ir_themeslug, $options; //Call global variables
 	$family = apply_filters( 'response_default_font_family', 'Georgia, "Times New Roman", Times, serif' );
 	
-	if ($options->get($themeslug.'_font') == "" ) {
+	if ($options->get($ir_themeslug.'_font') == "" ) {
 		$font = apply_filters( 'response_default_font', 'Georgia' );
 	}		
 	else {
-		$font = $options->get($themeslug.'_font'); 
+		$font = $options->get($ir_themeslug.'_font'); 
 	} ?>
 	
 	<body style="font-family:'<?php echo str_replace("+", " ", $font ); ?>', <?php echo $family; ?>" <?php body_class(); ?> > <?php
@@ -78,7 +78,7 @@ function response_html_attributes() { ?>
 */
 function response_meta_tags() { ?>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><?php
-	global $themeslug, $options, $post; //Call global variables
+	global $ir_themeslug, $options, $post; //Call global variables
 	if(!$post) return; // in case of 404 page or something?>
 
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
@@ -91,8 +91,8 @@ function response_meta_tags() { ?>
 * @since 1.0
 */
 function response_title_tag() {
-	global $options, $themeslug, $query, $post; 
-	$blogtitle = ($options->get($themeslug.'_home_title'));
+	global $options, $ir_themeslug, $query, $post; 
+	$blogtitle = ($options->get($ir_themeslug.'_home_title'));
 	if (!is_404()) {
 		$title = get_post_meta($post->ID, 'seo_title' , true);
 	}
@@ -150,23 +150,23 @@ function response_title_tag() {
 * @since 1.0
 */
 function response_link_rel() {
-global $themeslug, $options; //Call global variables
-	$favicon = $options->get($themeslug.'_favicon'); //Calls the favicon URL from the theme options 
+global $ir_themeslug, $options; //Call global variables
+	$favicon = $options->get($ir_themeslug.'_favicon'); //Calls the favicon URL from the theme options 
 	
-	if ($options->get($themeslug.'_font') == "" AND $options->get($themeslug.'_custom_font') == "") {
+	if ($options->get($ir_themeslug.'_font') == "" AND $options->get($ir_themeslug.'_custom_font') == "") {
 		$font = apply_filters( 'response_default_font', 'Georgia' );
 	}		
-	elseif ($options->get($themeslug.'_custom_font') != "" && $options->get($themeslug.'_font') == 'custom') {
-		$font = $options->get($themeslug.'_custom_font');	
+	elseif ($options->get($ir_themeslug.'_custom_font') != "" && $options->get($ir_themeslug.'_font') == 'custom') {
+		$font = $options->get($ir_themeslug.'_custom_font');	
 	}	
 	else {
-		$font = $options->get($themeslug.'_font'); 
+		$font = $options->get($ir_themeslug.'_font'); 
 	} 
-	if ($options->get($themeslug.'_skin_color') == '') {
+	if ($options->get($ir_themeslug.'_skin_color') == '') {
 		$color = 'default';
 	}
 	else {
-		$color = $options->get($themeslug.'_skin_color');
+		$color = $options->get($ir_themeslug.'_skin_color');
 	}?>
 	
 <link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
@@ -195,10 +195,10 @@ global $themeslug, $options; //Call global variables
 * @since 1.0
 */
 function response_header_sitename_content() {
-	global $themeslug, $options; //Call global variables
-	$logo = $options->get($themeslug.'_logo'); //Calls the logo URL from the theme options
+	global $ir_themeslug, $options; //Call global variables
+	$logo = $options->get($ir_themeslug.'_logo'); //Calls the logo URL from the theme options
 	
-	if ($options->get($themeslug.'_custom_logo') == '1') { ?>
+	if ($options->get($ir_themeslug.'_custom_logo') == '1') { ?>
 	<div id="logo">
 		<a href="<?php echo home_url(); ?>/"><img src="<?php echo stripslashes($logo['url']); ?>" alt="logo"></a>
 	</div> <?php
@@ -211,7 +211,7 @@ function response_header_sitename_content() {
 }
 
 function response_header_site_description_content() {
-	global $themeslug, $options; ?>
+	global $ir_themeslug, $options; ?>
 	
 	<div id="description">
 		<h2 class="description"><?php bloginfo('description'); ?>&nbsp;</h2>
@@ -225,35 +225,35 @@ function response_header_site_description_content() {
 * @since 1.0
 */
 function response_header_social_icons_content() { 
-	global $options, $themeslug; //call globals
+	global $options, $ir_themeslug; //call globals
 	
-	$facebook		= $options->get($themeslug.'_facebook');
-	$hidefacebook   = $options->get($themeslug.'_hide_facebook_icon');
-	$twitter		= $options->get($themeslug.'_twitter');;
-	$hidetwitter    = $options->get($themeslug.'_hide_twitter_icon');;
-	$gplus		    = $options->get($themeslug.'_gplus');
-	$hidegplus      = $options->get($themeslug.'_hide_gplus_icon');
-	$flickr		    = $options->get($themeslug.'_flickr');
-	$hideflickr     = $options->get($themeslug.'_hide_flickr');
-	$myspace	    = $options->get($themeslug.'_myspace');
-	$hidemyspace    = $options->get($themeslug.'_hide_myspace');
-	$linkedin		= $options->get($themeslug.'_linkedin');
-	$hidelinkedin   = $options->get($themeslug.'_hide_linkedin');
-	$youtube		= $options->get($themeslug.'_youtube');
-	$hideyoutube    = $options->get($themeslug.'_hide_youtube');
-	$googlemaps		= $options->get($themeslug.'_googlemaps');
-	$hidegooglemaps = $options->get($themeslug.'_hide_googlemaps');
-	$email			= $options->get($themeslug.'_email');
-	$hideemail      = $options->get($themeslug.'_hide_email');
-	$rss			= $options->get($themeslug.'_rsslink');
-	$hiderss   		= $options->get($themeslug.'_hide_rss_icon');
+	$facebook		= $options->get($ir_themeslug.'_facebook');
+	$hidefacebook   = $options->get($ir_themeslug.'_hide_facebook_icon');
+	$twitter		= $options->get($ir_themeslug.'_twitter');;
+	$hidetwitter    = $options->get($ir_themeslug.'_hide_twitter_icon');;
+	$gplus		    = $options->get($ir_themeslug.'_gplus');
+	$hidegplus      = $options->get($ir_themeslug.'_hide_gplus_icon');
+	$flickr		    = $options->get($ir_themeslug.'_flickr');
+	$hideflickr     = $options->get($ir_themeslug.'_hide_flickr');
+	$myspace	    = $options->get($ir_themeslug.'_myspace');
+	$hidemyspace    = $options->get($ir_themeslug.'_hide_myspace');
+	$linkedin		= $options->get($ir_themeslug.'_linkedin');
+	$hidelinkedin   = $options->get($ir_themeslug.'_hide_linkedin');
+	$youtube		= $options->get($ir_themeslug.'_youtube');
+	$hideyoutube    = $options->get($ir_themeslug.'_hide_youtube');
+	$googlemaps		= $options->get($ir_themeslug.'_googlemaps');
+	$hidegooglemaps = $options->get($ir_themeslug.'_hide_googlemaps');
+	$email			= $options->get($ir_themeslug.'_email');
+	$hideemail      = $options->get($ir_themeslug.'_hide_email');
+	$rss			= $options->get($ir_themeslug.'_rsslink');
+	$hiderss   		= $options->get($ir_themeslug.'_hide_rss_icon');
 	
-	if ($options->get($themeslug.'_icon_style') == '') {
+	if ($options->get($ir_themeslug.'_icon_style') == '') {
 		$folder = 'default';
 	}
 	
 	else {
-		$folder = $options->get($themeslug.'_icon_style');
+		$folder = $options->get($ir_themeslug.'_icon_style');
 	} ?>
 
 	<div id="social">
@@ -326,7 +326,7 @@ function response_header_social_icons_content() {
 * @since 1.0
 */
 function response_nav() {
-	global $options, $themeslug, $themename; //call globals 
+	global $options, $ir_themeslug, $ir_themename; //call globals 
 		
 	?>
 <div class="visible-phone" id="mobile-nav">
@@ -364,7 +364,7 @@ function response_nav() {
 				'container' => 'nav',
 				'container_id' => 'nav',
 		    'theme_location' => 'header-menu', // Setting up the location for the main-menu, Main Navigation.
-		    'fallback_cb' => $themename.'_menu_fallback', //if wp_nav_menu is unavailable, WordPress displays wp_page_menu function, which displays the pages of your blog.
+		    'fallback_cb' => $ir_themename.'_menu_fallback', //if wp_nav_menu is unavailable, WordPress displays wp_page_menu function, which displays the pages of your blog.
 		    'items_wrap'      => '<ul id="nav_menu">%3$s</ul>',
 			    )
 			);
@@ -383,14 +383,14 @@ function response_nav() {
 * @since 1.0
 */
 function response_custom_header_element_content() { 
-	global $themeslug, $options; ?>
+	global $ir_themeslug, $options; ?>
 	
 	<div class="container-fluid">
 		<div class="row-fluid">
 		
 			<div class="span12">
 				
-				<?php echo stripslashes ($options->get($themeslug.'_custom_header_element')); 	?>
+				<?php echo stripslashes ($options->get($ir_themeslug.'_custom_header_element')); 	?>
 						
 			</div>	
 		</div><!--end row-fluid-->
@@ -476,9 +476,9 @@ function response_logo_icons_content() {
 * @since 3.0
 */
 function response_banner_content() {
-global $themeslug, $options, $root; //Call global variables
-$banner = $options->get($themeslug.'_banner'); //Calls the logo URL from the theme options
-$default = "$root/images/pro/banner.jpg";
+global $ir_themeslug, $options, $ir_root; //Call global variables
+$banner = $options->get($ir_themeslug.'_banner'); //Calls the logo URL from the theme options
+$default = "$ir_root/images/pro/banner.jpg";
 
 ?>
 	<div class="container-fluid">

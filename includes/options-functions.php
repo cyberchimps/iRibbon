@@ -18,25 +18,25 @@
 /* Standard Web Layout*/
 
 function response_content_layout() {
-	global $options, $themeslug, $post;
+	global $options, $ir_themeslug, $post;
 	
 	if (is_single()) {
-	$sidebar = $options->get($themeslug.'_single_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_single_sidebar');
 	}
 	elseif (is_archive()) {
-	$sidebar = $options->get($themeslug.'_archive_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_archive_sidebar');
 	}
 	elseif (is_404()) {
-	$sidebar = $options->get($themeslug.'_404_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_404_sidebar');
 	}
 	elseif (is_search()) {
-	$sidebar = $options->get($themeslug.'_search_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_search_sidebar');
 	}
 	elseif (is_page()) {
 	$sidebar = get_post_meta($post->ID, 'page_sidebar' , true);
 	}
 	else {
-	$sidebar = $options->get($themeslug.'_blog_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_blog_sidebar');
 	}
 	
 	if ($sidebar == 'two-right' OR $sidebar == '3' ) {
@@ -65,8 +65,8 @@ add_action( 'wp_head', 'response_content_Layout' );
 /* Widget Title Background*/
 
 function custom_row_width() {
-	global $options, $themeslug;
-	$maxwidth = $options->get($themeslug.'_row_max_width');
+	global $options, $ir_themeslug;
+	$maxwidth = $options->get($ir_themeslug.'_row_max_width');
 	
 	if ($maxwidth != '0' OR $maxwidth =='1020px' ) {
 		echo '<style type="text/css">';
@@ -79,10 +79,10 @@ add_action( 'wp_head', 'custom_row_width' );
 /* Widget Title Background*/
 
 function custom_text_color() {
-	global $options, $themeslug;
-	$color = $options->get($themeslug.'_text_color');
+	global $options, $ir_themeslug;
+	$color = $options->get($ir_themeslug.'_text_color');
 	
-	if ($options->get($themeslug.'_text_color') != '' ) {
+	if ($options->get($ir_themeslug.'_text_color') != '' ) {
 		echo '<style type="text/css">';
 		echo "body {color: $color;}";
 		echo '</style>';
@@ -94,15 +94,15 @@ add_action( 'wp_head', 'custom_text_color' );
 /* Adjust postbar width for full width and 2 sidebar configs*/
 
 function postbar_option() {
-	global $options, $themeslug;
+	global $options, $ir_themeslug;
 	
-	if ($options->get($themeslug.'_blog_sidebar') == 'two-right' OR $options->get($themeslug.'_blog_sidebar') == 'right-left') {
+	if ($options->get($ir_themeslug.'_blog_sidebar') == 'two-right' OR $options->get($ir_themeslug.'_blog_sidebar') == 'right-left') {
 		echo '<style type="text/css">';
 		echo ".postbar {width: 95.4%;}";
 		echo '</style>';
 	}
 	
-	if ($options->get($themeslug.'_blog_sidebar') == 'none') {
+	if ($options->get($ir_themeslug.'_blog_sidebar') == 'none') {
 		echo '<style type="text/css">';
 		echo ".postbar {width: 97.8%;}";
 		echo '</style>';
@@ -115,16 +115,16 @@ add_action( 'wp_head', 'postbar_option');
 
 function featured_image_alignment() {
 
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 	
-	if ($options->get($themeslug.'_featured_image_align') == "key3" ) {
+	if ($options->get($ir_themeslug.'_featured_image_align') == "key3" ) {
 	
 		echo '<style type="text/css">';
 		echo ".featured-image {float: right;}";
 		echo '</style>';
 			
 	}
-	elseif ($options->get($themeslug.'_featured_image_align') == "key2" ) {
+	elseif ($options->get($ir_themeslug.'_featured_image_align') == "key2" ) {
 
 		echo '<style type="text/css">';
 		echo ".featured-image {text-align: center;}";
@@ -144,9 +144,9 @@ add_action( 'wp_head', 'featured_image_alignment');
 
 function post_meta_data_width() {
 
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 
-	if ($options->get($themeslug.'_blog_sidebar') == "two-right" OR $options->get($themeslug.'_blog_sidebar') == "right-left") {
+	if ($options->get($ir_themeslug.'_blog_sidebar') == "two-right" OR $options->get($ir_themeslug.'_blog_sidebar') == "right-left") {
 
 		echo '<style type="text/css">';
 		echo ".postmetadata {width: 480px;}";
@@ -161,14 +161,14 @@ add_action( 'wp_head', 'post_meta_data_width');
 
 function add_sitetitle_color() {
 
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 
-	if ($options->get($themeslug.'_sitetitle_color') == "") {
+	if ($options->get($ir_themeslug.'_sitetitle_color') == "") {
 		$sitetitle = '#717171';
 	}
 	
 	else {
-		$sitetitle = $options->get($themeslug.'_sitetitle_color'); 
+		$sitetitle = $options->get($ir_themeslug.'_sitetitle_color'); 
 	}		
 	
 		echo '<style type="text/css">';
@@ -182,10 +182,10 @@ add_action( 'wp_head', 'add_sitetitle_color');
 
 function add_link_color() {
 
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 
-	if ($options->get($themeslug.'_link_color') != '') {
-		$link = $options->get($themeslug.'_link_color'); 
+	if ($options->get($ir_themeslug.'_link_color') != '') {
+		$link = $options->get($ir_themeslug.'_link_color'); 
 	
 
 		echo '<style type="text/css">';
@@ -200,10 +200,10 @@ add_action( 'wp_head', 'add_link_color');
 
 function add_link_hover_color() {
 
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 
-	if ($options->get($themeslug.'_link_hover_color') != '') {
-		$link = $options->get($themeslug.'_link_hover_color'); 
+	if ($options->get($ir_themeslug.'_link_hover_color') != '') {
+		$link = $options->get($ir_themeslug.'_link_hover_color'); 
 	
 
 		echo '<style type="text/css">';
@@ -218,10 +218,10 @@ add_action( 'wp_head', 'add_link_hover_color');
 
 function add_tagline_color() {
 
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 
-	if ($options->get($themeslug.'_tagline_color') != '') {
-		$color = $options->get($themeslug.'_tagline_color'); 
+	if ($options->get($ir_themeslug.'_tagline_color') != '') {
+		$color = $options->get($ir_themeslug.'_tagline_color'); 
 
 		echo '<style type="text/css">';
 		echo ".description {color: $color;}";
@@ -235,10 +235,10 @@ add_action( 'wp_head', 'add_tagline_color');
 
 function add_posttitle_color() {
 
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 
-	if ($options->get($themeslug.'_posttitle_color') != '') {
-		$posttitle = $options->get($themeslug.'_posttitle_color'); 
+	if ($options->get($ir_themeslug.'_posttitle_color') != '') {
+		$posttitle = $options->get($ir_themeslug.'_posttitle_color'); 
 			
 		echo '<style type="text/css">';
 		echo ".posts_title a {color: $posttitle;}";
@@ -251,18 +251,18 @@ add_action( 'wp_head', 'add_posttitle_color');
  
 function add_menu_font() {
 		
-	global $themename, $themeslug, $options;	
+	global $ir_themename, $ir_themeslug, $options;	
 		
-	if ($options->get($themeslug.'_menu_font') == "") {
+	if ($options->get($ir_themeslug.'_menu_font') == "") {
 		$font = 'Georgia';
 	}		
 		
-	elseif ($options->get($themeslug.'_menu_font') == 'custom' && $options->get($themeslug.'_custom_menu_font') != "") {
-		$font = $options->get($themeslug.'_custom_menu_font');	
+	elseif ($options->get($ir_themeslug.'_menu_font') == 'custom' && $options->get($ir_themeslug.'_custom_menu_font') != "") {
+		$font = $options->get($ir_themeslug.'_custom_menu_font');	
 	}
 	
 	else {
-		$font = $options->get($themeslug.'_menu_font'); 
+		$font = $options->get($ir_themeslug.'_menu_font'); 
 	}
 	
 		$fontstrip =  str_replace("+", " ", $font );
@@ -278,18 +278,18 @@ add_action( 'wp_head', 'add_menu_font');
  
 function add_secondary_font() {
 		
-	global $themename, $themeslug, $options;	
+	global $ir_themename, $ir_themeslug, $options;	
 		
-	if ($options->get($themeslug.'_secondary_font') == "") {
+	if ($options->get($ir_themeslug.'_secondary_font') == "") {
 		$font = 'Lobster';
 	}		
 		
-	elseif ($options->get($themeslug.'_secondary_font') == 'custom' && $options->get($themeslug.'_custom_secondary_font') != "") {
-		$font = $options->get($themeslug.'_custom_secondary_font');	
+	elseif ($options->get($ir_themeslug.'_secondary_font') == 'custom' && $options->get($ir_themeslug.'_custom_secondary_font') != "") {
+		$font = $options->get($ir_themeslug.'_custom_secondary_font');	
 	}
 	
 	else {
-		$font = $options->get($themeslug.'_secondary_font'); 
+		$font = $options->get($ir_themeslug.'_secondary_font'); 
 	}
 	
 		$fontstrip =  ereg_replace("[^A-Za-z0-9]", " ", $font );
@@ -305,9 +305,9 @@ add_action( 'wp_head', 'add_secondary_font');
 
 function custom_css() {
 
-	global $themename, $themeslug, $options;
+	global $ir_themename, $ir_themeslug, $options;
 	
-	$custom =$options->get($themeslug.'_css_options');
+	$custom =$options->get($ir_themeslug.'_css_options');
 	echo '<style type="text/css">' . "\n";
 	echo  $custom  . "\n";
 	echo '</style>' . "\n";
