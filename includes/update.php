@@ -6,17 +6,22 @@
 //set_site_transient('update_themes', null);
 
 
-add_filter('pre_set_site_transient_update_themes', 'response_check_for_update');
+add_filter('pre_set_site_transient_update_themes', 'chimps_check_for_update');
 
-$theme_data = get_theme_data( get_template_directory() . '/style.css');
-$theme_version = $theme_data['Version'];
-$theme_base = get_option('stylesheet');
+if(function_exists('wp_get_theme')){
+    $theme_data = wp_get_theme(get_option('template'));
+    $theme_version = $theme_data->Version;
+} else {
+    $theme_data = get_theme_data( TEMPLATEPATH . '/style.css');
+    $theme_version = $theme_data['Version'];
+}
+$theme_base = get_option('template');
 
 /******************Change this*******************/
 $api_url = 'http://cyberchimps.com/api/';
 /************************************************/
 	
-function response_check_for_update($checked_data) 
+function chimps_check_for_update($checked_data) 
 {
 	global $wp_version, $theme_version, $theme_base, $api_url;
 	
@@ -24,12 +29,12 @@ function response_check_for_update($checked_data)
 		'slug' => $theme_base,
 		'version' => $theme_version 
 	);
-	// Start checking for an update
+        // Start checking for an update
 	$send_for_check = array(
 		'body' => array(
 			'action' => 'theme_update', 
 			'request' => serialize($request),
-			'api-key' => md5(home_url())
+			'api-key' => md5(get_bloginfo('url'))
 		),
 		'user-agent' => 'WordPress/' . $wp_version . '; ' . get_bloginfo('url')
 	);
