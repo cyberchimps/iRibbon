@@ -15,7 +15,7 @@
 * @since 1.0
 */
 
-	global $options, $themeslug, $themename; // call globals
+	global $options, $ir_themeslug, $ir_themename; // call globals
 
 ?>
 	<?php response_head_tag(); ?>

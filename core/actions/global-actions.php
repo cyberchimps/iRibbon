@@ -32,22 +32,22 @@ add_action( 'response_post_bar', 'response_post_bar_content' );
 */
 function response_loop_content($content) { 
 
-	global $options, $themeslug, $post; //call globals
+	global $options, $ir_themeslug, $post; //call globals
 	
 	if (is_single()) {
-		 $post_formats = $options->get($themeslug.'_single_post_formats');
-		 $featured_images = $options->get($themeslug.'_single_show_featured_images');
-		 $excerpts = $options->get($themeslug.'_single_show_excerpts');
+		 $post_formats = $options->get($ir_themeslug.'_single_post_formats');
+		 $featured_images = $options->get($ir_themeslug.'_single_show_featured_images');
+		 $excerpts = $options->get($ir_themeslug.'_single_show_excerpts');
 	}
 	elseif (is_archive()) {
-		 $post_formats = $options->get($themeslug.'_archive_post_formats');
-		 $featured_images = $options->get($themeslug.'_archive_show_featured_images');
-		 $excerpts = $options->get($themeslug.'_archive_show_excerpts');
+		 $post_formats = $options->get($ir_themeslug.'_archive_post_formats');
+		 $featured_images = $options->get($ir_themeslug.'_archive_show_featured_images');
+		 $excerpts = $options->get($ir_themeslug.'_archive_show_excerpts');
 	}
 	else {
-		 $post_formats = $options->get($themeslug.'_post_formats');
-		 $featured_images = $options->get($themeslug.'_show_featured_images');
-		 $excerpts = $options->get($themeslug.'_show_excerpts');
+		 $post_formats = $options->get($ir_themeslug.'_post_formats');
+		 $featured_images = $options->get($ir_themeslug.'_show_featured_images');
+		 $excerpts = $options->get($ir_themeslug.'_show_excerpts');
 	}
 	
 	if (get_post_format() == '') {
@@ -137,20 +137,20 @@ function response_loop_content($content) {
 * @since 3.1
 */
 function response_post_bar_content() { 
-	global $options, $themeslug; 
+	global $options, $ir_themeslug; 
 	
 	if (is_single()) {
-		$hidden = $options->get($themeslug.'_single_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_single_hide_byline'); 
 	}
 	elseif (is_archive()) {
-		$hidden = $options->get($themeslug.'_archive_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_archive_hide_byline'); 
 	}
 	else {
-		$hidden = $options->get($themeslug.'_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_hide_byline'); 
 	}?>
 	
 	<div id="comments">
-	<?php if (($hidden[$themeslug.'_hide_comments']) != '0'):?><?php comments_popup_link( __('No Comments', 'response' ), __('1 Comment', 'response' ), __('% Comments' , 'response' )); //need a filer here ?>.<?php endif;?>
+	<?php if (($hidden[$ir_themeslug.'_hide_comments']) != '0'):?><?php comments_popup_link( __('No Comments', 'response' ), __('1 Comment', 'response' ), __('% Comments' , 'response' )); //need a filer here ?>.<?php endif;?>
 	</div>
 	<?php
 }
@@ -161,21 +161,21 @@ function response_post_bar_content() {
 * @since 1.0
 */
 function response_post_byline_content() {
-	global $options, $themeslug; //call globals.  
+	global $options, $ir_themeslug; //call globals.  
 	if (is_single()) {
-		$hidden = $options->get($themeslug.'_single_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_single_hide_byline'); 
 	}
 	elseif (is_archive()) {
-		$hidden = $options->get($themeslug.'_archive_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_archive_hide_byline'); 
 	}
 	else {
-		$hidden = $options->get($themeslug.'_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_hide_byline'); 
 	}?>
 	
 	<div class="meta">
-		<?php if (($hidden[$themeslug.'_hide_date']) != '0'):?> <?php printf( __( 'Published on', 'response' )); ?> <a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>,<?php endif;?>
-		<?php if (($hidden[$themeslug.'_hide_author']) != '0'):?><?php printf( __( 'by', 'response' )); ?> <?php the_author_posts_link(); ?> <?php endif;?> 
-		<?php if (($hidden[$themeslug.'_hide_categories']) != '0'):?><?php printf( __( 'in', 'response' )); ?> <?php the_category(', ') ?>.<?php endif;?>
+		<?php if (($hidden[$ir_themeslug.'_hide_date']) != '0'):?> <?php printf( __( 'Published on', 'response' )); ?> <a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>,<?php endif;?>
+		<?php if (($hidden[$ir_themeslug.'_hide_author']) != '0'):?><?php printf( __( 'by', 'response' )); ?> <?php the_author_posts_link(); ?> <?php endif;?> 
+		<?php if (($hidden[$ir_themeslug.'_hide_categories']) != '0'):?><?php printf( __( 'in', 'response' )); ?> <?php the_category(', ') ?>.<?php endif;?>
 		
 	</div> <?php
 }
@@ -195,18 +195,18 @@ function response_edit_link_content() {
 * @since 1.0
 */
 function response_post_tags_content() {
-	global $options, $themeslug; 
+	global $options, $ir_themeslug; 
 	if (is_single()) {
-		$hidden = $options->get($themeslug.'_single_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_single_hide_byline'); 
 	}
 	elseif (is_archive()) {
-		$hidden = $options->get($themeslug.'_archive_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_archive_hide_byline'); 
 	}
 	else {
-		$hidden = $options->get($themeslug.'_hide_byline'); 
+		$hidden = $options->get($ir_themeslug.'_hide_byline'); 
 	}?>
 
-	<?php if (has_tag() AND ($hidden[$themeslug.'_hide_tags']) != '0'):?>
+	<?php if (has_tag() AND ($hidden[$ir_themeslug.'_hide_tags']) != '0'):?>
 	<div class="tags">
 			<?php the_tags( __('Tags: ', 'response'), ', ', '<br />'); ?>
 		

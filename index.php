@@ -15,8 +15,8 @@
 * @since 1.0
 */
 
-	global $options, $themeslug, $post; // call globals
-	$reorder = $options->get($themeslug.'_blog_section_order');		
+	global $options, $ir_themeslug, $post; // call globals
+	$reorder = $options->get($ir_themeslug.'_blog_section_order');		
 ?>
 
 <?php get_header(); ?>
@@ -24,7 +24,7 @@
 	<div class="container-fluid">
 	
 		<?php
-			foreach(explode(",", $options->get($themeslug.'_blog_section_order')) as $fn) {
+			foreach(explode(",", $options->get($ir_themeslug.'_blog_section_order')) as $fn) {
 				if(function_exists($fn)) {
 					call_user_func_array($fn, array());
 				}
@@ -32,9 +32,5 @@
 		?>
 	
 	</div>
-	
-	<!-- For sticky footer -->
-	<div class="push"></div>  
-	</div>	<!-- End of wrapper -->
 	
 <?php get_footer(); ?>

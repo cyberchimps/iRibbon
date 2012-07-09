@@ -30,25 +30,25 @@ add_action( 'response_after_content_sidebar', 'response_after_content_sidebar_ma
 */
 function response_sidebar_init_content() {
 
-	global $options, $themeslug, $post, $sidebar, $content_grid;
+	global $options, $ir_themeslug, $post, $sidebar, $content_grid;
 	
 	if (is_single()) {
-	$sidebar = $options->get($themeslug.'_single_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_single_sidebar');
 	}
 	elseif (is_archive()) {
-	$sidebar = $options->get($themeslug.'_archive_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_archive_sidebar');
 	}
 	elseif (is_404()) {
-	$sidebar = $options->get($themeslug.'_404_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_404_sidebar');
 	}
 	elseif (is_search()) {
-	$sidebar = $options->get($themeslug.'_search_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_search_sidebar');
 	}
 	elseif (is_page()) {
 	$sidebar = get_post_meta($post->ID, 'page_sidebar' , true);
 	}
 	else {
-	$sidebar = $options->get($themeslug.'_blog_sidebar');
+	$sidebar = $options->get($ir_themeslug.'_blog_sidebar');
 	}
 	
 	if ($sidebar == 'none' OR $sidebar == "2") {
@@ -71,7 +71,7 @@ function response_sidebar_init_content() {
 * @since 1.0
 */
 function response_before_content_sidebar_markup() { 
-	global $options, $themeslug, $post, $sidebar; // call globals ?>
+	global $options, $ir_themeslug, $post, $sidebar; // call globals ?>
 					
 	<?php if ($sidebar == 'left' OR $sidebar == "1"): ?>
   <div class="span4">
@@ -88,7 +88,7 @@ function response_before_content_sidebar_markup() {
 * @since 1.0
 */
 function response_after_content_sidebar_markup() {
-	global $options, $themeslug, $post, $sidebar; // call globals ?>
+	global $options, $ir_themeslug, $post, $sidebar; // call globals ?>
 	
 	<?php if ($sidebar == 'right' OR $sidebar == '0' OR $sidebar == '' ): ?>
 	<div class="span4">

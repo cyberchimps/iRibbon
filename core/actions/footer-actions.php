@@ -75,13 +75,13 @@ function response_footer_widgets() {
 * @since 1.0
 */
 function response_secondary_footer_copyright() {
-	global $options, $themeslug; //call globals
+	global $options, $ir_themeslug; //call globals
 		
-	if ($options->get($themeslug.'_footer_text') == "") {
+	if ($options->get($ir_themeslug.'_footer_text') == "") {
 		$copyright =  get_bloginfo('name');
 	}
 	else {
-		$copyright = $options->get($themeslug.'_footer_text');
+		$copyright = $options->get($ir_themeslug.'_footer_text');
 	}
 	
 	echo "<div id='afterfootercopyright' class='span6'>";
@@ -96,9 +96,9 @@ function response_secondary_footer_copyright() {
 */
 function response_secondary_footer_credit() { 
 		
-	global $options, $themeslug; //call globals
+	global $options, $ir_themeslug; //call globals
 	
-	if ($options->get($themeslug.'_hide_link') == "1") {?>
+	if ($options->get($ir_themeslug.'_hide_link') == "1") {?>
 		
 		<div id="credit" class="span6">
 			<a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/achimps.png" alt="credit" /></a>

@@ -36,7 +36,7 @@ add_action('after_setup_theme', 'response_text_domain');
 * Load jQuery and register additional scripts.
 */ 
 function response_scripts() {
-	global $options, $themeslug;
+	global $options, $ir_themeslug;
 	if ( !is_admin() ) {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-ui-tabs');
@@ -50,6 +50,7 @@ function response_scripts() {
 	wp_register_script( 'plusone' ,$path.'/js/plusone.js');
 	wp_register_script( 'mobilemenu' ,$path.'/js/mobilemenu.js');
 	wp_register_script( 'html5shiv', $path.'/js/html5shiv.js' );
+	wp_register_script( 'oembed' ,$path.'/js/oembed-twitter.js');
 	
 	wp_enqueue_script ('orbit');
 	wp_enqueue_script ('bootstrap');
@@ -57,6 +58,7 @@ function response_scripts() {
 	wp_enqueue_script ('plusone');
 	wp_enqueue_script ('mobilemenu');
 	wp_enqueue_script ('html5shiv');
+	wp_enqueue_script ('oembed');
 	
 	}
 	
@@ -134,7 +136,7 @@ function response_comment($comment, $args, $depth) {
 * @since 1.0
 */
 function response_breadcrumbs() {
-  global $root;
+  global $ir_root;
   
   $delimiter = "/";
   $home = 'Home'; // text for the 'Home' link
