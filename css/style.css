@@ -34,6 +34,7 @@ html, body {
 }
 
 .wrapper {
+	overflow: hidden;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
