@@ -25,7 +25,7 @@
 	$ir_pagedocs = 'http://cyberchimps.com/question/using-the-iribbon-page-options/';
 	$ir_sliderdocs = 'http://cyberchimps.com/question/using-the-feature-slider-in-iribbon/';
 	$ir_root = get_template_directory_uri();
-	$ir_content_width = 608;
+	$content_width = 608;
 	
 /**
 * Assign new default font.
@@ -41,7 +41,7 @@ add_filter( 'response_default_font', 'ribbon_default_font' );
 * Basic theme setup.
 */ 
 function iribbon_theme_setup() {
-	if ( ! isset( $ir_content_width ) ) $ir_content_width = 608; //Set content width
+	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
 	
 	add_theme_support(
 		'post-formats',

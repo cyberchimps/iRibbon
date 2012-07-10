@@ -71,7 +71,7 @@ function response_search_content() {
 			<div class="ribbon-top">
       <div class="ribbon-more">
       </div>
-					<h2 class="posts_title"><?php printf( __( $noresults, 'response' )) ; ?></h2>
+					<h2 class="posts_title"><?php printf( $noresults ) ; ?></h2>
       </div><!-- ribbon top -->
 			<article class="post_container">
       <div class="ribbon-shadow">

@@ -32,7 +32,7 @@ function response_comments_password_required() {
 	
 	$password_text = apply_filters( 'response_password_required_text', 'This post is password protected. Enter the password to view comments.');
 	if ( post_password_required() ) { 
-		printf( __( $password_text, 'response' )); 
+		printf( $password_text ); 
 		return;
 	}
 }
