@@ -22,7 +22,7 @@
 /* End header. */	
 
 /* Define global variables. */
-	global $options, $post, $themeslug;
+	global $options, $post, $ir_themeslug;
 	$page_section_order = get_post_meta($post->ID, 'page_section_order' , true);
 	if(!$page_section_order) {
 		$page_section_order = 'breadcrumbs,page_section';

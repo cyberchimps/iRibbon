@@ -59,6 +59,8 @@ function response_search_content() {
         
 			</article><!--end post container-->
 			</div><!-- end post -->
+      
+		<div class='clear'>&nbsp;</div>
 			
 		<?php endwhile; ?>
 
