@@ -570,7 +570,7 @@ header {
 /* Search Bar */
 
 .searchform {
-  margin: 40px 5px 10px 5px
+  margin: 10px 5px;
 }
 .search-container {
   width: 80%;
@@ -793,7 +793,7 @@ ol, ul {
   position: relative;
 	color: #666;
   margin-top: 0;
-	padding: 15px;
+	padding:  50px 15px 15px 15px;
 	background: transparent;
 }
 .widget-container:first-child {
@@ -821,9 +821,7 @@ ol, ul {
   filter: dropshadow(color=rgba(0,0,0,0.5), offx=1, offy=2);      
 }
 .widget-container > ul{
-  margin-top: 40px;
   margin-left: 0px;
-  margin-bottom:10px;
 }
 
 /* Blog and Post Styles */
