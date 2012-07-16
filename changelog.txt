@@ -1,6 +1,10 @@
 Response Changelog
 ****************************
 
+Version 1.0.3 (07-16-12)
+-Fixed iframe issue.
+-Removed extra template options.
+
 Version 1.0.2 (07-10-12)
 -Prefix fix
 -Twitter embed fix.
