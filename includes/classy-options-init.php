@@ -76,6 +76,7 @@ $options
 			->checkbox($ir_themeslug."_custom_logo", "Custom Logo" , array('default' => true))
 			->upload($ir_themeslug."_logo", "Logo", array('default' => array('url' => TEMPLATE_URL . '/images/responselogo.png')))
 			->upload($ir_themeslug."_favicon", "Custom Favicon")
+			->upload($themeslug."_apple_touch", "Apple Touch Icon", array('default' => array('url' => TEMPLATE_URL . '/images/apple-icon.png')))
 		->subsection_end()
 		->subsection("Social")
 			->images($ir_themeslug."_icon_style", "Icon set", array( 'options' => array('legacy' => TEMPLATE_URL . '/images/social/thumbs/icons-classic.png', 'default' =>

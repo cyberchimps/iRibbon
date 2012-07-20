@@ -179,6 +179,10 @@ global $ir_themeslug, $options; //Call global variables
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/color/<?php echo $color; ?>.css" type="text/css" />
 
+<!--  For apple touch icon -->
+<?php $apple_icon = $options->get($themeslug.'_apple_touch'); ?>
+<link rel="apple-touch-icon" href="<?php echo $apple_icon['url']; ?>"/>
+
 <?php if (is_child_theme()) :  //add support for child themes?>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css" />
 <?php endif; ?>
