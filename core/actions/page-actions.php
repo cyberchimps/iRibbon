@@ -33,7 +33,6 @@ function response_page_section_content() {
 	
 	$hidetitle = get_post_meta($post->ID, 'hide_page_title' , true);
 
-
 ?>
 <div class="row-fluid">
 	<!--Begin @response before content sidebar hook-->
@@ -47,7 +46,9 @@ function response_page_section_content() {
           <div class="ribbon-top">
           <div class="ribbon-more">
           </div>
+				<?php if ($hidetitle == "on" OR $hidetitle == ''): ?>
 					<h2 class="posts_title"><?php the_title(); ?></h2>
+				<?php endif;?>
           <div class="ribbon-shadow">
       </div><!-- ribbon shadow -->
           </div><!-- ribbon top -->
