@@ -441,14 +441,14 @@ header {
 .sd_left_sidebar div.ribbon-more {
   position: absolute;
   top: 0;
-  right: -15px;
+  right: -14px;
   height:100%;
   width:15px;
 }
 .sd_right_sidebar div.ribbon-more {
   position: absolute;
   top: 0;
-  right: -15px;
+  right: -14px;
   height:100%;
   width:15px;
 }
@@ -498,7 +498,7 @@ header {
   width:0;
   height:0;
   top:100%;
-  right:-10px;
+  right:-9px;
   border-width:0 0 10px 10px;
   border-style: solid;
 }
