@@ -3,7 +3,7 @@
 * Initializes the Response Theme Options
 *
 * Author: Tyler Cunningham
-* Copyright: © 2012
+* Copyright: &#169; 2012
 * {@link http://cyberchimps.com/ CyberChimps LLC}
 *
 * Released under the terms of the GNU General Public License.
@@ -76,7 +76,7 @@ $options
 			->checkbox($ir_themeslug."_custom_logo", "Custom Logo" , array('default' => true))
 			->upload($ir_themeslug."_logo", "Logo", array('default' => array('url' => TEMPLATE_URL . '/images/responselogo.png')))
 			->upload($ir_themeslug."_favicon", "Custom Favicon")
-			->upload($themeslug."_apple_touch", "Apple Touch Icon", array('default' => array('url' => TEMPLATE_URL . '/images/apple-icon.png')))
+			->upload($ir_themeslug."_apple_touch", "Apple Touch Icon", array('default' => array('url' => TEMPLATE_URL . '/images/apple-icon.png')))
 		->subsection_end()
 		->subsection("Social")
 			->images($ir_themeslug."_icon_style", "Icon set", array( 'options' => array('legacy' => TEMPLATE_URL . '/images/social/thumbs/icons-classic.png', 'default' =>
@@ -114,7 +114,7 @@ TEMPLATE_URL . '/images/social/thumbs/icons-default.png' ), 'default' => 'defaul
 			->images($ir_themeslug."_blog_sidebar", "Sidebar Options", array( 'options' => array("none" => TEMPLATE_URL . '/images/options/none.png',"left" => TEMPLATE_URL . '/images/options/left.png',  "right" => TEMPLATE_URL . '/images/options/right.png'), 'default' => 'right'))
 			->checkbox($ir_themeslug."_post_formats", "Post Format Icons",  array('default' => true))
 			->checkbox($ir_themeslug."_show_excerpts", "Post Excerpts")
-			->text($ir_themeslug."_excerpt_link_text", "Excerpt Link Text", array('default' => '(More)…'))
+			->text($ir_themeslug."_excerpt_link_text", "Excerpt Link Text", array('default' => '(More)&#8230;'))
 			->text($ir_themeslug."_excerpt_length", "Excerpt Character Length", array('default' => '55'))
 			->checkbox($ir_themeslug."_show_featured_images", "Featured Images")
 			->select($ir_themeslug."_featured_image_align", "Featured Image Alignment", array( 'options' => array("key1" => "Left", "key2" => "Center", "key3" => "Right")))

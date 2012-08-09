@@ -56,6 +56,7 @@ function response_comments_loop() {
 		<nav class="navigation">
 			<div class="next-posts"><?php previous_comments_link() ?></div>
 			<div class="prev-posts"><?php next_comments_link() ?></div>
+      <div class="clear"></div>
 		</nav>
 
 		<ol class="commentlist">
@@ -65,6 +66,7 @@ function response_comments_loop() {
 		<nav class="navigation">
 			<div class="next-posts"><?php previous_comments_link() ?></div>
 			<div class="prev-posts"><?php next_comments_link() ?></div>
+      <div class="clear"></div>
 		</nav>
 		</article><!--end post container-->
 	</aside><!--end comments_container-->

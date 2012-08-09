@@ -3,7 +3,7 @@
 * Header actions used by the CyberChimps Response Core Framework
 *
 * Author: Tyler Cunningham
-* Copyright: © 2012
+* Copyright: &#169; 2012
 * {@link http://cyberchimps.com/ CyberChimps LLC}
 *
 * Released under the terms of the GNU General Public License.
@@ -152,44 +152,16 @@ function response_title_tag() {
 function response_link_rel() {
 global $ir_themeslug, $options; //Call global variables
 	$favicon = $options->get($ir_themeslug.'_favicon'); //Calls the favicon URL from the theme options 
-	
-	if ($options->get($ir_themeslug.'_font') == "" AND $options->get($ir_themeslug.'_custom_font') == "") {
-		$font = apply_filters( 'response_default_font', 'Georgia' );
-	}		
-	elseif ($options->get($ir_themeslug.'_custom_font') != "" && $options->get($ir_themeslug.'_font') == 'custom') {
-		$font = $options->get($ir_themeslug.'_custom_font');	
-	}	
-	else {
-		$font = $options->get($ir_themeslug.'_font'); 
-	} 
-	if ($options->get($ir_themeslug.'_skin_color') == '') {
-		$color = 'default';
-	}
-	else {
-		$color = $options->get($ir_themeslug.'_skin_color');
-	}?>
+?>
 	
 <link rel="shortcut icon" href="<?php echo stripslashes($favicon['url']); ?>" type="image/x-icon" />
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/bootstrap/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/bootstrap/bootstrap-responsive.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/core/css/orbit/orbit.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/shortcode.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/elements.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/color/<?php echo $color; ?>.css" type="text/css" />
-
 <!--  For apple touch icon -->
-<?php $apple_icon = $options->get($themeslug.'_apple_touch'); ?>
+<?php $apple_icon = $options->get($ir_themeslug.'_apple_touch'); ?>
 <link rel="apple-touch-icon" href="<?php echo $apple_icon['url']; ?>"/>
 
-<?php if (is_child_theme()) :  //add support for child themes?>
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css" />
-<?php endif; ?>
-
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-<link href='//fonts.googleapis.com/css?family=<?php echo $font ; ?>' rel='stylesheet' type='text/css' /> <?php
+<?php
 }
 
 
@@ -338,7 +310,7 @@ function response_nav() {
 </div><!-- visible phone -->	
 <div id="mobile-nav-modal" class="modal hide fade in" style="display: none;">
 <div class="modal-header">
-<button class="close" data-dismiss="modal">×</button>
+<button class="close" data-dismiss="modal">&#215;</button>
 <h3>Navigation</h3>
 </div>
     <?php wp_nav_menu( array(

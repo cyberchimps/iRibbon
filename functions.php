@@ -25,7 +25,8 @@
 	$ir_pagedocs = 'http://cyberchimps.com/question/using-the-iribbon-page-options/';
 	$ir_sliderdocs = 'http://cyberchimps.com/question/using-the-feature-slider-in-iribbon/';
 	$ir_root = get_template_directory_uri();
-	$content_width = 608;
+	
+	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
 	
 /**
 * Assign new default font.
@@ -41,7 +42,18 @@ add_filter( 'response_default_font', 'ribbon_default_font' );
 * Basic theme setup.
 */ 
 function iribbon_theme_setup() {
-	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
+	
+/**
+* Initialize response Core Framework and Pro Extension.
+*/ 
+	require_once ( get_template_directory() . '/core/core-init.php' );
+
+/**
+* Call additional files required by theme.
+*/ 
+	require_once ( get_template_directory() . '/includes/classy-options-init.php' ); // Theme options markup.
+	require_once ( get_template_directory() . '/includes/options-functions.php' ); // Custom functions based on theme options.
+	require_once ( get_template_directory() . '/includes/meta-box.php' ); // Meta options markup.
 	
 	add_theme_support(
 		'post-formats',
@@ -332,18 +344,6 @@ function iRibbon_post_meta()
 			return 0;
 		}
 }
-
-/**
-* Initialize response Core Framework and Pro Extension.
-*/ 
-require_once ( get_template_directory() . '/core/core-init.php' );
-
-/**
-* Call additional files required by theme.
-*/ 
-require_once ( get_template_directory() . '/includes/classy-options-init.php' ); // Theme options markup.
-require_once ( get_template_directory() . '/includes/options-functions.php' ); // Custom functions based on theme options.
-require_once ( get_template_directory() . '/includes/meta-box.php' ); // Meta options markup.
 
 /**
 * End

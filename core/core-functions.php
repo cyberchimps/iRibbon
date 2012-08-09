@@ -33,6 +33,66 @@ function response_text_domain() {
 add_action('after_setup_theme', 'response_text_domain');
 
 /**
+* Load styles.
+*/ 
+
+function iribbon_styles() {
+	global $options, $ir_themeslug;
+	
+	// get color scheme
+	if ($options->get($ir_themeslug.'_skin_color') == '') {
+		$color = 'default';
+	}
+	else {
+		$color = $options->get($ir_themeslug.'_skin_color');
+	}
+	
+	// set paths to stylesheet dir
+	$core_path =  get_template_directory_uri() ."/core/css";
+	$path = get_template_directory_uri() ."/css";
+	
+	// register stylesheets
+	wp_register_style( 'bootstrap', $core_path.'/bootstrap/bootstrap.css' );
+	wp_register_style( 'bootstrap_responsive', $core_path.'/bootstrap/bootstrap-responsive.css', array( 'bootstrap' ) );
+	wp_register_style( 'orbit', $core_path.'/orbit/orbit.css', array( 'bootstrap' ) );
+	wp_register_style( 'shortcode', $path.'/shortcode.css' );
+	wp_register_style( 'iribbon_style', $path.'/style.css', array( 'bootstrap' ) );
+	wp_register_style( 'elements', $path.'/elements.css', array( 'bootstrap', 'iribbon_style' ) );
+	wp_register_style( 'color', $path.'/color/'.$color.'.css', array( 'elements' ) );
+	
+	// child theme support
+	wp_register_style( 'child_theme', get_stylesheet_directory_uri().'/style.css', array( 'iribbon_style' ) );
+	if( is_child_theme() ) {
+		wp_enqueue_style( 'child_theme' );
+	}
+	
+	// get fonts
+	if ($options->get($ir_themeslug.'_font') == "" AND $options->get($ir_themeslug.'_custom_font') == "") {
+		$font = apply_filters( 'response_default_font', 'Georgia' );
+	}		
+	elseif ($options->get($ir_themeslug.'_custom_font') != "" && $options->get($ir_themeslug.'_font') == 'custom') {
+		$font = $options->get($ir_themeslug.'_custom_font');	
+	}	
+	else {
+		$font = $options->get($ir_themeslug.'_font'); 
+	} 
+	// register font stylesheet
+	wp_register_style( 'fonts', 'http://fonts.googleapis.com/css?family='.$font, array( 'iribbon_style' ) ); 		
+	
+	// enqueue stylesheets
+	wp_enqueue_style( 'bootstrap' );
+	wp_enqueue_style( 'bootstrap_responsive' );
+	wp_enqueue_style( 'orbit' );
+	wp_enqueue_style( 'shortcode' );
+	wp_enqueue_style( 'iribbon_style' );
+	wp_enqueue_style( 'elements' );
+	wp_enqueue_style( 'color' );
+	wp_enqueue_style( 'fonts' );
+}
+
+add_action( 'wp_enqueue_scripts', 'iribbon_styles' );
+
+/**
 * Load jQuery and register additional scripts.
 */ 
 function response_scripts() {
@@ -59,6 +119,8 @@ function response_scripts() {
 	wp_enqueue_script ('mobilemenu');
 	wp_enqueue_script ('html5shiv');
 	wp_enqueue_script ('oembed');
+	
+	if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 	
 	}
 	
