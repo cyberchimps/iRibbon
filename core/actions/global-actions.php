@@ -92,7 +92,15 @@ function response_loop_content($content) {
 						}
 					 ?>
 				</div><!--end entry-->
+        <?php if( is_attachment() ): ?>
+        	<div class='alignleft'>
+						<?php previous_image_link( 'thumbnail', 'Previous Image' ); ?>
+          </div>
+          <div class='alignright'>
+          	<?php next_image_link( 'thumbnail', 'Next Image' ); ?>
+          </div>
         
+        <?php endif; ?>
         <!-- Start containing styling if any of the links below are selected -->
         <?php if( iRibbon_post_meta() != 0 ): ?>
         <div class="iRibbon-post-meta">

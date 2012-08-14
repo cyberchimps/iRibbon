@@ -65,7 +65,8 @@ function iribbon_theme_setup() {
 	add_editor_style();
 	
 	if ( function_exists('get_custom_header')) {
-        add_theme_support('custom-background');
+				$default_bg = array( 'default-image' => get_template_directory_uri().'/images/backgrounds/texture-background.jpg' );
+        add_theme_support( 'custom-background', $default_bg );
 	} 
 	else {
        	add_custom_background(); //For WP 3.3 and below.	

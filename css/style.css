@@ -19,7 +19,6 @@ input[type=submit]{font-size: 12px;padding: 2px;margin-top: 5px;border: 1px soli
 input[type=reset]{font-size: 12px;padding: 2px;margin-top: 5px;border: 1px solid #999;border-radius: 3px;-moz-border-radius: 3px;}
 a img{border:none}
 a{outline:none}
-body {background: url( '../images/backgrounds/texture-background.jpg' )}
 
 .container-fluid {max-width: 980px; margin-left: auto; margin-right: auto; padding-left:0px; padding-right: 0px;}
 
@@ -1235,4 +1234,9 @@ footer .row-fluid [class*="span"]:first-child {
 #twitterbar {
   margin-right: 5px;
   margin-left:15px;
+}
+}
+.entry embed, .entry object {
+  width: 95%;
+  max-width: 95%;
 }
