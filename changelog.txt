@@ -1,6 +1,9 @@
 Response Changelog
 ****************************
 
+Version 1.0.4 (08-14-12)
+-.Org fixes.
+
 Version 1.0.3 (07-16-12)
 -Fixed iframe issue.
 -Removed extra template options.
