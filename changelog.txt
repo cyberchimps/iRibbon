@@ -1,6 +1,12 @@
 Response Changelog
 ****************************
 
+Version 1.0.5 (09-04-12)
+-Fixed responsive slider in IE and Firefox.
+-Added Bootstrap to read me txt.
+-Changed read me text for licenses.
+-Fixed echo in core functions.
+
 Version 1.0.4 (08-14-12)
 -.Org fixes.
 
