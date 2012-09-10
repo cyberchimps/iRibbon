@@ -1,6 +1,10 @@
 Response Changelog
 ****************************
 
+Version 1.0.6 (09-10-12)
+-Fixed language files.
+-Updated style copy.
+
 Version 1.0.5 (09-04-12)
 -Fixed responsive slider in IE and Firefox.
 -Added Bootstrap to read me txt.
