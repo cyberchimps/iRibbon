@@ -1,6 +1,9 @@
 Response Changelog
 ****************************
 
+Version 1.0.7 (09-18-12)
+-Changed how translations are laid out.
+
 Version 1.0.6 (09-10-12)
 -Fixed language files.
 -Updated style copy.
