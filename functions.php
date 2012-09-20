@@ -242,7 +242,7 @@ function iribbon_pie() { ?>
 		#wrapper input, textarea, #twitterbar, input[type=submit], input[type=reset], #imenu, .searchform, .post_container, .postformats, .postbar, .post-edit-link, .widget-container, .widget-title, .footer-widget-title, .comments_container, ol.commentlist li.even, ol.commentlist li.odd, .slider_nav, ul.metabox-tabs li, .tab-content, .list_item, .section-info, #of_container #header, .menu ul li a, .submit input, #of_container textarea, #of_container input, #of_container select, #of_container .screenshot img, #of_container .of_admin_bar, #of_container .subsection > h3, .subsection, #of_container #content .outersection .section, #carousel_list, #calloutwrap, #calloutbutton, .box1, .box2, .box3, .es-carousel-wrapper, #halfnav ul li a, #halfnav ul li a:hover, #halfnav li.current_page_item a, #halfnav li.current_page_item ul li a, .pagination span, .pagination a, .pagination a:hover, .pagination .current, #nav, .nav-shadow, .sd_left_sidebar div.ribbon-top, .sd_left_sidebar div.ribbon-shadow, .sd_left_sidebar div.ribbon-more, .sd_right_sidebar div.ribbon-top, .sd_right_sidebar div.ribbon-more, .sd_right_sidebar div.ribbon-extra, .sd_right_sidebar div.ribbon-shadow, .ribbon-bottom, .ribbon-bottom-end, .ribbon-bg-blue, .ribbon-bg-blue .ribbon-shadow, .ribbon-left-blue, .ribbon-right-blue, .searchform .iRibbon-search
   		
   	{
-  		behavior: url('<?php echo get_template_directory_uri();  ?>/core/library/pie/PIE.htc');
+  		behavior: url('<?php echo get_template_directory_uri();  ?>/core/library/pie/PIE.php');
 	}
 	</style>
 <?php
