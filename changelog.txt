@@ -1,6 +1,9 @@
 Response Changelog
 ****************************
 
+Version 1.0.8 (09-25-12)
+-Setup pie.php file.
+
 Version 1.0.7 (09-18-12)
 -Changed how translations are laid out.
 
