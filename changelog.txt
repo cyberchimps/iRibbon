@@ -1,5 +1,8 @@
-Response Changelog
+iRibbon Changelog
 ****************************
+
+Version 1.0.10 (10-08-12)
+-Archive actions fix.
 
 Version 1.0.9 (10-01-12)
 -Printf call to echo variable.
