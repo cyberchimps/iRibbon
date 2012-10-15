@@ -1,6 +1,9 @@
 iRibbon Changelog
 ****************************
 
+Version 1.0.11 (10-15-12)
+-Quick edit fix.
+
 Version 1.0.10 (10-08-12)
 -Archive actions fix.
 
