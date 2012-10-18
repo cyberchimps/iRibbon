@@ -81,7 +81,7 @@ function response_comments_loop() {
 	
 <?php endif; ?>
 
-<?php if ( comments_open() ) : ?>
+<?php if ( comments_open() && ! post_password_required() ) : ?>
 <aside class="comments_container">
 			<div class="ribbon-top">
       <div class="ribbon-more">
