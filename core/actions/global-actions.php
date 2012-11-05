@@ -125,6 +125,7 @@ function response_loop_content($content) {
         
         <!-- end containing styling for links above -->
          <?php if( iRibbon_post_meta() != 0 ): ?>
+			<div class='clear'></div>
         </div>
         <?php endif; ?>
 							
