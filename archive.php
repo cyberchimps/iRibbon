@@ -48,10 +48,6 @@
 			
 			</div><!--end post_class-->
 			
-			<!--Begin @response post bar hook-->
-				<?php response_post_bar(); ?>
-			<!--End @response post bar hook-->
-			
 		</div><!-- end post outer container -->
 
 		 <?php endwhile; ?>
