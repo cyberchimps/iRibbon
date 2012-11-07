@@ -1,6 +1,11 @@
 iRibbon Changelog
 ****************************
 
+Version 1.0.14 (11-07-12)
+-Added password protection for elements.
+-Removed extra comment div.
+-Added clear div for overflow issue.
+
 Version 1.0.13 (10-31-12)
 -Google font fix.
 
