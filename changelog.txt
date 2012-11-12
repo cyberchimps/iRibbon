@@ -1,6 +1,9 @@
 iRibbon Changelog
 ****************************
 
+Version 1.0.14 (11-12-12)
+-Footer-actions fix.
+
 Version 1.0.14 (11-07-12)
 -Added password protection for elements.
 -Removed extra comment div.
