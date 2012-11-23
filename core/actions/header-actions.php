@@ -82,7 +82,7 @@ function response_meta_tags() { ?>
 	if(!$post) return; // in case of 404 page or something?>
 
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-<meta name="viewport" content="initial-scale=1.6; maximum-scale=1.0; width=device-width; "/><?php
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=3.0; width=device-width; "/><?php
 }
 
 /**
