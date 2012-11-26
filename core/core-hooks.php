@@ -422,12 +422,21 @@ function response_after_search() {
 }
 
 /**
-* Generates the lite version of the Feature slider. 
+* Generates the lite version of the Feature slider for blog. 
 *
 * @since 1.0
 */
 function response_blog_slider() {
 	do_action('response_blog_slider');
+}
+
+/**
+* Generates the lite version of the Feature slider for page. 
+*
+* @since 1.0
+*/
+function response_page_slider() {
+	do_action('response_page_slider');
 }
 
 /**
