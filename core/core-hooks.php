@@ -439,6 +439,13 @@ function response_page_slider() {
 	do_action('response_page_slider');
 }
 
+/** 
+* Callout Section
+*/
+function response_callout_section() {
+	do_action ('response_callout_section');
+}
+
 /**
 * Generates the before content sidebar. 
 *
