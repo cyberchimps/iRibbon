@@ -1,6 +1,12 @@
 iRibbon Changelog
 ****************************
 
+Version 1.0.16 (11-26-12)
+-Enabled pinch to zoom.
+-Slide fix for pages.
+-Broken links fix.
+-Added action for callout element.
+
 Version 1.0.16 (11-19-12)
 -Feed title fix.
 
