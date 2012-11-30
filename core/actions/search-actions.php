@@ -73,15 +73,16 @@ function response_search_content() {
 			<div class="ribbon-top">
       <div class="ribbon-more">
       </div>
-					<h2 class="posts_title"><?php printf( $noresults ) ; ?></h2>
+					<h2 class="posts_title"><?php echo $noresults; ?></h2>
       </div><!-- ribbon top -->
 			<article class="post_container">
       <div class="ribbon-shadow">
       </div><!-- ribbon shadow -->
       <div class="entry">
 
-					<p>No posts can be found for your search term <?php echo get_search_query(); ?>.</p>
-          <p>Please try again using a different term.</p>
+					<p><?php printf( __( 'No posts can be found for your search term %1$s', 'response' ),
+													get_search_query() ); ?>.</p>
+          <p><?php _e( 'Please try again using a different term', 'response' ); ?>.</p>
 
 				</div><!-- end entry -->
   </article><!-- post container -->
