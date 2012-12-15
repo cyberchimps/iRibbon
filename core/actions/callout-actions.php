@@ -51,7 +51,7 @@ function response_callout_section_content() {
 
 /* Define Callout text. */	
 	if ($text == '') {
-		$callouttext = 'CyberChimps gives you the tools to turn WordPress into a modern feature rich Content Management System (CMS)';
+		$callouttext = __( 'CyberChimps gives you the tools to turn WordPress into a modern feature rich Content Management System (CMS)', 'response' );
 	}
 	else {
 		$callouttext = $text;
