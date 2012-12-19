@@ -20,7 +20,7 @@
 	get_header(); // call header
 
 ?>
-<h2 class="widget-title">Search</h2>
+
 <form method="get" class="searchform" action="<?php echo home_url(); ?>/">
 	<div class="search-container">
   <input type="text" name="s" class="iRibbon-search" value="<?php printf( __( 'Search', 'response' )); ?>" id="searchsubmit" onfocus="if (this.value == 'Search') this.value = '';" />
