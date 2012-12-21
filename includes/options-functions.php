@@ -277,7 +277,10 @@ function add_menu_font() {
 			$font == 'Tenor Sans' ||
 			$font == 'Quicksand' ||
 			$font == 'Ubuntu') {
-			echo "<link href='http://fonts.googleapis.com/css?family=$font' rel='stylesheet' type='text/css' />";
+			
+			// Check if SSL is present, if so then use https othereise use http
+			$protocol = is_ssl() ? 'https' : 'http';
+			echo "<link href='$protocol://fonts.googleapis.com/css?family=$font' rel='stylesheet' type='text/css' />";
 		}
 		
 		echo '<style type="text/css">';
@@ -306,7 +309,10 @@ function add_secondary_font() {
 	
 		$fontstrip =  ereg_replace("[^A-Za-z0-9]", " ", $font );
 	
-		echo "<link href='http://fonts.googleapis.com/css?family=$font' rel='stylesheet' type='text/css' />";
+		// Check if SSL is present, if so then use https othereise use http
+		$protocol = is_ssl() ? 'https' : 'http';
+		
+		echo "<link href='$protocol://fonts.googleapis.com/css?family=$font' rel='stylesheet' type='text/css' />";
 		echo '<style type="text/css">';
 		echo "#callout_text, .posts_title a, .posts_title, .sitename, .widget-title, .box-widget-title, .carousel_caption, .footer-widget-title, .commentsh2{font-family: '$fontstrip', cursive;}";
 		echo '</style>';
