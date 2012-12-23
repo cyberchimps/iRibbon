@@ -1,6 +1,10 @@
 iRibbon Changelog
 ****************************
 
+Version 1.0.20 (12-22-12)
+-Removed title from search form.
+-SSL compatibility.
+
 Version 1.0.19 (12-16-12)
 -Callout action added translation function.
 
