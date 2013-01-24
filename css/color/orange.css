@@ -122,7 +122,7 @@ a:hover{color:#f7820e;text-decoration:none}
   background: -o-linear-gradient(top,  #229bc8 0%,#0a91c8 100%);
   background: -ms-linear-gradient(top,  #229bc8 0%,#0a91c8 100%);
   background: linear-gradient(top,  #229bc8 0%,#0a91c8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#229bc8', endColorstr='#0a91c8',GradientType=0 );
+  -pie-background: linear-gradient(top,  #229bc8 0%,#0a91c8 100%);
 }
 #nav .current_page_item a{
   color:#E9E3BB;/*yellow*/
