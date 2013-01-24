@@ -1,6 +1,10 @@
 iRibbon Changelog
 ****************************
 
+Version 1.0.24 (1-23-13)
+-Printf call to _e.
+-Meta class fix.
+
 Version 1.0.23 (1-14-13)
 -Sidebar fix.
 
