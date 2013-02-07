@@ -1,6 +1,9 @@
 iRibbon Changelog
 ****************************
 
+Version 1.0.26 (2-6-13)
+-Media uploader fix and filters.
+
 Version 1.0.25 (1-25-13)
 -Fix image upload
 
