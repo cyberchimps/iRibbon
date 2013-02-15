@@ -1,6 +1,9 @@
 iRibbon Changelog
 ****************************
 
+Version 1.0.27 (2-14-13)
+-Fixed notice - Undefined offset: 1.
+
 Version 1.0.26 (2-6-13)
 -Media uploader fix and filters.
 
