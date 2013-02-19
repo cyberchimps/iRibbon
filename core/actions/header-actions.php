@@ -169,6 +169,8 @@ function response_header_social_icons_content() {
 	$hidemyspace    = $options->get($ir_themeslug.'_hide_myspace');
 	$linkedin		= $options->get($ir_themeslug.'_linkedin');
 	$hidelinkedin   = $options->get($ir_themeslug.'_hide_linkedin');
+	$pinterest		= $options->get($ir_themeslug.'_pinterest');
+	$hidepinterest  = $options->get($ir_themeslug.'_hide_pinterest');
 	$youtube		= $options->get($ir_themeslug.'_youtube');
 	$hideyoutube    = $options->get($ir_themeslug.'_hide_youtube');
 	$googlemaps		= $options->get($ir_themeslug.'_googlemaps');
@@ -219,6 +221,12 @@ function response_header_social_icons_content() {
 		<?php endif;?>
 		<?php if ($hidelinkedin == '1' AND $linkedin == '' ):?>
 			<a href="http://linkedin.com" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/linkedin.png" alt="LinkedIn" /></a>
+		<?php endif;?>
+		<?php if ($hidepinterest == '1' AND $pinterest != '' ):?>
+			<a href="<?php echo $pinterest ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/pinterest.png" alt="Pinterest" /></a>
+		<?php endif;?>
+		<?php if ($hidepinterest == '1' AND $pinterest == '' ):?>
+			<a href="http://pinterest.com" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/pinterest.png" alt="Pinterest" /></a>
 		<?php endif;?>
 		<?php if ($hideyoutube == '1' AND $youtube != '' ):?>
 			<a href="<?php echo $youtube ?>" target="_blank" rel="me"><img src="<?php echo $template_dir; ?>/images/social/<?php echo $folder; ?>/youtube.png" alt="YouTube" /></a>
