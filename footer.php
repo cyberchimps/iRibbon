@@ -53,9 +53,10 @@
   </footer>
 	<?php endif;?>
 	
-	<?php wp_footer(); ?>	
-	
-	</div>  <!--End of footer class for sticky footer -->
+</div>  <!--End of footer class for sticky footer -->
+
+<?php wp_footer(); ?>
+
 </body>
 </div><!-- closes iribbon-content-margin found in header.php -->
 </html>
