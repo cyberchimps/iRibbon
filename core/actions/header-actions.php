@@ -415,7 +415,8 @@ function response_logo_icons_content() {
 */
 function response_banner_content() {
 global $ir_themeslug, $options, $ir_root; //Call global variables
-$banner = $options->get($ir_themeslug.'_banner'); //Calls the logo URL from the theme options
+$banner = $options->get($ir_themeslug.'_banner'); //Calls the banner image from the theme options
+$banner_url = $options->get($ir_themeslug.'_banner_url'); //Calls the banner URL from the theme options
 $default = "$ir_root/images/banner.jpg";
 
 ?>
@@ -426,7 +427,7 @@ $default = "$ir_root/images/banner.jpg";
 			<div id="banner">
 			
 			<?php if ($banner != ""):?>
-				<a href="<?php echo home_url(); ?>/"><img src="<?php echo stripslashes($banner['url']); ?>" alt="logo"></a>		
+				<a href="<?php echo esc_url( $banner_url ); ?>/"><img src="<?php echo stripslashes($banner['url']); ?>" alt="logo"></a>		
 			<?php endif; ?>
 			
 			<?php if ($banner == ""):?>
