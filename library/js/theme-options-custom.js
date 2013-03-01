@@ -157,7 +157,7 @@ jQuery(function($) {
 		var map = {
 			response_logo_contact: "section-ir_header_contact",
 			response_custom_header_element: "section-ir_custom_header_element",
-			response_banner: "section-ir_banner"
+			response_banner: "subsection-banneroptions"
 			// , response_box_section: ""
 		};
 
