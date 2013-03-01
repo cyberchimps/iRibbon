@@ -1,6 +1,9 @@
 iRibbon Changelog
 ****************************
 
+Version 1.0.29 (3-1-13)
+-Replaced get_template_directory_uri() with '$directory_uri', the variable defined with the same value.
+
 Version 1.0.28 (2-21-13)
 -Added placeholder for widget class.
 -Social icon fix.
