@@ -95,16 +95,11 @@ function response_secondary_footer_copyright() {
 * @since 1.0
 */
 function response_secondary_footer_credit() { 
-		
-	global $options, $ir_themeslug; //call globals
-	
-	if ($options->get($ir_themeslug.'_hide_link') == "1") {?>
-		
-		<div id="credit" class="span6">
-			<a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/achimps.png" alt="credit" /></a>
-		</div> 
-	
-	<?php }
+?>
+	<div id="credit" class="span6">
+		<a href="http://cyberchimps.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/achimps.png" alt="credit" /></a>
+	</div> 
+<?php
 }
 /**
 * End
