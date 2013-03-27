@@ -1,8 +1,9 @@
 iRibbon Changelog
+
 ****************************
 
 Version 1.0.32 (3-22-13)
--stylesheet cleaned (shortcode.css)
+-Stylesheet cleaned (shortcode.css)
 
 Version 1.0.31 (3-15-13)
 -Replaced the get_template_directory_uri() with the global variable defined with same value.
