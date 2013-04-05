@@ -26,10 +26,7 @@ add_action( 'response_comments', 'response_comments_loop' );
 *
 * @since 1.0
 */
-function response_comments_password_required() {
-	
-	global $post;
-	
+function response_comments_password_required() {	
 	$password_text = apply_filters( 'response_password_required_text', 'This post is password protected. Enter the password to view comments.');
 	if ( post_password_required() ) { 
 		printf( $password_text ); 
@@ -43,33 +40,32 @@ function response_comments_password_required() {
 * @since 1.0
 */
 function response_comments_loop() { 
-	global $post; ?>
-<?php if ( have_comments() ) : ?>
-	<aside class="comments_container">
-			<div class="ribbon-top">
-      <div class="ribbon-more">
-      </div>
-		<h2 class="commentsh2"><?php comments_number( __('No Responses', 'response' ), __( 'One Response', 'response' ), __('% Responses', 'response' ));?></h2>
-      <div class="ribbon-shadow"></div><!-- ribbon shadow -->
-			</div><!-- ribbon top -->
-			<article class="post_container">
-		<nav class="navigation">
-			<div class="next-posts"><?php previous_comments_link() ?></div>
-			<div class="prev-posts"><?php next_comments_link() ?></div>
-      <div class="clear"></div>
-		</nav>
-
-		<ol class="commentlist">
-			<?php wp_list_comments('callback=response_comment'); ?>
-		</ol>
-
-		<nav class="navigation">
-			<div class="next-posts"><?php previous_comments_link() ?></div>
-			<div class="prev-posts"><?php next_comments_link() ?></div>
-      <div class="clear"></div>
-		</nav>
-		</article><!--end post container-->
-	</aside><!--end comments_container-->
+	if ( have_comments() ) : ?>
+		<aside class="comments_container">
+				<div class="ribbon-top">
+		  <div class="ribbon-more">
+		  </div>
+			<h2 class="commentsh2"><?php comments_number( __('No Responses', 'response' ), __( 'One Response', 'response' ), __('% Responses', 'response' ));?></h2>
+		  <div class="ribbon-shadow"></div><!-- ribbon shadow -->
+				</div><!-- ribbon top -->
+				<article class="post_container">
+			<nav class="navigation">
+				<div class="next-posts"><?php previous_comments_link() ?></div>
+				<div class="prev-posts"><?php next_comments_link() ?></div>
+		  <div class="clear"></div>
+			</nav>
+	
+			<ol class="commentlist">
+				<?php wp_list_comments('callback=response_comment'); ?>
+			</ol>
+	
+			<nav class="navigation">
+				<div class="next-posts"><?php previous_comments_link() ?></div>
+				<div class="prev-posts"><?php next_comments_link() ?></div>
+		  <div class="clear"></div>
+			</nav>
+			</article><!--end post container-->
+		</aside><!--end comments_container-->
  <?php else : // this is displayed if there are no comments so far ?>
 
 	<?php if ( comments_open() ) : ?>
