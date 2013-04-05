@@ -2,6 +2,9 @@ iRibbon Changelog
 
 ****************************
 
+Version 1.0.33 (3-29-13)
+-Removed the unused global variables from the archive-actions.php.
+
 Version 1.0.32 (3-22-13)
 -Stylesheet cleaned (shortcode.css)
 
