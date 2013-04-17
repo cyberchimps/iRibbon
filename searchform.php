@@ -23,7 +23,7 @@
 
 <form method="get" class="searchform" action="<?php echo home_url(); ?>/">
 	<div class="search-container">
-  <input type="text" name="s" class="iRibbon-search" value="<?php _e( 'Search', 'response' ); ?>" id="searchsubmit" onfocus="if (this.value == 'Search') this.value = '';" />
+  <input type="text" name="s" class="iRibbon-search" value="<?php _e( 'Search', 'iribbon' ); ?>" id="searchsubmit" onfocus="if (this.value == 'Search') this.value = '';" />
 	<button class="search-button" value="Submit search" ></button>
   </div>
 </form>

@@ -34,32 +34,32 @@ function response_footer_widgets() {
    	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer") ) { ?>
 		
 		<div class="span3 footer-widgets">
-			<h3 class="footer-widget-title"><?php _e( 'Footer Widgets', 'response' ); ?></h3>
+			<h3 class="footer-widget-title"><?php _e( 'Footer Widgets', 'iribbon' ); ?></h3>
 			<ul>
 				<li>To customize this widget area login to your admin account, go to Appearance, then Widgets and drag new widgets into Footer Widgets</li>
 			</ul>
 		</div>
 
 		<div class="span3 footer-widgets">
-			<h3 class="footer-widget-title"><?php _e( 'Recent Posts', 'response' ); ?></h3>
+			<h3 class="footer-widget-title"><?php _e( 'Recent Posts', 'iribbon' ); ?></h3>
 			<ul>
 				<?php wp_get_archives('type=postbypost&limit=4'); ?>
 			</ul>
 		</div>
 		
 		<div class="span3 footer-widgets">
-			<h3 class="footer-widget-title"><?php _e( 'Archives', 'response' ); ?></h3>
+			<h3 class="footer-widget-title"><?php _e( 'Archives', 'iribbon' ); ?></h3>
 			<ul>
 				<?php wp_get_archives('type=monthly&limit=16'); ?>
 			</ul>
 		</div>
 
 		<div class="span3 footer-widgets">
-			<h3 class="footer-widget-title"><?php _e( 'WordPress', 'response' ); ?></h3>
+			<h3 class="footer-widget-title"><?php _e( 'WordPress', 'iribbon' ); ?></h3>
 			<ul>
     		<?php wp_register(); ?>
     		<li><?php wp_loginout(); ?></li>
-    		<li><a href="<?php echo esc_url( __('http://wordpress.org/', 'response' )); ?>" target="_blank" title="<?php esc_attr_e('Powered by WordPress, state-of-the-art semantic personal publishing platform.', 'response'); ?>"> <?php _e('WordPress', 'response' ); ?></a></li>
+    		<li><a href="<?php echo esc_url( __('http://wordpress.org/', 'iribbon' )); ?>" target="_blank" title="<?php esc_attr_e('Powered by WordPress, state-of-the-art semantic personal publishing platform.', 'iribbon'); ?>"> <?php _e('WordPress', 'iribbon' ); ?></a></li>
     		<?php wp_meta(); ?>
     		</ul>
 		</div>

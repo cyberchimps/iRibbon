@@ -159,7 +159,7 @@ function response_post_bar_content() {
 	}?>
 	
 	<div id="comments">
-	<?php if (($hidden[$ir_themeslug.'_hide_comments']) != '0'):?><?php comments_popup_link( __('No Comments', 'response' ), __('1 Comment', 'response' ), __('% Comments' , 'response' )); //need a filer here ?>.<?php endif;?>
+	<?php if (($hidden[$ir_themeslug.'_hide_comments']) != '0'):?><?php comments_popup_link( __('No Comments', 'iribbon' ), __('1 Comment', 'iribbon' ), __('% Comments' , 'iribbon' )); //need a filer here ?>.<?php endif;?>
 	</div>
 	<?php
 }
@@ -182,9 +182,9 @@ function response_post_byline_content() {
 	}?>
 	
 	<div class="meta">
-		<?php if (($hidden[$ir_themeslug.'_hide_date']) != '0'):?> <?php _e( 'Published on', 'response' ); ?> <a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>,<?php endif;?>
-		<?php if (($hidden[$ir_themeslug.'_hide_author']) != '0'):?><?php _e( 'by', 'response' ); ?> <?php the_author_posts_link(); ?> <?php endif;?> 
-		<?php if (($hidden[$ir_themeslug.'_hide_categories']) != '0'):?><?php _e( 'in', 'response' ); ?> <?php the_category(', ') ?>.<?php endif;?>
+		<?php if (($hidden[$ir_themeslug.'_hide_date']) != '0'):?> <?php _e( 'Published on', 'iribbon' ); ?> <a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>,<?php endif;?>
+		<?php if (($hidden[$ir_themeslug.'_hide_author']) != '0'):?><?php _e( 'by', 'iribbon' ); ?> <?php the_author_posts_link(); ?> <?php endif;?> 
+		<?php if (($hidden[$ir_themeslug.'_hide_categories']) != '0'):?><?php _e( 'in', 'iribbon' ); ?> <?php the_category(', ') ?>.<?php endif;?>
 		
 	</div> <?php
 }
@@ -217,7 +217,7 @@ function response_post_tags_content() {
 
 	<?php if (has_tag() AND ($hidden[$ir_themeslug.'_hide_tags']) != '0'):?>
 	<div class="tags">
-			<?php the_tags( __('Tags: ', 'response'), ', ', '<br />'); ?>
+			<?php the_tags( __('Tags: ', 'iribbon'), ', ', '<br />'); ?>
 		
 	</div><!--end tags--> 
 	<?php endif;

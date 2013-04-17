@@ -45,7 +45,7 @@ function response_comments_loop() {
 				<div class="ribbon-top">
 		  <div class="ribbon-more">
 		  </div>
-			<h2 class="commentsh2"><?php comments_number( __('No Responses', 'response' ), __( 'One Response', 'response' ), __('% Responses', 'response' ));?></h2>
+			<h2 class="commentsh2"><?php comments_number( __('No Responses', 'iribbon' ), __( 'One Response', 'iribbon' ), __('% Responses', 'iribbon' ));?></h2>
 		  <div class="ribbon-shadow"></div><!-- ribbon shadow -->
 				</div><!-- ribbon top -->
 				<article class="post_container">
@@ -93,7 +93,7 @@ function response_comments_loop() {
 	</div>
 
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-		<p><?php _e( 'You must be', 'response' ); ?><a href="<?php echo wp_login_url( get_permalink() ); ?>"> <?php _e( 'logged in', 'response' ); ?></a> <?php _e('to post a comment.', 'response' ); ?></p>
+		<p><?php _e( 'You must be', 'iribbon' ); ?><a href="<?php echo wp_login_url( get_permalink() ); ?>"> <?php _e( 'logged in', 'iribbon' ); ?></a> <?php _e('to post a comment.', 'iribbon' ); ?></p>
 	<?php else : ?>
 	
 	<?php comment_form(); ?>

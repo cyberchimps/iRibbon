@@ -29,12 +29,12 @@
 	if ( ! isset( $content_width ) ) $content_width = 608; //Set content width
 
 /**
-* Establishes 'response' as the textdomain, sets $locale and file path
+* Establishes 'iribbon' as the textdomain, sets $locale and file path
 *
 * @since 1.0
 */
 function response_text_domain() {
-	load_theme_textdomain( 'response', get_template_directory() . '/core/languages' );
+	load_theme_textdomain( 'iribbon', get_template_directory() . '/core/languages' );
 
 	    $locale = get_locale();
 	    $locale_file = get_template_directory() . "/core/languages/$locale.php";
@@ -296,7 +296,7 @@ add_action('wp_head', 'iribbon_custom_scripts');
 */ 
 function iribbon_register_menus() {
 	register_nav_menus(
-	array( 'header-menu' => __( 'Header Menu', 'response' ), 'footer-menu' => __( 'Footer Menu', 'response' ), 'sub-menu' => __( 'Sub Menu', 'response' ), 'mobile-menu' => __( 'Mobile Menu', 'response' ) )
+	array( 'header-menu' => __( 'Header Menu', 'iribbon' ), 'footer-menu' => __( 'Footer Menu', 'iribbon' ), 'sub-menu' => __( 'Sub Menu', 'iribbon' ), 'mobile-menu' => __( 'Mobile Menu', 'iribbon' ) )
 	);
 }
 add_action( 'init', 'iribbon_register_menus' );

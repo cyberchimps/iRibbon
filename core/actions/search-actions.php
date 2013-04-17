@@ -80,9 +80,9 @@ function response_search_content() {
       </div><!-- ribbon shadow -->
       <div class="entry">
 
-					<p><?php printf( __( 'No posts can be found for your search term %1$s', 'response' ),
+					<p><?php printf( __( 'No posts can be found for your search term %1$s', 'iribbon' ),
 													get_search_query() ); ?>.</p>
-          <p><?php _e( 'Please try again using a different term', 'response' ); ?>.</p>
+          <p><?php _e( 'Please try again using a different term', 'iribbon' ); ?>.</p>
 
 				</div><!-- end entry -->
   </article><!-- post container -->

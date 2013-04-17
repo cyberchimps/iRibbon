@@ -18,7 +18,7 @@
 		
 		<div class="widget-container">
     <div class="ribbon-cut-blue"></div><div class="ribbon-bg-blue"><div class="ribbon-left-blue"></div><div class="ribbon-shadow"></div><div class="ribbon-right-blue"></div></div>   
-		<h2 class="widget-title"><?php _e('Pages', 'response' ); ?></h2>
+		<h2 class="widget-title"><?php _e('Pages', 'iribbon' ); ?></h2>
 		<ul>
     	<?php wp_list_pages('title_li=' ); ?>
     	</ul>
@@ -26,7 +26,7 @@
     
 		<div class="widget-container">
     <div class="ribbon-cut-blue"></div><div class="ribbon-bg-blue"><div class="ribbon-left-blue"></div><div class="ribbon-shadow"></div><div class="ribbon-right-blue"></div></div>    
-    	<h2 class="widget-title"><?php _e( 'Archives', 'response' ); ?></h2>
+    	<h2 class="widget-title"><?php _e( 'Archives', 'iribbon' ); ?></h2>
     	<ul>
     		<?php wp_get_archives('type=monthly'); ?>
     	</ul>
@@ -34,7 +34,7 @@
         
 		<div class="widget-container">
     <div class="ribbon-cut-blue"></div><div class="ribbon-bg-blue"><div class="ribbon-left-blue"></div><div class="ribbon-shadow"></div><div class="ribbon-right-blue"></div></div>    
-       <h2 class="widget-title"><?php _e('Categories', 'response' ); ?></h2>
+       <h2 class="widget-title"><?php _e('Categories', 'iribbon' ); ?></h2>
         <ul>
     	   <?php wp_list_categories('show_count=1&title_li='); ?>
         </ul>
@@ -42,21 +42,21 @@
         
 		<div class="widget-container">
     <div class="ribbon-cut-blue"></div><div class="ribbon-bg-blue"><div class="ribbon-left-blue"></div><div class="ribbon-shadow"></div><div class="ribbon-right-blue"></div></div>  
-    	<h2 class="widget-title"><?php _e('WordPress', 'response' ); ?></h2>
+    	<h2 class="widget-title"><?php _e('WordPress', 'iribbon' ); ?></h2>
     	<ul>
     		<?php wp_register(); ?>
     		<li><?php wp_loginout(); ?></li>
-    		<li><a href="<?php echo esc_url( __('http://wordpress.org/', 'response' )); ?>" target="_blank" title="<?php esc_attr_e('Powered by WordPress, state-of-the-art semantic personal publishing platform.', 'response'); ?>"> <?php _e('WordPress', 'response' ); ?></a></li>
+    		<li><a href="<?php echo esc_url( __('http://wordpress.org/', 'iribbon' )); ?>" target="_blank" title="<?php esc_attr_e('Powered by WordPress, state-of-the-art semantic personal publishing platform.', 'iribbon'); ?>"> <?php _e('WordPress', 'iribbon' ); ?></a></li>
     		<?php wp_meta(); ?>
     	</ul>
     	</div>
     	
     	<div class="widget-container">
       <div class="ribbon-cut-blue"></div><div class="ribbon-bg-blue"><div class="ribbon-left-blue"></div><div class="ribbon-shadow"></div><div class="ribbon-right-blue"></div></div>
-    	<h2 class="widget-title"><?php _e('Subscribe', 'response' ); ?></h2>
+    	<h2 class="widget-title"><?php _e('Subscribe', 'iribbon' ); ?></h2>
     	<ul>
-    		<li><a href="<?php bloginfo('rss2_url'); ?>"><?php _e('Entries (RSS)', 'response' ); ?></a></li>
-    		<li><a href="<?php bloginfo('comments_rss2_url'); ?>"><?php _e('Comments (RSS)', 'response' ); ?></a></li>
+    		<li><a href="<?php bloginfo('rss2_url'); ?>"><?php _e('Entries (RSS)', 'iribbon' ); ?></a></li>
+    		<li><a href="<?php bloginfo('comments_rss2_url'); ?>"><?php _e('Comments (RSS)', 'iribbon' ); ?></a></li>
     	</ul>
     	</div>
 	
