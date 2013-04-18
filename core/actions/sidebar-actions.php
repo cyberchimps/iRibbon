@@ -71,9 +71,9 @@ function response_sidebar_init_content() {
 * @since 1.0
 */
 function response_before_content_sidebar_markup() { 
-	global $options, $ir_themeslug, $post, $sidebar; // call globals ?>
+	global $sidebar;
 					
-	<?php if ($sidebar == 'left' OR $sidebar == "1"): ?>
+	if ($sidebar == 'left' OR $sidebar == "1"): ?>
   <div class="span4">
 	<div id="sidebar_left">
 		<?php get_sidebar(); ?>
@@ -88,9 +88,9 @@ function response_before_content_sidebar_markup() {
 * @since 1.0
 */
 function response_after_content_sidebar_markup() {
-	global $options, $ir_themeslug, $post, $sidebar; // call globals ?>
+	global $sidebar;
 	
-	<?php if ($sidebar == 'right' OR $sidebar == '0' OR $sidebar == '' ): ?>
+	if ($sidebar == 'right' OR $sidebar == '0' OR $sidebar == '' ): ?>
 	<div class="span4">
   <div id="sidebar">
 		<?php get_sidebar(); ?>
