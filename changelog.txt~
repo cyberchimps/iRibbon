@@ -2,6 +2,10 @@ iRibbon Changelog
 
 ****************************
 
+Version 1.0.36 (4-19-13)
+-Removed unused global variables from sidebar-actions.php file.
+-Changed translation text domain from "response" to "iribbon".
+
 Version 1.0.35 (4-12-13)
 -Removed the unused global variables from the page-actions.php.
 
