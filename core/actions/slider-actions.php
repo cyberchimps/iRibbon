@@ -27,7 +27,7 @@ add_action ('response_page_slider', 'response_slider_lite_content' );
 */
 function response_slider_lite_content() {
 
-	global $ir_themename, $ir_themeslug, $options, $wp_query, $post, $ir_slider_default, $ir_root;
+	global $ir_themeslug, $options, $post;
 		
 	if (is_page()) {
 		$slide1 = get_post_meta($post->ID, 'page_slide_one_image' , true);
