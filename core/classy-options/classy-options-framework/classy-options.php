@@ -115,12 +115,12 @@ class ClassyOptions {
 					</p>
 				<div class="menu">
 					<ul class="buttons">
-						<li><a href="http://cyberchimps.com/store/" target="_blank"><?php printf( __( 'CyberChimps Store', 'ifeature' )); ?></a></li>
-						<li><a href="http://cyberchimps.com/support" target="_blank"><?php printf( __( 'Support', 'ifeature' )); ?></a></li>
-						<li><a href="http://cyberchimps.com/iribbon/docs/" target="_blank"> <?php printf( __( 'Documentation', 'ifeature' )); ?></a></li>
-						<li><a href="http://cyberchimps.com/forum/" target="_blank"><?php printf( __( 'Forum', 'ifeature' )); ?></a></li>
-						<li><a href="http://twitter.com/#!/cyberchimps" target="_blank"><?php printf( __( 'Twitter', 'ifeature' ));?></a></li>
-						<li><a href="http://facebook.com/cyberchimps/" target="_blank"><?php printf( __( 'Facebook', 'ifeature' ));?></a></li>
+						<li><a href="http://cyberchimps.com/store/" target="_blank"><?php printf( __( 'CyberChimps Store', 'iribbon' )); ?></a></li>
+						<li><a href="http://cyberchimps.com/support" target="_blank"><?php printf( __( 'Support', 'iribbon' )); ?></a></li>
+						<li><a href="http://cyberchimps.com/iribbon/iribbon-free-docs/" target="_blank"> <?php printf( __( 'Documentation', 'iribbon' )); ?></a></li>
+						<li><a href="http://cyberchimps.com/forum/" target="_blank"><?php printf( __( 'Forum', 'iribbon' )); ?></a></li>
+						<li><a href="http://twitter.com/#!/cyberchimps" target="_blank"><?php printf( __( 'Twitter', 'iribbon' ));?></a></li>
+						<li><a href="http://facebook.com/cyberchimps/" target="_blank"><?php printf( __( 'Facebook', 'iribbon' ));?></a></li>
 					</ul>
 				</div>
 

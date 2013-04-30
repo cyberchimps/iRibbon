@@ -4,11 +4,11 @@
     
 		<div class="widget-container"> 
     <div class="ribbon-cut-blue"></div><div class="ribbon-bg-blue"><div class="ribbon-left-blue"></div><div class="ribbon-shadow"></div><div class="ribbon-right-blue"></div></div>   
-		<h2 class="widget-title">Welcome to Response Pro</h2>
+		<h2 class="widget-title">Welcome to iRibbon</h2>
     	<ul>
-						<li>Thank you for purchasing Response Pro.</li>
+						<li>Thank you for using iRibbon.</li>
 						<li>&nbsp;</li>
-						<li>We designed Response Pro to be as user friendly as possible, but if you do run into trouble we provide a <a href="http://cyberchimps.com/forum">support forum</a>, and <a href="http://www.cyberchimps.com/response-pro/docs/">precise documentation</a>.</li>
+						<li>We designed iRibbon to be as user friendly as possible, but if you do run into trouble we provide a <a href="http://cyberchimps.com/forum">support forum</a>, and <a href="http://cyberchimps.com/iribbon/iribbon-free-docs/">precise documentation</a>.</li>
 						<li>&nbsp;</li>
 						<li>If we were all designers then every WordPress theme would look this good.</li>
 						<li>&nbsp;</li>
