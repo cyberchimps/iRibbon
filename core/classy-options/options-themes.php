@@ -13,7 +13,7 @@
 
 function enqueue_store_styles() {
  
- 	global $ir_themename, $ir_themeslug, $options;
+ 	global $ir_themeslug;
  	wp_register_style($ir_themeslug.'storecss', get_template_directory_uri(). '/core/classy-options/themes.css');
 
       
