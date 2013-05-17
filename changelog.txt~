@@ -2,6 +2,9 @@ iRibbon Changelog
 
 ****************************
 
+Version 1.0.39 (5-9-13)
+-Removed unused global variables from options-themes.php
+
 Version 1.0.38 (5-2-13)
 -Replaced stripslashes with esc_url for the urls
 -Sanitized social link urls with esc_url
