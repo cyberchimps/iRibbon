@@ -43,7 +43,7 @@ add_action( 'response_banner', 'response_banner_content');
 */
 function response_font() {
 	global $ir_themeslug, $options; //Call global variables
-	$family = apply_filters( 'response_default_font_family', 'Georgia, "Times New Roman", Times, serif' );
+	$family = apply_filters( 'response_default_font_family', 'Georgia, Times New Roman, Times, serif' );
 	
 	if ($options->get($ir_themeslug.'_font') == "" ) {
 		$font = apply_filters( 'response_default_font', 'Georgia' );
