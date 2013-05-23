@@ -93,7 +93,7 @@ add_action( 'wp_enqueue_scripts', 'iribbon_styles' );
 * Load jQuery and register additional scripts.
 */ 
 function response_scripts() {
-	global $options, $ir_themeslug;
+
 	if ( !is_admin() ) {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-ui-tabs');
@@ -119,7 +119,7 @@ function response_scripts() {
 	
 	if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 	
-	}
+}
 	
 add_action('wp_enqueue_scripts', 'response_scripts');	
 
@@ -194,7 +194,6 @@ function response_comment($comment, $args, $depth) {
 * @since 1.0
 */
 function response_breadcrumbs() {
-  global $ir_root;
   
   $delimiter = "/";
   $home = 'Home'; // text for the 'Home' link
@@ -295,7 +294,7 @@ function response_breadcrumbs() {
 }
 /* set the title tag */
 function response_title_tag_filter( $old_title ) {
-	global $options, $ir_themeslug, $query, $post; 
+	global $options, $ir_themeslug, $post; 
 	
 	
 	
