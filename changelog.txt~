@@ -2,6 +2,12 @@ iRibbon Changelog
 
 ****************************
 
+Version 1.0.41 (5-23-13)
+Removed unused global variables from core/core-functions.php.
+
+Version 1.0.40 (5-17-13)
+-Stylesheet cleaned (core/classy-options/themes.css)
+
 Version 1.0.39 (5-9-13)
 -Removed unused global variables from options-themes.php
 
