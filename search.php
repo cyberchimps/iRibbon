@@ -15,7 +15,7 @@
 * @since 1.0
 */
 
-	global $options, $themeslug, $post, $sidebar, $content_grid; // call globals
+	global $content_grid; // call globals
 	response_sidebar_init(); // sidebar init
 	get_header(); // call header
 
