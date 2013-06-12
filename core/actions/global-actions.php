@@ -183,7 +183,7 @@ function response_post_byline_content() {
 	
 	<div class="meta">
 		<?php if (($hidden[$ir_themeslug.'_hide_date']) != '0'):?> <?php _e( 'Published on', 'iribbon' ); ?> <a href="<?php the_permalink() ?>"><?php echo get_the_date(); ?></a>,<?php endif;?>
-		<?php if (($hidden[$ir_themeslug.'_hide_author']) != '0'):?><?php _e( 'by', 'iribbon' ); ?> <?php the_author_posts_link(); ?> <?php endif;?> 
+		<?php if (($hidden[$ir_themeslug.'_hide_author']) != '0'):?><?php _e( 'by', 'iribbon' ); ?> <span class="vcard author"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="url fn"><?php the_author_meta( 'display_name' ); ?></a></span> <?php endif;?>
 		<?php if (($hidden[$ir_themeslug.'_hide_categories']) != '0'):?><?php _e( 'in', 'iribbon' ); ?> <?php the_category(', ') ?>.<?php endif;?>
 		
 	</div> <?php
