@@ -61,7 +61,7 @@ function response_loop_content($content) {
 			<div class="ribbon-top">
       <div class="ribbon-more">
       </div>
-      <h2 class="posts_title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+      <h2 class="posts_title entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
       <div class="ribbon-shadow"></div><!-- ribbon shadow -->
       </div><!-- ribbon top -->
 			<article class="post_container">
