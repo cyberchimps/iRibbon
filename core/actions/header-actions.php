@@ -132,7 +132,7 @@ function response_header_sitename_content() {
 	}
 						
 	else{ ?>
-		<h1 class="sitename"><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> </a></h1>
+		<div class="sitename"><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> </a></div>
 		<?php
 	}						 
 }
