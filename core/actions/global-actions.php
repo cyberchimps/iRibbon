@@ -61,7 +61,19 @@ function response_loop_content($content) {
 			<div class="ribbon-top">
       <div class="ribbon-more">
       </div>
-      <h2 class="posts_title entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+      <?php if( is_single() ): ?>
+      	<h1 class="posts_title entry-title">
+      <?php else: ?>
+      	<h2 class="posts_title entry-title">
+      		<a href="<?php the_permalink() ?>">
+      <?php endif; ?>
+			<?php the_title(); ?>
+			<?php if( is_single() ): ?>
+				</h1>
+			<?php else: ?>
+					</a>
+				</h2>
+			<?php endif; ?>
       <div class="ribbon-shadow"></div><!-- ribbon shadow -->
       </div><!-- ribbon top -->
 			<article class="post_container">
