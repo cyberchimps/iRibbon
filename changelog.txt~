@@ -2,6 +2,9 @@ iRibbon Changelog
 
 ****************************
 
+Version 1.0.43 (6-6-13)
+-Removed unused global variables from search.php
+
 Version 1.0.42 (5-30-13)
 -Removed unused global variables from includes/options-functions.php
 
