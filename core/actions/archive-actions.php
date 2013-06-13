@@ -53,6 +53,29 @@ function response_archive_page_title() {
 }
 
 /**
+* Output Archive Description in archibe pages.
+*
+* @since ?
+*/
+
+function response_archive_description(){
+	?>
+		<?php if ((is_category() || is_tag()) && category_description()): ?>
+			<div class="ribbon-top">
+      	<div class="ribbon-more"></div>
+      	<h1 class="posts_title"><?php single_cat_title(_e( 'Currently browsing: ', 'iribbon' )); ?></h1>
+      	<div class="ribbon-shadow"></div><!-- ribbon shadow -->
+      </div>
+			<div class="post_outer_container">
+				<div class="post_container">
+					<?php echo category_description(); ?> 
+				</div>
+			</div>
+		<?php endif; ?>
+	<?php
+}
+
+/**
 * End
 */
 

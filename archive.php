@@ -37,7 +37,11 @@
 		<!--Begin @response before_archive hook-->
 			<?php response_before_archive(); ?>
 		<!--End @response before_archive hook-->
-		
+
+		<!--Begin category description-->
+		<?php response_archive_description(); ?>
+		<!--END category description-->
+
 		<?php while (have_posts()) : the_post(); ?>
 		<div class="post_outer_container">
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
