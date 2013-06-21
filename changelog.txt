@@ -2,6 +2,9 @@ iRibbon Changelog
 
 ****************************
 
+Version 1.0.45 (6-21-13)
+-Removed unused global variables from single.php.
+
 Version 1.0.44 (6-13-13)
 -Updated microformats.
 
