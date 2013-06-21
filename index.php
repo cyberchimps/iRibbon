@@ -15,7 +15,7 @@
 * @since 1.0
 */
 
-	global $options, $ir_themeslug, $post; // call globals
+	global $options, $ir_themeslug; // call globals
 	$reorder = $options->get($ir_themeslug.'_blog_section_order');		
 ?>
 
