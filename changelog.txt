@@ -2,6 +2,9 @@ iRibbon Changelog
 
 ****************************
 
+Version 1.0.48 (7-11-13)
+- Removed unused global variable from archive.php.
+
 Version 1.0.47 (7-4-13)
 -Removed left half and right half sidebar.
 
