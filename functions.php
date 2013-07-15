@@ -16,10 +16,6 @@
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 
-// Notify user of theme update on "Updates" page in Dashboard.
-require_once( get_template_directory() . '/inc/update.php' );
-new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 337,  basename( get_template_directory() ) );
-
 // Set the content width based on the theme's design and stylesheet.
 if( !isset( $content_width ) ) {
     $content_width = 640;
@@ -92,14 +88,14 @@ endif; // ends check for cyberchimps_comment()
 // core options customization Names and URL's
 //Pro or Free
 function cyberchimps_theme_check() {
-    $level = 'pro';
+    $level = 'free';
 
     return $level;
 }
 
 //Theme Name
 function cyberchimps_options_theme_name() {
-    $text = 'iRibbon Pro 2';
+    $text = 'iRibbon';
 
     return $text;
 }
@@ -113,7 +109,7 @@ function cyberchimps_options_documentation_url() {
 
 // Support Forum URL
 function cyberchimps_options_support_forum() {
-    $url = 'http://cyberchimps.com/forum/pro/';
+    $url = 'http://cyberchimps.com/forum/free/';
 
     return $url;
 }
@@ -140,13 +136,13 @@ add_filter( 'cyberchimps_slider_options_help', 'cyberchimps_options_slider_optio
 
 // Help Section
 function cyberchimps_options_help_header() {
-    $text = 'iRibbon Pro 2';
+    $text = 'iRibbon';
 
     return $text;
 }
 
 function cyberchimps_options_help_sub_header() {
-    $text = __( 'iRibbon Pro 2, an elegant, professional Wordpress theme', 'cyberchimps' );
+    $text = __( 'iRibbon, an elegant, responsive Wordpress theme', 'cyberchimps' );
 
     return $text;
 }
@@ -173,7 +169,7 @@ function cyberchimps_slide_pro_img() {
 
     return $url;
 }
-add_action( 'cyberchimps_slide_pro_img1', 'cyberchimps_slide_pro_img', 2 );
+add_action( 'cyberchimps_slide_lite_img_one', 'cyberchimps_slide_pro_img', 2 );
 add_action( 'cyberchimps_slide_pro_img2', 'cyberchimps_slide_pro_img', 2 );
 add_action( 'cyberchimps_slide_pro_img3', 'cyberchimps_slide_pro_img', 2 );
 
@@ -186,10 +182,7 @@ function cyberchimps_skin_color_options( $options ) {
     $imagepath = get_template_directory_uri() . '/inc/css/skins/images/';
 
     $options = array(
-        'default' => $imagepath . 'default.png',
-        'blue-orange' => $imagepath . 'blue-orange.png',
-        'red-green' => $imagepath . 'red-green.png',
-        'black-red' => $imagepath . 'black-red.png'
+        'default' => $imagepath . 'default.png'
     );
 
     return $options;
@@ -229,23 +222,6 @@ function cyberchimps_typography_styles( $styles ) {
 add_filter( 'cyberchimps_typography_sizes', 'cyberchimps_typography_sizes' );
 add_filter( 'cyberchimps_typography_styles', 'cyberchimps_typography_styles' );
 
-// turn cyberchimps footer link off
-
-function cyberchimps_footer_link() {
-    $array = array(
-        'name'    => __( 'Cyberchimps Link', 'cyberchimps' ),
-        'id'      => 'footer_cyberchimps_link',
-        'std'     => 1,
-        'type'    => 'toggle',
-        'section' => 'cyberchimps_footer_section',
-        'heading' => 'cyberchimps_footer_heading'
-    );
-
-    return $array;
-}
-
-add_filter( 'footer_cyberchimps_link', 'cyberchimps_footer_link' );
-
 /**
  * Adds extra div container to sidebar widget title
  *
@@ -275,25 +251,6 @@ function cyberchimps_sidebar_after_widget_title( $title ) {
 }
 
 add_action( 'cyberchimps_sidebar_after_widget_title', 'cyberchimps_sidebar_after_widget_title', 10, 1 );
-
-// Modify sidebar layout options to remove option for both sidebar at right.
-function cyberchimps_customize_layout_option() {
-
-    // Get path of the image folder.
-    $imagepath = get_template_directory_uri() . '/cyberchimps/lib/images/';
-
-    // Set the option array with respective thumbnail path.
-    $options = array(
-        'full_width'     => $imagepath . '1col.png',
-        'right_sidebar'  => $imagepath . '2cr.png',
-        'left_sidebar'   => $imagepath . '2cl.png',
-        'content_middle' => $imagepath . '3col.png'
-    );
-
-    return $options;
-}
-
-add_filter( 'sidebar_layout_options', 'cyberchimps_customize_layout_option', 99 );
 
 // Set separator for post entry meta.
 function cyberchimps_entry_meta_sep() {
