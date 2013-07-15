@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iRibbon Pro 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
+"PO-Revision-Date: 2013-07-10 15:10-0000\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: Danish, Denmark\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../404.php
+msgid "Oops! That page cannot be found."
+msgstr "Oops! Denne side blev ikke fundet."
+
+#: ../../404.php
+msgid ""
+"It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr ""
+"Det ser ud, som om intet var fundet på denne placering. Måske prøve at søge "
+"efter det?"
+
+#: ../../archive.php
+msgid "Category Archives: %s"
+msgstr "Kategoriarkiv: %s"
+
+#: ../../archive.php
+msgid "Tag Archives: %s"
+msgstr "Tag Archives: %s"
+
+#: ../../archive.php
+msgid "Author Archives: %s"
+msgstr "Forfatter arkiver: %s"
+
+#: ../../archive.php
+msgid "Daily Archives: %s"
+msgstr "Daglige arkiver: %s"
+
+#: ../../archive.php
+msgid "Monthly Archives: %s"
+msgstr "Månedlige arkiver: %s"
+
+#: ../../archive.php
+msgid "Yearly Archives: %s"
+msgstr "Årlige arkiver: %s"
+
+#: ../../archive.php ../../footer.php ../../sidebar-left.php
+#: ../../sidebar-right.php ../../sidebar.php
+msgid "Archives"
+msgstr "Arkiver"
+
+#: ../../comments.php
+msgid "One Response"
+msgid_plural "%1$s Responses"
+msgstr[0] ""
+
+#: ../../comments.php
+msgid "Comment navigation"
+msgstr "Kommentar navigation"
+
+#: ../../comments.php
+msgid "Older Comments"
+msgstr "Ældre kommentarer"
+
+#: ../../comments.php
+msgid "Newer Comments"
+msgstr "Nyere kommentarer"
+
+#: ../../comments.php
+msgid "Comments are closed."
+msgstr "Kommentarer er lukket."
+
+#: ../../comments.php
+msgid "You must be %1$s logged in %2$s to post a comment"
+msgstr "Du skal være %1$ s logget i %2$ s til at skrive en kommentar"
+
+#: ../../comments.php
+msgid "logged in"
+msgstr "logget ind"
+
+#: ../../content.php
+msgid "Permalink to %s"
+msgstr "Permalink til %s"
+
+#: ../../content.php
+msgid "Continue reading"
+msgstr "Fortsæt læsning"
+
+#: ../../content.php ../../image.php
+msgid "Pages:"
+msgstr "Sider:"
+
+#: ../../content.php ../../image.php
+msgid "Edit"
+msgstr "Rediger"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Pages"
+msgstr "Sider"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Categories"
+msgstr "Kategorier"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"Powered by WordPress, state-of-the-art semantisk personlige udgivelse "
+"platform."
+
+#: ../../functions.php
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../../functions.php
+msgid "(Edit)"
+msgstr "(Rediger)"
+
+#: ../../functions.php
+msgid "says:"
+msgstr "siger:"
+
+#: ../../functions.php
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar afventer moderation."
+
+#: ../../functions.php
+msgid "%1$s at %2$s"
+msgstr "%1$ s på %2$ s"
+
+#: ../../functions.php
+msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
+msgstr "iRibbon Pro 2, en elegant, professionel Wordpress tema"
+
+#: ../../functions.php
+msgid "Cyberchimps Link"
+msgstr "Cyberchimps Link"
+
+#: ../../image.php
+msgid "Published"
+msgstr "Offentliggjort"
+
+#: ../../image.php
+msgid "size"
+msgstr "størrelse"
+
+#: ../../image.php
+msgid "in"
+msgstr "i"
+
+#: ../../image.php
+msgid "Previous"
+msgstr "Tidligere"
+
+#: ../../image.php
+msgid "Next"
+msgstr "Næste"
+
+#: ../../image.php
+msgid "Post a comment"
+msgstr "Skriv en kommentar"
+
+#: ../../image.php
+msgid "or leave a trackback"
+msgstr "eller forlade en trackback"
+
+#: ../../image.php
+msgid "Trackback URL"
+msgstr "Trackback URL"
+
+#: ../../image.php
+msgid "Comments are closed, but you can leave a trackback: "
+msgstr "Kommentarer er lukket, men du kan efterlade et trackback: "
+
+#: ../../image.php
+msgid "Trackbacks are closed, but you can %s"
+msgstr "Trackbacks er lukket, men du kan %s"
+
+#: ../../image.php
+msgid "post a comment"
+msgstr "Skriv en kommentar"
+
+#: ../../image.php
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Både kommentarer og trackbacks er i øjeblikket lukket."
+
+#: ../../no-results.php
+msgid "Nothing Found"
+msgstr "Intet fundet"
+
+#: ../../no-results.php
+msgid "Ready to publish your first post?"
+msgstr "Klar til at udgive dit første indlæg?"
+
+#: ../../no-results.php
+msgid "Get started here"
+msgstr "Komme i gang her"
+
+#: ../../no-results.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Desværre, men intet matchede søgeordene. Prøv igen med nogle forskellige "
+"søgeord."
+
+#: ../../no-results.php
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Det synes vi ikke kan finde, hvad du leder efter. Måske søger kan hjælpe."
+
+#: ../../search.php
+msgid "Search Results for: %s"
+msgstr "Søge resultater for: %s"
+
+#: ../../searchform.php
+msgid "Search &hellip;"
+msgstr "Søg &hellip;"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Subscribe"
+msgstr "Tilmeld dig"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Entries (RSS)"
+msgstr "Angivelser (RSS)"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Comments (RSS)"
+msgstr "Kommentarer (RSS)"

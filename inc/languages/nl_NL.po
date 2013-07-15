@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iRibbon Pro 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
+"PO-Revision-Date: 2013-07-10 15:09-0000\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: Dutch, Netherlands\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../404.php
+msgid "Oops! That page cannot be found."
+msgstr "Oeps! Die pagina kan niet worden gevonden."
+
+#: ../../404.php
+msgid ""
+"It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr ""
+"Het lijkt erop dat niets werd gevonden op deze locatie. Misschien kunt u "
+"zoeken naar het?"
+
+#: ../../archive.php
+msgid "Category Archives: %s"
+msgstr "Categorie Archieven: %s"
+
+#: ../../archive.php
+msgid "Tag Archives: %s"
+msgstr "Tag Archives: %s"
+
+#: ../../archive.php
+msgid "Author Archives: %s"
+msgstr "Auteur Archieven: %s"
+
+#: ../../archive.php
+msgid "Daily Archives: %s"
+msgstr "Dagelijkse archieven: %s"
+
+#: ../../archive.php
+msgid "Monthly Archives: %s"
+msgstr "Maandelijks Archief: %s"
+
+#: ../../archive.php
+msgid "Yearly Archives: %s"
+msgstr "Jaarlijkse archieven: %s"
+
+#: ../../archive.php ../../footer.php ../../sidebar-left.php
+#: ../../sidebar-right.php ../../sidebar.php
+msgid "Archives"
+msgstr "Archieven"
+
+#: ../../comments.php
+msgid "One Response"
+msgid_plural "%1$s Responses"
+msgstr[0] ""
+
+#: ../../comments.php
+msgid "Comment navigation"
+msgstr "Opmerking navigatie"
+
+#: ../../comments.php
+msgid "Older Comments"
+msgstr "Oudere Reacties"
+
+#: ../../comments.php
+msgid "Newer Comments"
+msgstr "Nieuwere opmerkingen"
+
+#: ../../comments.php
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#: ../../comments.php
+msgid "You must be %1$s logged in %2$s to post a comment"
+msgstr "U moet %1$ s ingelogd %2$ s om een commentaar te posten"
+
+#: ../../comments.php
+msgid "logged in"
+msgstr "ingelogd"
+
+#: ../../content.php
+msgid "Permalink to %s"
+msgstr "Permalink naar %s"
+
+#: ../../content.php
+msgid "Continue reading"
+msgstr "Lees verder"
+
+#: ../../content.php ../../image.php
+msgid "Pages:"
+msgstr "Pagina's:"
+
+#: ../../content.php ../../image.php
+msgid "Edit"
+msgstr "Bewerken"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Pages"
+msgstr "Pagina 's"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Categories"
+msgstr "Categorieën"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"Aangedreven door WordPress, state-of-the-art semantische persoonlijke "
+"publishing platform."
+
+#: ../../functions.php
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../../functions.php
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#: ../../functions.php
+msgid "says:"
+msgstr "zegt:"
+
+#: ../../functions.php
+msgid "Your comment is awaiting moderation."
+msgstr "Uw opmerking is in afwachting van matiging."
+
+#: ../../functions.php
+msgid "%1$s at %2$s"
+msgstr "%1$ s op %2$ s"
+
+#: ../../functions.php
+msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
+msgstr "iRibbon Pro 2, een elegante, professionele wordpressthema"
+
+#: ../../functions.php
+msgid "Cyberchimps Link"
+msgstr "Cyberchimps Link"
+
+#: ../../image.php
+msgid "Published"
+msgstr "Gepubliceerd"
+
+#: ../../image.php
+msgid "size"
+msgstr "grootte"
+
+#: ../../image.php
+msgid "in"
+msgstr "in"
+
+#: ../../image.php
+msgid "Previous"
+msgstr "Vorige"
+
+#: ../../image.php
+msgid "Next"
+msgstr "Volgende"
+
+#: ../../image.php
+msgid "Post a comment"
+msgstr "Plaats een reactie"
+
+#: ../../image.php
+msgid "or leave a trackback"
+msgstr "of laat een trackback"
+
+#: ../../image.php
+msgid "Trackback URL"
+msgstr "Trackback URL"
+
+#: ../../image.php
+msgid "Comments are closed, but you can leave a trackback: "
+msgstr "Reacties zijn gesloten, maar u kunt laat een trackback: "
+
+#: ../../image.php
+msgid "Trackbacks are closed, but you can %s"
+msgstr "Trackbacks zijn gesloten, maar u kunt %s"
+
+#: ../../image.php
+msgid "post a comment"
+msgstr "plaats een reactie"
+
+#: ../../image.php
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Beide opmerkingen en trackbacks zijn momenteel gesloten."
+
+#: ../../no-results.php
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#: ../../no-results.php
+msgid "Ready to publish your first post?"
+msgstr "Klaar om te publiceren uw eerste post?"
+
+#: ../../no-results.php
+msgid "Get started here"
+msgstr "Hier aan de slag"
+
+#: ../../no-results.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Sorry, maar niets geëvenaard uw zoektermen. Probeer opnieuw met sommige "
+"andere trefwoorden."
+
+#: ../../no-results.php
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Het lijkt dat we kan niet vinden wat u zoekt. Misschien zoeken kan helpen."
+
+#: ../../search.php
+msgid "Search Results for: %s"
+msgstr "Zoek resultaten voor: %s"
+
+#: ../../searchform.php
+msgid "Search &hellip;"
+msgstr "Zoek &hellip;"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Subscribe"
+msgstr "Abonneren"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Entries (RSS)"
+msgstr "Entries (RSS)"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Comments (RSS)"
+msgstr "Reacties (RSS)"

@@ -1,0 +1,245 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iRibbon Pro 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
+"PO-Revision-Date: 2013-07-10 15:10-0000\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: Russian, Russia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../../404.php
+msgid "Oops! That page cannot be found."
+msgstr "Упс! Эта страница не найдена."
+
+#: ../../404.php
+msgid ""
+"It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr ""
+"Это выглядит как ничего не было найдено в этом месте. Может быть, "
+"попробовать, искать для него?"
+
+#: ../../archive.php
+msgid "Category Archives: %s"
+msgstr "Категория Архивы: %s"
+
+#: ../../archive.php
+msgid "Tag Archives: %s"
+msgstr "Тег Архивы: %s"
+
+#: ../../archive.php
+msgid "Author Archives: %s"
+msgstr "Автор Архивы: %s"
+
+#: ../../archive.php
+msgid "Daily Archives: %s"
+msgstr "Ежедневные архивы: %s"
+
+#: ../../archive.php
+msgid "Monthly Archives: %s"
+msgstr "Архив по месяцам: %s"
+
+#: ../../archive.php
+msgid "Yearly Archives: %s"
+msgstr "Ежегодные архивы: %s"
+
+#: ../../archive.php ../../footer.php ../../sidebar-left.php
+#: ../../sidebar-right.php ../../sidebar.php
+msgid "Archives"
+msgstr "Архивы"
+
+#: ../../comments.php
+msgid "One Response"
+msgid_plural "%1$s Responses"
+msgstr[0] ""
+
+#: ../../comments.php
+msgid "Comment navigation"
+msgstr "Комментарий навигации"
+
+#: ../../comments.php
+msgid "Older Comments"
+msgstr "Пожилые Комментарии"
+
+#: ../../comments.php
+msgid "Newer Comments"
+msgstr "Новые комментарии"
+
+#: ../../comments.php
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: ../../comments.php
+msgid "You must be %1$s logged in %2$s to post a comment"
+msgstr "Вы должны быть %1$ s вошел в %2$ s оставить комментарий"
+
+#: ../../comments.php
+msgid "logged in"
+msgstr "войти в систему"
+
+#: ../../content.php
+msgid "Permalink to %s"
+msgstr "Постоянная ссылка на %s"
+
+#: ../../content.php
+msgid "Continue reading"
+msgstr "Продолжить чтение"
+
+#: ../../content.php ../../image.php
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: ../../content.php ../../image.php
+msgid "Edit"
+msgstr "Редактировать"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Pages"
+msgstr "Страниц"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Categories"
+msgstr "Категории"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+"Работает на WordPress, последнему слову семантической личные издательской "
+"платформой."
+
+#: ../../functions.php
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../../functions.php
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#: ../../functions.php
+msgid "says:"
+msgstr "говорит:"
+
+#: ../../functions.php
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерации."
+
+#: ../../functions.php
+msgid "%1$s at %2$s"
+msgstr "%1$ s на %2$ s"
+
+#: ../../functions.php
+msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
+msgstr "iRibbon Pro 2, элегантный, профессиональный Wordpress тема"
+
+#: ../../functions.php
+msgid "Cyberchimps Link"
+msgstr "Cyberchimps связь"
+
+#: ../../image.php
+msgid "Published"
+msgstr "Опубликовано"
+
+#: ../../image.php
+msgid "size"
+msgstr "Размер"
+
+#: ../../image.php
+msgid "in"
+msgstr "в"
+
+#: ../../image.php
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: ../../image.php
+msgid "Next"
+msgstr "Следующая"
+
+#: ../../image.php
+msgid "Post a comment"
+msgstr "Оставить комментарий"
+
+#: ../../image.php
+msgid "or leave a trackback"
+msgstr "или оставить trackback"
+
+#: ../../image.php
+msgid "Trackback URL"
+msgstr "Trackback URL"
+
+#: ../../image.php
+msgid "Comments are closed, but you can leave a trackback: "
+msgstr "Комментарии закрыты, но вы можете оставить Архив: "
+
+#: ../../image.php
+msgid "Trackbacks are closed, but you can %s"
+msgstr "Trackbacks закрыты, но вы можете %s"
+
+#: ../../image.php
+msgid "post a comment"
+msgstr "оставить комментарий"
+
+#: ../../image.php
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Комментарии и обратные ссылки в настоящее время закрыты."
+
+#: ../../no-results.php
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: ../../no-results.php
+msgid "Ready to publish your first post?"
+msgstr "Готовы опубликовать ваш первый пост?"
+
+#: ../../no-results.php
+msgid "Get started here"
+msgstr "Начните здесь"
+
+#: ../../no-results.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Извините, но ничего не соответствует условиям поиска. Пожалуйста, попробуйте "
+"еще раз с некоторыми различных ключевых слов."
+
+#: ../../no-results.php
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Кажется, мы не можем найти то, что вы ищете. Возможно, поиск может помочь."
+
+#: ../../search.php
+msgid "Search Results for: %s"
+msgstr "Результаты поиска для: %s"
+
+#: ../../searchform.php
+msgid "Search &hellip;"
+msgstr "Поиск &hellip;"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Subscribe"
+msgstr "Подписаться"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Entries (RSS)"
+msgstr "Записи (RSS)"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Comments (RSS)"
+msgstr "Комментарии (RSS)"

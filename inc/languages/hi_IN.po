@@ -1,0 +1,242 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iRibbon Pro 2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
+"PO-Revision-Date: 2013-07-10 15:10-0000\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: Hindi, India\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../../404.php
+msgid "Oops! That page cannot be found."
+msgstr "उफ़! उस पृष्ठ नहीं मिल सका।"
+
+#: ../../404.php
+msgid ""
+"It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr ""
+"ऐसा लगता है कि कुछ भी नहीं इस स्थान पर पाया गया था। शायद इसके लिए खोज का प्रयास करें?"
+
+#: ../../archive.php
+msgid "Category Archives: %s"
+msgstr "श्रेणी अभिलेखागार: %s"
+
+#: ../../archive.php
+msgid "Tag Archives: %s"
+msgstr "टैग अभिलेखागार: %s"
+
+#: ../../archive.php
+msgid "Author Archives: %s"
+msgstr "लेखक अभिलेखागार: %s"
+
+#: ../../archive.php
+msgid "Daily Archives: %s"
+msgstr "दैनिक अभिलेखागार: %s"
+
+#: ../../archive.php
+msgid "Monthly Archives: %s"
+msgstr "मासिक अभिलेखागार: %s"
+
+#: ../../archive.php
+msgid "Yearly Archives: %s"
+msgstr "वार्षिक अभिलेखागार: %s"
+
+#: ../../archive.php ../../footer.php ../../sidebar-left.php
+#: ../../sidebar-right.php ../../sidebar.php
+msgid "Archives"
+msgstr "अभिलेखागार"
+
+#: ../../comments.php
+msgid "One Response"
+msgid_plural "%1$s Responses"
+msgstr[0] ""
+
+#: ../../comments.php
+msgid "Comment navigation"
+msgstr "टिप्पणी नेविगेशन"
+
+#: ../../comments.php
+msgid "Older Comments"
+msgstr "पुराना टिप्पणियाँ"
+
+#: ../../comments.php
+msgid "Newer Comments"
+msgstr "नई टिप्पणियाँ"
+
+#: ../../comments.php
+msgid "Comments are closed."
+msgstr "टिप्पणियाँ बंद हो जाती हैं।"
+
+#: ../../comments.php
+msgid "You must be %1$s logged in %2$s to post a comment"
+msgstr "आप %1$ s %2$ s एक टिप्पणी पोस्ट करने में लॉग इन होना चाहिए"
+
+#: ../../comments.php
+msgid "logged in"
+msgstr "लॉग इन"
+
+#: ../../content.php
+msgid "Permalink to %s"
+msgstr "%S के लिए Permalink"
+
+#: ../../content.php
+msgid "Continue reading"
+msgstr "पढ़ना जारी रखें"
+
+#: ../../content.php ../../image.php
+msgid "Pages:"
+msgstr "पृष्ठ:"
+
+#: ../../content.php ../../image.php
+msgid "Edit"
+msgstr "संपादित करें"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Pages"
+msgstr "पृष्ठों"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Categories"
+msgstr "श्रेणियाँ"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
+#: ../../sidebar.php
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "राज्य के--कला अर्थ व्यक्तिगत प्रकाशन मंच, WordPress द्वारा संचालित है।"
+
+#: ../../functions.php
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../../functions.php
+msgid "(Edit)"
+msgstr "(संपादित करें)"
+
+#: ../../functions.php
+msgid "says:"
+msgstr "कहते हैं:"
+
+#: ../../functions.php
+msgid "Your comment is awaiting moderation."
+msgstr "आपकी टिप्पणी मॉडरेशन का इंतजार है।"
+
+#: ../../functions.php
+msgid "%1$s at %2$s"
+msgstr "%2$ s पर %1$ s"
+
+#: ../../functions.php
+msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
+msgstr "iRibbon प्रो 2, एक सुरुचिपूर्ण, व्यावसायिक Wordpress थीम"
+
+#: ../../functions.php
+msgid "Cyberchimps Link"
+msgstr "Cyberchimps लिंक"
+
+#: ../../image.php
+msgid "Published"
+msgstr "प्रकाशित"
+
+#: ../../image.php
+msgid "size"
+msgstr "आकार"
+
+#: ../../image.php
+msgid "in"
+msgstr "में"
+
+#: ../../image.php
+msgid "Previous"
+msgstr "पिछले"
+
+#: ../../image.php
+msgid "Next"
+msgstr "अगले"
+
+#: ../../image.php
+msgid "Post a comment"
+msgstr "पोस्ट एक टिप्पणी"
+
+#: ../../image.php
+msgid "or leave a trackback"
+msgstr "या एक trackback छोड़ दो"
+
+#: ../../image.php
+msgid "Trackback URL"
+msgstr "Trackback यूआरएल"
+
+#: ../../image.php
+msgid "Comments are closed, but you can leave a trackback: "
+msgstr "टिप्पणियाँ बंद हो जाती हैं, लेकिन तुम एक trackback छोड़ कर सकते हैं: "
+
+#: ../../image.php
+msgid "Trackbacks are closed, but you can %s"
+msgstr "Trackbacks बंद हो जाती हैं, लेकिन आप कर सकते हैं %s"
+
+#: ../../image.php
+msgid "post a comment"
+msgstr "पोस्ट एक टिप्पणी"
+
+#: ../../image.php
+msgid "Both comments and trackbacks are currently closed."
+msgstr "दोनों ही टिप्पणियाँ और trackbacks वर्तमान में बंद हो जाती हैं।"
+
+#: ../../no-results.php
+msgid "Nothing Found"
+msgstr "कुछ भी नहीं पाया"
+
+#: ../../no-results.php
+msgid "Ready to publish your first post?"
+msgstr "अपनी पहली पोस्ट प्रकाशित करने के लिए तैयार हैं?"
+
+#: ../../no-results.php
+msgid "Get started here"
+msgstr "यहाँ प्रारंभ करें"
+
+#: ../../no-results.php
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"क्षमा करें, लेकिन कुछ भी नहीं अपना खोज शब्द मिलान। कृपया कुछ अलग अलग खोजशब्दों के साथ "
+"पुन: प्रयास करें।"
+
+#: ../../no-results.php
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"ऐसा लगता है हम तुम्हारे लिए क्या देख रहे हो खोजने नहीं कर सकता। शायद खोज करने में मदद कर "
+"सकते हैं।"
+
+#: ../../search.php
+msgid "Search Results for: %s"
+msgstr "खोज परिणाम के लिए: %s"
+
+#: ../../searchform.php
+msgid "Search &hellip;"
+msgstr "खोज &hellip;"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Subscribe"
+msgstr "सदस्यता लें"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Entries (RSS)"
+msgstr "प्रविष्टियां (आरएसएस)"
+
+#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
+msgid "Comments (RSS)"
+msgstr "टिप्पणियाँ (आरएसएस)"
