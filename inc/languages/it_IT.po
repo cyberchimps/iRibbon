@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: iRibbon Pro 2\n"
+"Project-Id-Version: iRibbon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
-"PO-Revision-Date: 2013-07-10 15:11-0000\n"
+"POT-Creation-Date: 2013-07-15 12:44:38 UTC\n"
+"PO-Revision-Date: 2013-07-15 19:03+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Italian, Italy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../../404.php
@@ -33,11 +33,11 @@ msgstr "Archivi Tag: %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
-msgstr "Author Archives: %s"
+msgstr "Archivi autore: %s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr "Daily Archives: %s"
+msgstr "Archivi giornalieri: %s"
 
 #: ../../archive.php
 msgid "Monthly Archives: %s"
@@ -59,11 +59,11 @@ msgstr[0] ""
 
 #: ../../comments.php
 msgid "Comment navigation"
-msgstr "Navigazione di commento"
+msgstr "Navigazione commenti"
 
 #: ../../comments.php
 msgid "Older Comments"
-msgstr "Commenti più vecchi"
+msgstr "Anziani Commenti"
 
 #: ../../comments.php
 msgid "Newer Comments"
@@ -91,11 +91,11 @@ msgstr "Continua a leggere"
 
 #: ../../content.php ../../image.php
 msgid "Pages:"
-msgstr "Pagine:"
+msgstr "Pagine"
 
 #: ../../content.php ../../image.php
 msgid "Edit"
-msgstr "Modifica"
+msgstr "mod"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -116,9 +116,7 @@ msgstr "WordPress"
 #: ../../sidebar.php
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
-"Powered by WordPress, piattaforma di editoria personale semantica dello "
-"stato-of-the-art."
+msgstr "Funziona con Wordpress."
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -130,23 +128,19 @@ msgstr "(Modifica)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "dice:"
+msgstr "dice"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
-msgstr "Il tuo commento è in attesa di moderazione."
+msgstr "Il commento è in attesa di moderazione."
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%1$ s a %2$ s"
+msgstr "%1$s in %2$s"
 
 #: ../../functions.php
-msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
-msgstr "iRibbon Pro 2, un tema di Wordpress professionale, elegante"
-
-#: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyberchimps Link"
+msgid "iRibbon, an elegant, responsive Wordpress theme"
+msgstr "iRibbon, un tema di Wordpress elegante, reattivo"
 
 #: ../../image.php
 msgid "Published"
@@ -154,11 +148,11 @@ msgstr "Pubblicato"
 
 #: ../../image.php
 msgid "size"
-msgstr "dimensione"
+msgstr "Dim."
 
 #: ../../image.php
 msgid "in"
-msgstr "in"
+msgstr "tra"
 
 #: ../../image.php
 msgid "Previous"
@@ -166,7 +160,7 @@ msgstr "Precedente"
 
 #: ../../image.php
 msgid "Next"
-msgstr "Successivo"
+msgstr "Avanti"
 
 #: ../../image.php
 msgid "Post a comment"
@@ -174,9 +168,8 @@ msgstr "Posta un commento"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "o lasciare un trackback"
+msgstr "o lascia un trackback"
 
-#: ../../image.php
 msgid "Trackback URL"
 msgstr "Trackback URL"
 
@@ -202,19 +195,19 @@ msgstr "Trovato nulla"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "Sei pronto per pubblicare il tuo primo post?"
+msgstr "Pronto a pubblicare il tuo primo post?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "Per iniziare qui"
+msgstr "Inizia qui"
 
 #: ../../no-results.php
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Siamo spiacenti, ma niente abbinati i termini di ricerca. Si prega di "
-"riprovare con alcune parole chiave diverse."
+"Spiacente, ma nulla corrisponde ai tuoi termini di ricerca. Riprova con "
+"alcune parole chiave diverse."
 
 #: ../../no-results.php
 msgid ""
@@ -234,11 +227,10 @@ msgstr "Ricerca &hellip;"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"
-msgstr "Iscriviti"
+msgstr "Abbonati"
 
-#: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"
-msgstr "Entries (RSS)"
+msgstr "RSS"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"

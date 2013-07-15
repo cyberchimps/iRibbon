@@ -1,256 +1,263 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: cyberchimpspro v1.1.0.0\n"
-"POT-Creation-Date: 2013-07-10 13:35-0000\n"
-"PO-Revision-Date: 2013-07-10 14:16-0000\n"
-"Last-Translator: CyberChimps <support@cyberchimps.com>\n"
-"Language-Team: CyberChimps\n"
+"Project-Id-Version: iRibbon\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-15 12:44:38 UTC\n"
+"PO-Revision-Date: 2013-07-15 13:15:58 UTC\n"
+"Last-Translator: Web Translate It <support@webtranslateit.com>\n"
+"Language-Team: English, United States\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx;esc_attr__;"
-"esc_attr_e;esc_attr_x;esc_html__;esc_html_e;esc_html_x;_n_noop;_nx_noop;"
-"translate_nooped_plural\n"
-"X-Poedit-Basepath: .\n"
+"X-Generator: WebTranslateIt.com\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-SearchPath-0: ../..\n"
 
-#: ../../404.php:40
+#: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr ""
+msgstr "Oops! That page cannot be found."
 
-#: ../../404.php:48
-msgid ""
-"It looks like nothing was found at this location. Maybe try searching for it?"
-msgstr ""
+#: ../../404.php
+msgid "It looks like nothing was found at this location. Maybe try searching for it?"
+msgstr "It looks like nothing was found at this location. Maybe try searching for it?"
 
-#: ../../archive.php:40
-#, php-format
+#: ../../archive.php
 msgid "Category Archives: %s"
-msgstr ""
+msgstr "Category Archives: %s"
 
-#: ../../archive.php:43
-#, php-format
+#: ../../archive.php
 msgid "Tag Archives: %s"
-msgstr ""
+msgstr "Tag Archives: %s"
 
-#: ../../archive.php:50
-#, php-format
+#: ../../archive.php
 msgid "Author Archives: %s"
-msgstr ""
+msgstr "Author Archives: %s"
 
-#: ../../archive.php:58
-#, php-format
+#: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr ""
+msgstr "Daily Archives: %s"
 
-#: ../../archive.php:61
-#, php-format
+#: ../../archive.php
 msgid "Monthly Archives: %s"
-msgstr ""
+msgstr "Monthly Archives: %s"
 
-#: ../../archive.php:64
-#, php-format
+#: ../../archive.php
 msgid "Yearly Archives: %s"
-msgstr ""
+msgstr "Yearly Archives: %s"
 
-#: ../../archive.php:67 ../../footer.php:36 ../../sidebar-left.php:34
-#: ../../sidebar-right.php:34 ../../sidebar.php:32
+#: ../../archive.php
+#: ../../footer.php
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
 msgid "Archives"
-msgstr ""
+msgstr "Archives"
 
-#: ../../comments.php:39
-#, php-format
+#: ../../comments.php
 msgid "One Response"
 msgid_plural "%1$s Responses"
 msgstr[0] ""
-msgstr[1] ""
 
-#: ../../comments.php:56 ../../comments.php:76
+#: ../../comments.php
+#: ../../comments.php
 msgid "Comment navigation"
-msgstr ""
+msgstr "Comment navigation"
 
-#: ../../comments.php:57 ../../comments.php:77
+#: ../../comments.php
+#: ../../comments.php
 msgid "Older Comments"
-msgstr ""
+msgstr "Older Comments"
 
-#: ../../comments.php:58 ../../comments.php:78
+#: ../../comments.php
+#: ../../comments.php
 msgid "Newer Comments"
-msgstr ""
+msgstr "Newer Comments"
 
-#: ../../comments.php:88
+#: ../../comments.php
 msgid "Comments are closed."
-msgstr ""
+msgstr "Comments are closed."
 
-#: ../../comments.php:113
-#, php-format
+#: ../../comments.php
 msgid "You must be %1$s logged in %2$s to post a comment"
-msgstr ""
+msgstr "You must be %1$s logged in %2$s to post a comment"
 
-#: ../../comments.php:114
+#: ../../comments.php
 msgid "logged in"
-msgstr ""
+msgstr "logged in"
 
-#: ../../content.php:31 ../../content.php:58 ../../content.php:70
-#, php-format
+#: ../../content.php
+#: ../../content.php
+#: ../../content.php
 msgid "Permalink to %s"
-msgstr ""
+msgstr "Permalink to %s"
 
-#: ../../content.php:102 ../../content.php:125 ../../content.php:145
+#: ../../content.php
+#: ../../content.php
+#: ../../content.php
 msgid "Continue reading"
-msgstr ""
+msgstr "Continue reading"
 
-#: ../../content.php:103 ../../content.php:126 ../../content.php:146
-#: ../../image.php:81
+#: ../../content.php
+#: ../../content.php
+#: ../../content.php
+#: ../../image.php
 msgid "Pages:"
-msgstr ""
+msgstr "Pages:"
 
-#: ../../content.php:162 ../../image.php:53 ../../image.php:148
+#: ../../content.php
+#: ../../image.php
+#: ../../image.php
 msgid "Edit"
-msgstr ""
+msgstr "Edit"
 
-#: ../../footer.php:29 ../../sidebar-left.php:26 ../../sidebar-right.php:26
-#: ../../sidebar.php:25
+#: ../../footer.php
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
 msgid "Pages"
-msgstr ""
+msgstr "Pages"
 
-#: ../../footer.php:43 ../../sidebar-left.php:42 ../../sidebar-right.php:42
-#: ../../sidebar.php:39
+#: ../../footer.php
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
 msgid "Categories"
-msgstr ""
+msgstr "Categories"
 
-#: ../../footer.php:50 ../../footer.php:54 ../../sidebar-left.php:50
-#: ../../sidebar-left.php:54 ../../sidebar-right.php:50
-#: ../../sidebar-right.php:54 ../../sidebar.php:46 ../../sidebar.php:50
+#: ../../footer.php
+#: ../../footer.php
+#: ../../sidebar-left.php
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
+#: ../../sidebar.php
 msgid "WordPress"
-msgstr ""
+msgstr "WordPress"
 
-#: ../../footer.php:54 ../../sidebar-left.php:54 ../../sidebar-right.php:54
-#: ../../sidebar.php:50
-msgid ""
-"Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
+#: ../../footer.php
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 
-#: ../../functions.php:46
+#: ../../functions.php
 msgid "Pingback:"
-msgstr ""
+msgstr "Pingback:"
 
-#: ../../functions.php:46 ../../functions.php:72
+#: ../../functions.php
+#: ../../functions.php
 msgid "(Edit)"
-msgstr ""
+msgstr "(Edit)"
 
-#: ../../functions.php:56
+#: ../../functions.php
 msgid "says:"
-msgstr ""
+msgstr "says:"
 
-#: ../../functions.php:60
+#: ../../functions.php
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Your comment is awaiting moderation."
 
-#: ../../functions.php:69
-#, php-format
+#: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s at %2$s"
 
-#: ../../functions.php:149
-msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
-msgstr ""
+#: ../../functions.php
+msgid "iRibbon, an elegant, responsive Wordpress theme"
+msgstr "iRibbon, an elegant, responsive Wordpress theme"
 
-#: ../../functions.php:218
-msgid "Cyberchimps Link"
-msgstr ""
-
-#: ../../image.php:43
+#: ../../image.php
 msgid "Published"
-msgstr ""
+msgstr "Published"
 
-#: ../../image.php:43
+#: ../../image.php
 msgid "size"
-msgstr ""
+msgstr "size"
 
-#: ../../image.php:43
+#: ../../image.php
 msgid "in"
-msgstr ""
+msgstr "in"
 
-#: ../../image.php:57
+#: ../../image.php
 msgid "Previous"
-msgstr ""
+msgstr "Previous"
 
-#: ../../image.php:58
+#: ../../image.php
 msgid "Next"
-msgstr ""
+msgstr "Next"
 
-#: ../../image.php:139
+#: ../../image.php
 msgid "Post a comment"
-msgstr ""
+msgstr "Post a comment"
 
-#: ../../image.php:139
+#: ../../image.php
 msgid "or leave a trackback"
-msgstr ""
+msgstr "or leave a trackback"
 
-#: ../../image.php:139 ../../image.php:141
+#: ../../image.php
+#: ../../image.php
 msgid "Trackback URL"
-msgstr ""
+msgstr "Trackback URL"
 
-#: ../../image.php:141
+#: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
-msgstr ""
+msgstr "Comments are closed, but you can leave a trackback: "
 
-#: ../../image.php:143
-#, php-format
+#: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
-msgstr ""
+msgstr "Trackbacks are closed, but you can %s"
 
-#: ../../image.php:144
+#: ../../image.php
 msgid "post a comment"
-msgstr ""
+msgstr "post a comment"
 
-#: ../../image.php:146
+#: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr ""
+msgstr "Both comments and trackbacks are currently closed."
 
-#: ../../no-results.php:18
+#: ../../no-results.php
 msgid "Nothing Found"
-msgstr ""
+msgstr "Nothing Found"
 
-#: ../../no-results.php:27
+#: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr ""
+msgstr "Ready to publish your first post?"
 
-#: ../../no-results.php:29
+#: ../../no-results.php
 msgid "Get started here"
-msgstr ""
+msgstr "Get started here"
 
-#: ../../no-results.php:34
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
+#: ../../no-results.php
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 
-#: ../../no-results.php:39
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
+#: ../../no-results.php
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 
-#: ../../search.php:37
-#, php-format
+#: ../../search.php
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Search Results for: %s"
 
-#: ../../searchform.php:18
+#: ../../searchform.php
 msgid "Search &hellip;"
-msgstr ""
+msgstr "Search &hellip;"
 
-#: ../../sidebar-left.php:61 ../../sidebar-right.php:61 ../../sidebar.php:56
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
 msgid "Subscribe"
-msgstr ""
+msgstr "Subscribe"
 
-#: ../../sidebar-left.php:63 ../../sidebar-right.php:63 ../../sidebar.php:58
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
 msgid "Entries (RSS)"
-msgstr ""
+msgstr "Entries (RSS)"
 
-#: ../../sidebar-left.php:64 ../../sidebar-right.php:64 ../../sidebar.php:59
+#: ../../sidebar-left.php
+#: ../../sidebar-right.php
+#: ../../sidebar.php
 msgid "Comments (RSS)"
-msgstr ""
+msgstr "Comments (RSS)"
+

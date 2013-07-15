@@ -1,27 +1,27 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: iRibbon Pro 2\n"
+"Project-Id-Version: iRibbon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
-"PO-Revision-Date: 2013-07-10 15:10-0000\n"
+"POT-Creation-Date: 2013-07-15 12:44:38 UTC\n"
+"PO-Revision-Date: 2013-07-15 19:03+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Danish, Denmark\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "Oops! Denne side blev ikke fundet."
+msgstr "Ups! Denne side kan ikke findes."
 
 #: ../../404.php
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
 msgstr ""
-"Det ser ud, som om intet var fundet på denne placering. Måske prøve at søge "
-"efter det?"
+"Det ligner intet blev fundet på denne placering. Måske prøve at søge efter "
+"det?"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
@@ -33,19 +33,19 @@ msgstr "Tag Archives: %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
-msgstr "Forfatter arkiver: %s"
+msgstr "Forfatter Arkiv: %s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr "Daglige arkiver: %s"
+msgstr "Dagligt arkiv: %s"
 
 #: ../../archive.php
 msgid "Monthly Archives: %s"
-msgstr "Månedlige arkiver: %s"
+msgstr "Månedlig Arkiv: %s"
 
 #: ../../archive.php
 msgid "Yearly Archives: %s"
-msgstr "Årlige arkiver: %s"
+msgstr "Årligt arkiv: %s"
 
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
@@ -91,7 +91,7 @@ msgstr "Fortsæt læsning"
 
 #: ../../content.php ../../image.php
 msgid "Pages:"
-msgstr "Sider:"
+msgstr "Sider"
 
 #: ../../content.php ../../image.php
 msgid "Edit"
@@ -130,7 +130,7 @@ msgstr "(Rediger)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "siger:"
+msgstr "siger"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
@@ -138,23 +138,19 @@ msgstr "Din kommentar afventer moderation."
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%1$ s på %2$ s"
+msgstr "%1$s kl. %2$s"
 
 #: ../../functions.php
-msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
-msgstr "iRibbon Pro 2, en elegant, professionel Wordpress tema"
-
-#: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyberchimps Link"
+msgid "iRibbon, an elegant, responsive Wordpress theme"
+msgstr "iRibbon, en elegant, lydhør Wordpress tema"
 
 #: ../../image.php
 msgid "Published"
-msgstr "Offentliggjort"
+msgstr "Udgivet"
 
 #: ../../image.php
 msgid "size"
-msgstr "størrelse"
+msgstr "Str."
 
 #: ../../image.php
 msgid "in"
@@ -162,7 +158,7 @@ msgstr "i"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "Tidligere"
+msgstr "Forrige"
 
 #: ../../image.php
 msgid "Next"
@@ -178,7 +174,7 @@ msgstr "eller forlade en trackback"
 
 #: ../../image.php
 msgid "Trackback URL"
-msgstr "Trackback URL"
+msgstr "Styrekugle URL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
@@ -221,19 +217,19 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Det synes vi ikke kan finde, hvad du leder efter. Måske søger kan hjælpe."
+"Det synes vi ikke kan finde det, du leder efter. Måske søger kan hjælpe."
 
 #: ../../search.php
 msgid "Search Results for: %s"
-msgstr "Søge resultater for: %s"
+msgstr "Søgeresultater for: %s"
 
 #: ../../searchform.php
 msgid "Search &hellip;"
-msgstr "Søg &hellip;"
+msgstr "Søg"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"
-msgstr "Tilmeld dig"
+msgstr "Tilmeld"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"

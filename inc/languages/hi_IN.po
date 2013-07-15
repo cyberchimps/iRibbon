@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: iRibbon Pro 2\n"
+"Project-Id-Version: iRibbon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
-"PO-Revision-Date: 2013-07-10 15:10-0000\n"
+"POT-Creation-Date: 2013-07-15 12:44:38 UTC\n"
+"PO-Revision-Date: 2013-07-15 19:03+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Hindi, India\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.4\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #: ../../404.php
@@ -20,7 +20,7 @@ msgstr "उफ़! उस पृष्ठ नहीं मिल सका।"
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
 msgstr ""
-"ऐसा लगता है कि कुछ भी नहीं इस स्थान पर पाया गया था। शायद इसके लिए खोज का प्रयास करें?"
+"ऐसा लगता है कि इस स्थान पर कुछ भी नहीं पाया गया था. शायद इसके लिए खोज की कोशिश की?"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
@@ -36,20 +36,20 @@ msgstr "लेखक अभिलेखागार: %s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr "दैनिक अभिलेखागार: %s"
+msgstr "नित्य संग्रह: %s"
 
 #: ../../archive.php
 msgid "Monthly Archives: %s"
-msgstr "मासिक अभिलेखागार: %s"
+msgstr "मासिक संग्रह: %s"
 
 #: ../../archive.php
 msgid "Yearly Archives: %s"
-msgstr "वार्षिक अभिलेखागार: %s"
+msgstr "वार्षिक संग्रह: %s"
 
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "अभिलेखागार"
+msgstr "अभिलेख"
 
 #: ../../comments.php
 msgid "One Response"
@@ -82,7 +82,7 @@ msgstr "लॉग इन"
 
 #: ../../content.php
 msgid "Permalink to %s"
-msgstr "%S के लिए Permalink"
+msgstr "Permalink %s"
 
 #: ../../content.php
 msgid "Continue reading"
@@ -90,21 +90,21 @@ msgstr "पढ़ना जारी रखें"
 
 #: ../../content.php ../../image.php
 msgid "Pages:"
-msgstr "पृष्ठ:"
+msgstr "पृष्ठ"
 
 #: ../../content.php ../../image.php
 msgid "Edit"
-msgstr "संपादित करें"
+msgstr "संपादन"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Pages"
-msgstr "पृष्ठों"
+msgstr "पृष्ठ"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Categories"
-msgstr "श्रेणियाँ"
+msgstr "श्रेणी"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -115,7 +115,7 @@ msgstr "WordPress"
 #: ../../sidebar.php
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "राज्य के--कला अर्थ व्यक्तिगत प्रकाशन मंच, WordPress द्वारा संचालित है।"
+msgstr "WordPress, राज्य के कला अर्थ निजी प्रकाशन मंच द्वारा संचालित है."
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -135,15 +135,11 @@ msgstr "आपकी टिप्पणी मॉडरेशन का इं�
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%2$ s पर %1$ s"
+msgstr "%1$s पर %2$s"
 
 #: ../../functions.php
-msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
-msgstr "iRibbon प्रो 2, एक सुरुचिपूर्ण, व्यावसायिक Wordpress थीम"
-
-#: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyberchimps लिंक"
+msgid "iRibbon, an elegant, responsive Wordpress theme"
+msgstr "iRibbon, एक सुरुचिपूर्ण, उत्तरदायी Wordpress थीम"
 
 #: ../../image.php
 msgid "Published"
@@ -151,7 +147,7 @@ msgstr "प्रकाशित"
 
 #: ../../image.php
 msgid "size"
-msgstr "आकार"
+msgstr "फैल"
 
 #: ../../image.php
 msgid "in"
@@ -171,7 +167,7 @@ msgstr "पोस्ट एक टिप्पणी"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "या एक trackback छोड़ दो"
+msgstr "या एक trackback छोड़"
 
 #: ../../image.php
 msgid "Trackback URL"
@@ -183,7 +179,7 @@ msgstr "टिप्पणियाँ बंद हो जाती हैं, 
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
-msgstr "Trackbacks बंद हो जाती हैं, लेकिन आप कर सकते हैं %s"
+msgstr "Trackbacks बंद हो जाती हैं, लेकिन आप %s कर सकते हैं"
 
 #: ../../image.php
 msgid "post a comment"
@@ -199,11 +195,11 @@ msgstr "कुछ भी नहीं पाया"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "अपनी पहली पोस्ट प्रकाशित करने के लिए तैयार हैं?"
+msgstr "अपनी पहली पोस्ट प्रकाशित करने के लिए तैयार है?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "यहाँ प्रारंभ करें"
+msgstr "यहाँ शुरू हो जाओ"
 
 #: ../../no-results.php
 msgid ""
@@ -218,7 +214,7 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"ऐसा लगता है हम तुम्हारे लिए क्या देख रहे हो खोजने नहीं कर सकता। शायद खोज करने में मदद कर "
+"ऐसा लगता है हम मिल नहीं कर सकता क्या आप के लिए देख रहे हैं। शायद खोज करने में मदद कर "
 "सकते हैं।"
 
 #: ../../search.php
@@ -231,7 +227,7 @@ msgstr "खोज &hellip;"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"
-msgstr "सदस्यता लें"
+msgstr "सदस्यता"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"

@@ -1,20 +1,20 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: iRibbon Pro 2\n"
+"Project-Id-Version: iRibbon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
-"PO-Revision-Date: 2013-07-10 15:11-0000\n"
+"POT-Creation-Date: 2013-07-15 12:44:38 UTC\n"
+"PO-Revision-Date: 2013-07-15 19:02+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Japanese, Japan\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "おっと ！そのページを発見することはできません。"
+msgstr "おっと！そのページが見つかりません。"
 
 #: ../../404.php
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../archive.php
 msgid "Category Archives: %s"
-msgstr "カテゴリー アーカイブ: %s"
+msgstr "カテゴリー:"
 
 #: ../../archive.php
 msgid "Tag Archives: %s"
@@ -36,20 +36,20 @@ msgstr "著者アーカイブ: %s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr "デイリー アーカイブ： %s"
+msgstr "%sのお知らせ"
 
 #: ../../archive.php
 msgid "Monthly Archives: %s"
-msgstr "月別アーカイブ: %s"
+msgstr "%sのお知らせ"
 
 #: ../../archive.php
 msgid "Yearly Archives: %s"
-msgstr "年間アーカイブ: %s"
+msgstr "%sのお知らせ"
 
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "アーカイブ"
+msgstr "お知らせ"
 
 #: ../../comments.php
 msgid "One Response"
@@ -58,7 +58,7 @@ msgstr[0] ""
 
 #: ../../comments.php
 msgid "Comment navigation"
-msgstr "ナビゲーションをコメント"
+msgstr "コメント"
 
 #: ../../comments.php
 msgid "Older Comments"
@@ -70,7 +70,7 @@ msgstr "新しいコメント"
 
 #: ../../comments.php
 msgid "Comments are closed."
-msgstr "コメントが閉じられます。"
+msgstr "コメントフィード"
 
 #: ../../comments.php
 msgid "You must be %1$s logged in %2$s to post a comment"
@@ -82,7 +82,7 @@ msgstr "ログイン"
 
 #: ../../content.php
 msgid "Permalink to %s"
-msgstr "%S へのパーマリンク"
+msgstr "パーマへ%s"
 
 #: ../../content.php
 msgid "Continue reading"
@@ -90,7 +90,7 @@ msgstr "続きを読む"
 
 #: ../../content.php ../../image.php
 msgid "Pages:"
-msgstr "ページ:"
+msgstr "ページ"
 
 #: ../../content.php ../../image.php
 msgid "Edit"
@@ -104,7 +104,7 @@ msgstr "ページ"
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Categories"
-msgstr "カテゴリ"
+msgstr "部類"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -129,23 +129,19 @@ msgstr "(編集)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "さんの意見："
+msgstr "発言"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
-msgstr "あなたのコメントは節度を待っています。"
+msgstr "あなたのコメントは承認待ちです。"
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%1 %2$ の $ s"
+msgstr "%1$s %2$s"
 
 #: ../../functions.php
-msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
-msgstr "iRibbon プロ 2、エレガントなプロのワードプレスのテーマ"
-
-#: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyberchimps リンク"
+msgid "iRibbon, an elegant, responsive Wordpress theme"
+msgstr "iRibbon、エレガントな応答性の高いワードプレスのテーマ"
 
 #: ../../image.php
 msgid "Published"
@@ -161,7 +157,7 @@ msgstr "で"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "以前"
+msgstr "前"
 
 #: ../../image.php
 msgid "Next"
@@ -173,11 +169,11 @@ msgstr "コメントを投稿します。"
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "またはトラック バックを残す"
+msgstr "かtrackbackを残す"
 
 #: ../../image.php
 msgid "Trackback URL"
-msgstr "トラック バック URL"
+msgstr "トラックバックURL"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
@@ -185,7 +181,7 @@ msgstr "コメント閉鎖されますが、トラック バックを残すこ�
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
-msgstr "トラック バック閉じていますが、%s することができます。"
+msgstr "トラック バックを閉じているが %s することができます。"
 
 #: ../../image.php
 msgid "post a comment"
@@ -197,15 +193,15 @@ msgstr "両方のコメントやトラック バックは現在閉鎖されま�
 
 #: ../../no-results.php
 msgid "Nothing Found"
-msgstr "何も見つかりませんでした。"
+msgstr "何が見つかりました"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
-msgstr "あなたの最初の記事を公開する準備ができて？"
+msgstr "最初の投稿を公開する準備はできましたか？"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "ここからスタートします。"
+msgstr "ここで始める"
 
 #: ../../no-results.php
 msgid ""
@@ -225,7 +221,7 @@ msgstr ""
 
 #: ../../search.php
 msgid "Search Results for: %s"
-msgstr "結果を検索: %s"
+msgstr "検索結果: %s"
 
 #: ../../searchform.php
 msgid "Search &hellip;"
@@ -237,8 +233,8 @@ msgstr "購読"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"
-msgstr "エントリ （の RSS）"
+msgstr "エントリ（のRSS）"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"
-msgstr "コメント （の RSS）"
+msgstr "コメント（RSS）"

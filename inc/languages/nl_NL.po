@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: iRibbon Pro 2\n"
+"Project-Id-Version: iRibbon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
-"PO-Revision-Date: 2013-07-10 15:09-0000\n"
+"POT-Creation-Date: 2013-07-15 12:44:38 UTC\n"
+"PO-Revision-Date: 2013-07-15 19:03+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Dutch, Netherlands\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../../404.php
@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../archive.php
 msgid "Category Archives: %s"
-msgstr "Categorie Archieven: %s"
+msgstr "Categorie archief: %s"
 
 #: ../../archive.php
 msgid "Tag Archives: %s"
@@ -33,11 +33,11 @@ msgstr "Tag Archives: %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
-msgstr "Auteur Archieven: %s"
+msgstr "Auteur Archief: %s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr "Dagelijkse archieven: %s"
+msgstr "Dagelijks archief: %s"
 
 #: ../../archive.php
 msgid "Monthly Archives: %s"
@@ -45,12 +45,12 @@ msgstr "Maandelijks Archief: %s"
 
 #: ../../archive.php
 msgid "Yearly Archives: %s"
-msgstr "Jaarlijkse archieven: %s"
+msgstr "Jaarlijks Archief: %s"
 
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "Archieven"
+msgstr "Archief"
 
 #: ../../comments.php
 msgid "One Response"
@@ -59,7 +59,7 @@ msgstr[0] ""
 
 #: ../../comments.php
 msgid "Comment navigation"
-msgstr "Opmerking navigatie"
+msgstr "Reactienavigatie"
 
 #: ../../comments.php
 msgid "Older Comments"
@@ -67,7 +67,7 @@ msgstr "Oudere Reacties"
 
 #: ../../comments.php
 msgid "Newer Comments"
-msgstr "Nieuwere opmerkingen"
+msgstr "Nieuwere reacties"
 
 #: ../../comments.php
 msgid "Comments are closed."
@@ -91,16 +91,16 @@ msgstr "Lees verder"
 
 #: ../../content.php ../../image.php
 msgid "Pages:"
-msgstr "Pagina's:"
+msgstr "Paginas"
 
 #: ../../content.php ../../image.php
 msgid "Edit"
-msgstr "Bewerken"
+msgstr "ed"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Pages"
-msgstr "Pagina 's"
+msgstr "Paginas"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -116,9 +116,7 @@ msgstr "WordPress"
 #: ../../sidebar.php
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr ""
-"Aangedreven door WordPress, state-of-the-art semantische persoonlijke "
-"publishing platform."
+msgstr "Powered by WordPress"
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -130,23 +128,19 @@ msgstr "(Edit)"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "zegt:"
+msgstr "zegt"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
-msgstr "Uw opmerking is in afwachting van matiging."
+msgstr "Je reactie moet nog  worden goedgekeurd."
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "%1$ s op %2$ s"
+msgstr "%1$s om %2$s"
 
 #: ../../functions.php
-msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
-msgstr "iRibbon Pro 2, een elegante, professionele wordpressthema"
-
-#: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyberchimps Link"
+msgid "iRibbon, an elegant, responsive Wordpress theme"
+msgstr "iRibbon, een elegante, responsieve wordpressthema"
 
 #: ../../image.php
 msgid "Published"
@@ -154,11 +148,11 @@ msgstr "Gepubliceerd"
 
 #: ../../image.php
 msgid "size"
-msgstr "grootte"
+msgstr "Omvang"
 
 #: ../../image.php
 msgid "in"
-msgstr "in"
+msgstr "van"
 
 #: ../../image.php
 msgid "Previous"
@@ -166,7 +160,7 @@ msgstr "Vorige"
 
 #: ../../image.php
 msgid "Next"
-msgstr "Volgende"
+msgstr "Verder"
 
 #: ../../image.php
 msgid "Post a comment"
@@ -190,11 +184,11 @@ msgstr "Trackbacks zijn gesloten, maar u kunt %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "plaats een reactie"
+msgstr "Plaats een reactie"
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr "Beide opmerkingen en trackbacks zijn momenteel gesloten."
+msgstr "Zowel reacties als trackbacks zijn momenteel gesloten."
 
 #: ../../no-results.php
 msgid "Nothing Found"
@@ -206,7 +200,7 @@ msgstr "Klaar om te publiceren uw eerste post?"
 
 #: ../../no-results.php
 msgid "Get started here"
-msgstr "Hier aan de slag"
+msgstr "Get hier begon"
 
 #: ../../no-results.php
 msgid ""
@@ -225,7 +219,7 @@ msgstr ""
 
 #: ../../search.php
 msgid "Search Results for: %s"
-msgstr "Zoek resultaten voor: %s"
+msgstr "Zoekresultaten voor: %s"
 
 #: ../../searchform.php
 msgid "Search &hellip;"
@@ -233,11 +227,11 @@ msgstr "Zoek &hellip;"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Subscribe"
-msgstr "Abonneren"
+msgstr "Abonneer"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Entries (RSS)"
-msgstr "Entries (RSS)"
+msgstr "RSS"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"

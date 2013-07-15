@@ -1,25 +1,25 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: iRibbon Pro 2\n"
+"Project-Id-Version: iRibbon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-10 13:00:48 UTC\n"
-"PO-Revision-Date: 2013-07-10 15:09-0000\n"
+"POT-Creation-Date: 2013-07-15 12:44:38 UTC\n"
+"PO-Revision-Date: 2013-07-15 19:01+0530\n"
 "Last-Translator: Web Translate It <support@webtranslateit.com>\n"
 "Language-Team: Chinese, China\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../404.php
 msgid "Oops! That page cannot be found."
-msgstr "哎呀 ！无法找到该网页。"
+msgstr "哎呀！无法找到该网页。"
 
 #: ../../404.php
 msgid ""
 "It looks like nothing was found at this location. Maybe try searching for it?"
-msgstr "它看起来像是什么都不在此位置找到。也许尝试搜索它吗？"
+msgstr "似乎什么也没找到，试试另搜索？"
 
 #: ../../archive.php
 msgid "Category Archives: %s"
@@ -31,24 +31,24 @@ msgstr "标记档案： %s"
 
 #: ../../archive.php
 msgid "Author Archives: %s"
-msgstr "作者档案： %s"
+msgstr "作者存档：%s"
 
 #: ../../archive.php
 msgid "Daily Archives: %s"
-msgstr "日常档案： %s"
+msgstr "每日存档：%s"
 
 #: ../../archive.php
 msgid "Monthly Archives: %s"
-msgstr "每月档案： %s"
+msgstr "每月存档：%s"
 
 #: ../../archive.php
 msgid "Yearly Archives: %s"
-msgstr "每年档案： %s"
+msgstr "每年存档：%s"
 
 #: ../../archive.php ../../footer.php ../../sidebar-left.php
 #: ../../sidebar-right.php ../../sidebar.php
 msgid "Archives"
-msgstr "档案"
+msgstr "归档"
 
 #: ../../comments.php
 msgid "One Response"
@@ -81,7 +81,7 @@ msgstr "登录"
 
 #: ../../content.php
 msgid "Permalink to %s"
-msgstr "到 %s 的固定链接"
+msgstr "连结到%s"
 
 #: ../../content.php
 msgid "Continue reading"
@@ -89,7 +89,7 @@ msgstr "继续阅读"
 
 #: ../../content.php ../../image.php
 msgid "Pages:"
-msgstr "页数："
+msgstr "页"
 
 #: ../../content.php ../../image.php
 msgid "Edit"
@@ -103,7 +103,7 @@ msgstr "页"
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
 msgid "Categories"
-msgstr "类别"
+msgstr "类型"
 
 #: ../../footer.php ../../sidebar-left.php ../../sidebar-right.php
 #: ../../sidebar.php
@@ -114,7 +114,7 @@ msgstr "WordPress"
 #: ../../sidebar.php
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "由 WordPress，先进的语义个人发布平台提供动力。"
+msgstr "基于 WordPress，优美的个人信息发布平台。"
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -126,23 +126,19 @@ msgstr "（编辑）"
 
 #: ../../functions.php
 msgid "says:"
-msgstr "说:"
+msgstr "说"
 
 #: ../../functions.php
 msgid "Your comment is awaiting moderation."
-msgstr "您的评论正在等待审核。"
+msgstr "您的评论需要审核…"
 
 #: ../../functions.php
 msgid "%1$s at %2$s"
-msgstr "在 %2$ s %1$ s"
+msgstr "%1$s于%2$s"
 
 #: ../../functions.php
-msgid "iRibbon Pro 2, an elegant, professional Wordpress theme"
-msgstr "iRibbon Pro 2、 优雅、 专业的 Wordpress 主题"
-
-#: ../../functions.php
-msgid "Cyberchimps Link"
-msgstr "Cyberchimps 链接"
+msgid "iRibbon, an elegant, responsive Wordpress theme"
+msgstr "iRibbon，优雅、 反应灵敏的 Wordpress 主题"
 
 #: ../../image.php
 msgid "Published"
@@ -154,27 +150,27 @@ msgstr "大小"
 
 #: ../../image.php
 msgid "in"
-msgstr "在中"
+msgstr "在"
 
 #: ../../image.php
 msgid "Previous"
-msgstr "上一页"
+msgstr "預覽"
 
 #: ../../image.php
 msgid "Next"
-msgstr "下一次"
+msgstr "下一个"
 
 #: ../../image.php
 msgid "Post a comment"
-msgstr "发表评论"
+msgstr "评论："
 
 #: ../../image.php
 msgid "or leave a trackback"
-msgstr "或离开引用通告"
+msgstr "或留下引用"
 
 #: ../../image.php
 msgid "Trackback URL"
-msgstr "引用通告 URL"
+msgstr "引用URLs"
 
 #: ../../image.php
 msgid "Comments are closed, but you can leave a trackback: "
@@ -182,19 +178,19 @@ msgstr "评论已关闭，但你可以离开引用通告："
 
 #: ../../image.php
 msgid "Trackbacks are closed, but you can %s"
-msgstr "引用通告已经关闭，但你可以 %s"
+msgstr "引用通知已经关闭，但你可以 %s"
 
 #: ../../image.php
 msgid "post a comment"
-msgstr "发表评论"
+msgstr "评论："
 
 #: ../../image.php
 msgid "Both comments and trackbacks are currently closed."
-msgstr "目前关闭评论和引用通告。"
+msgstr "评论和引用都被关闭。"
 
 #: ../../no-results.php
 msgid "Nothing Found"
-msgstr "未找到任何内容"
+msgstr "没有找到"
 
 #: ../../no-results.php
 msgid "Ready to publish your first post?"
@@ -208,17 +204,17 @@ msgstr "从这里开始"
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr "对不起，但一点也不匹配您的搜索条件。请用一些不同的关键字再试一次。"
+msgstr "抱歉，没有符合您搜索的关键字，请再尝试别的关键字。"
 
 #: ../../no-results.php
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr "看来我们找不到你在找什么。搜索，也许可以帮助。"
+msgstr "似乎找不到你所寻找的东西，请另行搜索。"
 
 #: ../../search.php
 msgid "Search Results for: %s"
-msgstr "搜索结果： %s"
+msgstr "搜索结果：%s"
 
 #: ../../searchform.php
 msgid "Search &hellip;"
@@ -234,4 +230,4 @@ msgstr "条目 (RSS)"
 
 #: ../../sidebar-left.php ../../sidebar-right.php ../../sidebar.php
 msgid "Comments (RSS)"
-msgstr "评论 (RSS)"
+msgstr "评论（RSS）"
