@@ -522,6 +522,10 @@ blockquote cite:before {
   margin: 0 10px;
 }
 
+.more-content {
+  margin-bottom: 20px;
+}
+
 div.ribbon-top {
   position: relative;
   margin-left: -15px;
