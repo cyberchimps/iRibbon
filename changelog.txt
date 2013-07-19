@@ -2,8 +2,12 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
-Version 2.0.0.0 (07/15/13)
+Version 2.0.1 (7-19-13)
+- Added default text for boxes element.
+- New HTML structure for password protected page/post.
+- Typography improvement: implemented dfferent font family for headings and text, both in theme option and customizer.
 
+Version 2.0.0 (07/15/13)
 - Initial setup
 
 iRibbon Changelog
