@@ -2,6 +2,11 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.2 (7-26-13)
+- Added upsell page listing all CyberChimps themes.
+- Added one click plugin instalation support for "Easy Digital Download".
+- Added polish language support.
+
 Version 2.0.1 (7-19-13)
 - Added default text for boxes element.
 - New HTML structure for password protected page/post.
