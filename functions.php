@@ -111,40 +111,28 @@ function cyberchimps_options_theme_name(){
 }
 //Doc's URL
 function cyberchimps_options_documentation_url() {
-    $url = 'http://cyberchimps.com/help/';
+    $url = 'http://cyberchimps.com/guides/c-free/';
     return $url;
 }
 // Support Forum URL
 function cyberchimps_options_support_forum() {
-    $url = 'http://cyberchimps.com/forum/free/';
-    return $url;
-}
-//Page Options Help URL
-function cyberchimps_options_page_options_help() {
-    $url = 'http://cyberchimps.com/element-how-tos/';
-    return $url;
-}
-// Slider Options Help URL
-function cyberchimps_options_slider_options_help() {
-    $url = 'http://cyberchimps.com/faq/how-to-use-the-ifeature-pro-slider/';
+    $url = 'http://cyberchimps.com/forum/free/iribbon-free/';
     return $url;
 }
 add_filter( 'cyberchimps_current_theme_name', 'cyberchimps_options_theme_name', 1 );
 add_filter( 'cyberchimps_documentation', 'cyberchimps_options_documentation_url' );
 add_filter( 'cyberchimps_support_forum', 'cyberchimps_options_support_forum' );
-add_filter( 'cyberchimps_page_options_help', 'cyberchimps_options_page_options_help' );
-add_filter( 'cyberchimps_slider_options_help', 'cyberchimps_options_slider_options_help' );
 
 //upgrade bar
-function cyberchimps_upgrade_title(){
+function cyberchimps_upgrade_bar_pro_title(){
     $title = 'iRibbon Pro 2';
     return $title;
 }
 function cyberchimps_upgrade_link(){
-    $link = 'http://cyberchimps.com/iribbon-pro/';
+    $link = 'http://cyberchimps.com/store/iribbon-pro/';
     return $link;
 }
-add_filter( 'cyberchimps_upgrade_pro_title', 'cyberchimps_upgrade_title' );
+add_filter( 'cyberchimps_upgrade_pro_title', 'cyberchimps_upgrade_bar_pro_title' );
 add_filter( 'cyberchimps_upgrade_link', 'cyberchimps_upgrade_link' );
 
 // Help Section
