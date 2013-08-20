@@ -277,7 +277,7 @@ function cyberchimps_after_widget_title( $title ) {
 
     $title = $title . $after_title;
 
-    return $after_title;
+    return $title;
 }
 
 add_filter( 'cyberchimps_after_widget_title', 'cyberchimps_after_widget_title', 10, 1 );
