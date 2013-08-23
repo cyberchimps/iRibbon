@@ -2,6 +2,11 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.6 (8-23-13)
+- Social icons reordering.
+- Upsell page update: Updated screenshot and info of Neuro Pro.
+- Fixed IE 9 widget issue.
+
 Version 2.0.5 (8-16-13)
 - Fixed heading typography.
 - Footer copyright - allow all html through.
