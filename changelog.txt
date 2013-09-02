@@ -3,9 +3,10 @@ iRibbon Pro 2 Changelog
 ****************************
 
 Version 2.0.7 (8-30-13)
-- Added new class for metabox options.
+- Removed new meta-box options due to unresolved bug that affected some users.
 
 Version 2.0.6 (8-23-13)
+- Added new class for metabox options.
 - Social icons reordering.
 - Upsell page update: Updated screenshot and info of Neuro Pro.
 - Fixed IE 9 widget issue.
