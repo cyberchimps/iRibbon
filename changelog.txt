@@ -2,6 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.13 (10-11-13)
+- Changed ID name separator to (_) from (-) for elements/boxes.php
+
 Version 2.0.12 (10-4-13)
 - Minified JS.
 - Reformatted code( Replaced spaces with tabs ).
