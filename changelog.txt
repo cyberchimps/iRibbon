@@ -2,6 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.15 (10-28-13)
+- Slider lite ID separator change from (-) to(_). Changed affected JS and CSS.
+
 Version 2.0.14 (10-18-13)
 - Container width fix.
 - Added class cc-responsive if responisve design is on.
