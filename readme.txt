@@ -30,6 +30,10 @@ iRibbon responsive Wordpress theme
 - by David Furfero http://touchpunch.furf.com/
 - dual licensed under the MIT or GPL Version 2 licenses.
 
+- Lobster
+- by Google http://www.google.com/fonts
+- licensed under the SIL Open Font License, 1.1 (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) Google.com
+
 - All other images
 - by CyberChimps http://cyberchimps.com
 - Licensed under GNU General Public License v3.0 - http://www.gnu.org/licenses/gpl-3.0.html
