@@ -99,21 +99,20 @@ if( post_password_required() ) {
 
 <?php
 /* If comment is allowed on the post and the post is not password protected then display form to give comment. */
-if( comments_open() && !post_password_required() ) {
+if( comments_open() && ! post_password_required() ) {
+	$args = apply_filters( 'comment_form_defaults', array('title_reply' => __( 'Leave a comment', 'cyberchimps' ) ) );
 	?>
 	<div id="respond_wrapper">
 
 		<div class="ribbon-top">
 			<div class="ribbon-more"></div>
-			<h2 class="respond-title">Leave a Reply</h2>
-
+			<h2 class="respond-title"><?php comment_form_title( $args['title_reply'] ); ?></h2>
 			<div class="ribbon-shadow"></div>
-		</div>
-		<!-- ribbon top -->
+		</div><!-- ribbon top -->
 
 		<div id="respond">
 			<?php
-			if( get_option( 'comment_registration' ) && !is_user_logged_in() ) {
+			if( get_option('comment_registration') && !is_user_logged_in() ) {
 				?>
 				<p>
 					<?php
