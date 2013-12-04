@@ -6,6 +6,9 @@ Version 2.0.20 (12-04-13)
 - Image size fix: Hooked add_image_size to after_setup_theme.
 - Deleted unused images.
 - Added TGM class to recommend responsive Add Ons.
+- Removed Google Analytics option (requested by WordPress).
+- Removed theme redirection (requested by WordPress).
+- Fixed comments title reply text so it can be overridden.
 
 Version 2.0.19 (11-15-13)
 - Added new background image option.
