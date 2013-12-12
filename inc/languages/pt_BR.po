@@ -139,8 +139,8 @@ msgid "%1$s at %2$s"
 msgstr "%1$s às %2$s"
 
 #: ../../functions.php
-msgid "iRibbon, an elegant, responsive Wordpress theme"
-msgstr "iRibbon, um tema de Wordpress elegante, ágil"
+msgid "iRibbon, an elegant, responsive WordPress theme"
+msgstr "iRibbon, um tema de WordPress elegante, ágil"
 
 #: ../../image.php
 msgid "Published"

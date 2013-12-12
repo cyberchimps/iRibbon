@@ -116,7 +116,7 @@ msgstr "WordPress"
 #: ../../sidebar.php
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "Funziona con Wordpress."
+msgstr "Funziona con WordPress."
 
 #: ../../functions.php
 msgid "Pingback:"
@@ -139,8 +139,8 @@ msgid "%1$s at %2$s"
 msgstr "%1$s in %2$s"
 
 #: ../../functions.php
-msgid "iRibbon, an elegant, responsive Wordpress theme"
-msgstr "iRibbon, un tema di Wordpress elegante, reattivo"
+msgid "iRibbon, an elegant, responsive WordPress theme"
+msgstr "iRibbon, un tema di WordPress elegante, reattivo"
 
 #: ../../image.php
 msgid "Published"

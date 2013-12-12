@@ -1,4 +1,4 @@
-iRibbon responsive Wordpress theme
+iRibbon responsive WordPress theme
 ====================================
 
 - iRibbon, Copyright 2013

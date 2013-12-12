@@ -140,7 +140,7 @@ msgid "%1$s at %2$s"
 msgstr "%1$s %2$s"
 
 #: ../../functions.php
-msgid "iRibbon, an elegant, responsive Wordpress theme"
+msgid "iRibbon, an elegant, responsive WordPress theme"
 msgstr "iRibbon、エレガントな応答性の高いワードプレスのテーマ"
 
 #: ../../image.php

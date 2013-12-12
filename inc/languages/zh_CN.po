@@ -137,8 +137,8 @@ msgid "%1$s at %2$s"
 msgstr "%1$s于%2$s"
 
 #: ../../functions.php
-msgid "iRibbon, an elegant, responsive Wordpress theme"
-msgstr "iRibbon，优雅、 反应灵敏的 Wordpress 主题"
+msgid "iRibbon, an elegant, responsive WordPress theme"
+msgstr "iRibbon，优雅、 反应灵敏的 WordPress 主题"
 
 #: ../../image.php
 msgid "Published"
