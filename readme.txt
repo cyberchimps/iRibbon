@@ -34,6 +34,21 @@ iRibbon responsive WordPress theme
 - by Google http://www.google.com/fonts
 - licensed under the SIL Open Font License, 1.1 (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) Google.com
 
+- Retina.js v1.1.0
+- adds the ability to load HD images to devices that can display them
+- Copyright 2013 Imulus, LLC
+- licensed under the MIT license
+
+- Glyphicons
+- fonticons for arrows, visual links etc
+- http://http://glyphicons.com/
+- licensed under APLv2 - https://github.com/twitter/bootstrap/blob/master/LICENSE
+
+- Mono Social Icons Font
+- adds social font icons
+- http://drinchev.github.io/monosocialiconsfont/
+- Licensed under SIL Open Font License
+
 - All other images
 - by CyberChimps http://cyberchimps.com
 - Licensed under GNU General Public License v3.0 - http://www.gnu.org/licenses/gpl-3.0.html
