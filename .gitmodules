@@ -3,4 +3,4 @@
 	url = ../core.git
 [submodule "elements"]
 	path = elements
-	url = ../elementslite.git
+	url = https://github.com/cyberchimps/elementslite.git
