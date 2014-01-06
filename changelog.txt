@@ -2,6 +2,10 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.245 (1-6-14)
+- Modified Helvetica font-family.
+- Removed translation of a variable.
+
 Version 2.0.24 (12-23-13)
 - Fixed drag and drop font icons on page options.
 - Added metabox field type unfiltered_textarea.
