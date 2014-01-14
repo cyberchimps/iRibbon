@@ -2,7 +2,11 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
-Version 2.0.245 (1-6-14)
+Version 2.0.26 (1-14-14)
+- Changed blog layout option text.
+- Fixed upload button not working issue with child themes.
+
+Version 2.0.25 (1-6-14)
 - Modified Helvetica font-family.
 - Removed translation of a variable.
 
