@@ -2,6 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.30 (2-11-14)
+- Updated Translation.
+
 Version 2.0.29 (2-5-14)
 - Fixed multiple thumbnails issue on image attachment page.
 - Fixed image load issue for boxes element.
