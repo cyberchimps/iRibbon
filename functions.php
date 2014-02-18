@@ -17,6 +17,7 @@
 function cyberchimps_text_domain() {
 	load_theme_textdomain( 'iribbon', get_template_directory() . '/inc/languages' );
 }
+add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );

@@ -2,6 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.31 (2-18-14)
+- Slider is made to be start sliding on page load.
+
 Version 2.0.30 (2-11-14)
 - Updated Translation.
 
