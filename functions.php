@@ -137,7 +137,7 @@ function cyberchimps_options_documentation_url() {
 
 // Support Forum URL
 function cyberchimps_options_support_forum() {
-	$url = 'http://cyberchimps.com/forum/free/iribbon-free/';
+	$url = 'http://cyberchimps.com/forum/free/iribbon/';
 
 	return $url;
 }
