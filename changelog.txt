@@ -2,6 +2,10 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.35 (3-21-14)
+- Updated support forum URL.
+- Fixed IE8 compatibility issue.
+
 Version 2.0.34 (3-12-14)
 - Fixed duplicate plugin install notification in option page.
 - Modified "More Themes" page to show up all CyberChimps free theme with option to install/activate right there.
