@@ -2,6 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.36 (3-27-14)
+- Updated Elements Translation.
+
 Version 2.0.35 (3-21-14)
 - Updated support forum URL.
 - Fixed IE8 compatibility issue.
