@@ -72,19 +72,15 @@ if( cyberchimps_get_option( 'footer_show_toggle' ) == '1' ) {
 
 	<?php do_action( 'cyberchimps_after_footer_widgets' ); ?>
 
-<?php } ?>
+<?php }
 
-<?php do_action( 'cyberchimps_before_footer_container' ); ?>
-<?php do_action( 'cyberchimps_footer' ); ?>
-<?php do_action( 'cyberchimps_after_footer_container' ); ?>
+do_action('cyberchimps_before_footer_container');
+do_action('cyberchimps_footer');
+do_action('cyberchimps_after_footer_container');
+do_action('cyberchimps_after_wrapper');
 
-</div><!-- #wrapper .container-fluid -->
-
-<?php do_action( 'cyberchimps_after_wrapper' ); ?>
-
-</div><!-- container -->
-
-<?php wp_footer(); ?>
+wp_footer();
+?>
 
 </body>
 </html>
