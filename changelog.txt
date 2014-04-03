@@ -2,6 +2,11 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.37 (4-3-14)
+- Added new background option.
+- Removed wp_register_style(or script) for local css/js files.
+- removed extra </div>.
+
 Version 2.0.36 (3-27-14)
 - Updated Elements Translation.
 
