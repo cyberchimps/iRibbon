@@ -2,6 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.49 (6-20-14)
+- Code reformatting: Changed spaces to tabs.
+
 Version 2.0.48 (6-13-14)
 - Code reformatted: Changed spaces to tabs.
 
