@@ -2,6 +2,10 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.55 (8-08-14)
+- Fixed conflict of footer widgets with other widgets.
+- Responsive fix for uploaded video.
+
 Version 2.0.54 (7-25-14)
 - Layout fixed for multiple rows of footer widget.
 
