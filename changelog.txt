@@ -2,6 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.58 (9-24-14)
+- Placeholder fix for IE8/9.
+
 Version 2.0.57 (9-08-14)
 - Added iFeature slider to plugin suggestion list.
 
