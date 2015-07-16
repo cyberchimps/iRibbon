@@ -2,6 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.62 (16-07-15)
+- Change in theme customizer as per wordpress.org guidelines
+
 Version 2.0.61 (1-23-15)
 - Fixed conflict between slider free and pro plugin.
 - Added new plugin suggestion.
