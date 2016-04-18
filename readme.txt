@@ -60,3 +60,5 @@ For updated documentation, walkthroughs, and support please visit http://cyberch
 For updated docs please visit http://cyberchimps.com/guides/
 
 For the support forum please visit: http://cyberchimps.com/forum/
+
+If you are looking for more features / flexibility, check out iRibbon pro 2 ( http://cyberchimps.com/store/iribbon-pro/ )
