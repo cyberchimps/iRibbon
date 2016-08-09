@@ -2,6 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
+Version 2.0.65 (9-8-16)
+- Updated theme as per latest WordPress guidelines
+
 Version 2.0.64 (18-04-16)
 - Site font issue fixed
 

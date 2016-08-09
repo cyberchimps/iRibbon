@@ -343,4 +343,11 @@ function cyberchimps_add_google_font() {
 }
 
 add_action( 'wp_head', 'cyberchimps_add_google_font' );
+
+// enabling theme support for title tag
+function iribbon_title_setup() 
+{
+	add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'iribbon_title_setup' );
 ?>
