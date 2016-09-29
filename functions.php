@@ -350,4 +350,19 @@ function iribbon_title_setup()
 	add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'iribbon_title_setup' );
+
+
+//add header drag and drop options
+function cyberchimps_add_header_drag_and_drop_options() {
+	$options = array(
+		'cyberchimps_logo_description'  => __( 'Logo + Description', 'cyberchimps_elements' ),
+		'cyberchimps_header_content'    => __( 'Logo + Icons', 'cyberchimps_elements' ),
+		'cyberchimps_logo_search'       => __( 'Logo + Search', 'cyberchimps_elements' ),
+		'cyberchimps_logo'              => __( 'Logo', 'cyberchimps_elements' )
+	);
+
+	return $options;
+}
+
+add_filter( 'header_drag_and_drop_options', 'cyberchimps_add_header_drag_and_drop_options', 10 );
 ?>
