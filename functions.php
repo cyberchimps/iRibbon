@@ -355,10 +355,10 @@ add_action( 'after_setup_theme', 'iribbon_title_setup' );
 //add header drag and drop options
 function cyberchimps_add_header_drag_and_drop_options() {
 	$options = array(
-		'cyberchimps_logo_description'  => __( 'Logo + Description', 'cyberchimps_elements' ),
-		'cyberchimps_header_content'    => __( 'Logo + Icons', 'cyberchimps_elements' ),
-		'cyberchimps_logo_search'       => __( 'Logo + Search', 'cyberchimps_elements' ),
-		'cyberchimps_logo'              => __( 'Logo', 'cyberchimps_elements' )
+		'cyberchimps_logo_description'  => __( 'Logo + Description', 'iribbon' ),
+		'cyberchimps_header_content'    => __( 'Logo + Icons', 'iribbon' ),
+		'cyberchimps_logo_search'       => __( 'Logo + Search', 'iribbon' ),
+		'cyberchimps_logo'              => __( 'Logo', 'iribbon' )
 	);
 
 	return $options;
