@@ -2,8 +2,9 @@ iRibbon Pro 2 Changelog
 
 ****************************
 
-Version 2.1 (11-04-17)
+Version 2.1 (12-04-17)
 - Fixed issue with PHP 7.1 
+- Fixed issue with loading google fonts (used protocol relative link)
 
 Version 2.0.66 (29-09-16)
 - Fixed issue of Site tagline display and position.
