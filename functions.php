@@ -21,6 +21,7 @@ add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
+require_once( get_template_directory() . '/inc/widget.php' );
 
 // Set the content width based on the theme's design and stylesheet.
 if( !isset( $content_width ) ) {

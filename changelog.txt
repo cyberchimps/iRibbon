@@ -1,6 +1,8 @@
-iRibbon Pro 2 Changelog
+iRibbon Changelog
 
 ****************************
+Version 2.2 (15-6-17)
+- Added Recent post widget
 
 Version 2.1 (13-04-17)
 - Fixed issue with PHP 7.1 

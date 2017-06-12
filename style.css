@@ -4,7 +4,7 @@ Theme URI: http://www.cyberchimps.com/iribbon/
 Author: CyberChimps
 Author URI: http://www.cyberchimps.com/
 Description: iRibbon is a fully Responsive Drag & Drop Starter WordPress Theme that adds amazing new functionality to your WordPress website. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device. Please use the <a href="http://cyberchimps.com/forum/">official support forum</a> (http://cyberchimps.com/forum/). Thank you.
-Version: 2.1
+Version: 2.2
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats, theme-options, sticky-post
 Text Domain: iribbon
 License: GNU General Public License version 3
@@ -1312,3 +1312,16 @@ table#wp-calendar td {
 .navbar-search {
     margin-right: 19%;
 }
+.iribbon_recent_posts_li .post-date {
+    float: left;
+    position: relative;
+    text-align: center;
+    margin: -1px 33px 0px 0px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.iribbon_recent_posts_li {margin-bottom:20px;}
+.iribbon_recent_posts_li .post-date .post-day {font-size: 20px;font-weight:900;}
+.iribbon_recent_posts_li .post-date .post-month {font-size:12px}
+.iribbon_recent_posts_li .recent_post_title {display: block;}
+.iribbon_recent_posts_li .post-content .txt { font-size:12px;}
+.iribbon_recent_posts_li .post-content {overflow: hidden;}
