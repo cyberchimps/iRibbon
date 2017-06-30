@@ -1,6 +1,10 @@
 iRibbon Changelog
 
 ****************************
+Version 2.3 (07/05/17)
+- Added visible edit links in the customizer
+- Added Snapchat social icon option
+
 Version 2.2 (15-6-17)
 - Added Recent post widget
 
