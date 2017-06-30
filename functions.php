@@ -366,4 +366,55 @@ function cyberchimps_add_header_drag_and_drop_options() {
 }
 
 add_filter( 'header_drag_and_drop_options', 'cyberchimps_add_header_drag_and_drop_options', 10 );
-?>
+
+
+function iRibbon_add_icon_theme_options( $fields_list ) {
+
+// Snapchat
+	$fields_list[] = array(
+		'name'    => __( 'Snapchat', 'cyberchimps_core' ),
+		'id'      => 'social_snapchat',
+		'type'    => 'toggle',
+		'section' => 'cyberchimps_header_social_section',
+		'heading' => 'cyberchimps_header_heading'
+	);
+
+	$fields_list[] = array(
+		'name'    => __( 'Snapchat URL', 'cyberchimps_core' ),
+		'id'      => 'snapchat_url',
+		'class'   => 'social_snapchat_toggle',
+		'std'     => 'https://snapchat.com/add/',
+		'type'    => 'text',
+		'section' => 'cyberchimps_header_social_section',
+		'heading' => 'cyberchimps_header_heading'
+	);
+
+	return apply_filters( 'cyberchimps_field_filter', $fields_list );
+}
+
+add_filter( 'cyberchimps_field_list', 'iRibbon_add_icon_theme_options', 20 );
+
+add_action( 'customize_register', 'iRibbon_add_icon_customizer', 20 );
+function iRibbon_add_icon_customizer( $wp_customize )
+{
+// Add Snapchat Setting
+    $wp_customize->add_setting( 'cyberchimps_options[social_snapchat]', array(
+        'sanitize_callback' => 'cyberchimps_sanitize_checkbox',
+        'type' => 'option'
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_snapchat', array(
+        'label' => __( 'Display Snapchat?', 'cyberchimps_core' ),
+        'section' => 'cyberchimps_social_media',
+        'settings' => 'cyberchimps_options[social_snapchat]',
+        'type' => 'checkbox'
+    ) ) );
+    $wp_customize->add_setting( 'cyberchimps_options[snapchat_url]', array(
+        'sanitize_callback' => 'esc_url_raw',
+        'type' => 'option'
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'snapchat_url', array(
+        'label' => __( 'Snapchat URL', 'cyberchimps_core' ),
+        'section' => 'cyberchimps_social_media',
+        'settings' => 'cyberchimps_options[snapchat_url]'
+    ) ) );
+}

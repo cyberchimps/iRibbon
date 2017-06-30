@@ -1325,3 +1325,9 @@ table#wp-calendar td {
 .iribbon_recent_posts_li .recent_post_title {display: block;}
 .iribbon_recent_posts_li .post-content .txt { font-size:12px;}
 .iribbon_recent_posts_li .post-content {overflow: hidden;}
+
+/********* Snapchat Icon ************/
+a.symbol.snapchat:before {
+	font-family: "FontAwesome";
+	content: "\f2ab";
+}
