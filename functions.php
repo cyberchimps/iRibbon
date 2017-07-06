@@ -366,4 +366,103 @@ function cyberchimps_add_header_drag_and_drop_options() {
 }
 
 add_filter( 'header_drag_and_drop_options', 'cyberchimps_add_header_drag_and_drop_options', 10 );
-?>
+
+
+function iRibbon_add_icon_theme_options( $fields_list ) {
+
+// Snapchat
+	$fields_list[] = array(
+		'name'    => __( 'Snapchat', 'cyberchimps_core' ),
+		'id'      => 'social_snapchat',
+		'type'    => 'toggle',
+		'section' => 'cyberchimps_header_social_section',
+		'heading' => 'cyberchimps_header_heading'
+	);
+
+	$fields_list[] = array(
+		'name'    => __( 'Snapchat URL', 'cyberchimps_core' ),
+		'id'      => 'snapchat_url',
+		'class'   => 'social_snapchat_toggle',
+		'std'     => 'https://snapchat.com/add/',
+		'type'    => 'text',
+		'section' => 'cyberchimps_header_social_section',
+		'heading' => 'cyberchimps_header_heading'
+	);
+
+	return apply_filters( 'cyberchimps_field_filter', $fields_list );
+}
+
+add_filter( 'cyberchimps_field_list', 'iRibbon_add_icon_theme_options', 20 );
+
+add_action( 'customize_register', 'iRibbon_add_icon_customizer', 20 );
+function iRibbon_add_icon_customizer( $wp_customize )
+{
+// Add Snapchat Setting
+    $wp_customize->add_setting( 'cyberchimps_options[social_snapchat]', array(
+        'sanitize_callback' => 'cyberchimps_sanitize_checkbox',
+        'type' => 'option'
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_snapchat', array(
+        'label' => __( 'Display Snapchat?', 'cyberchimps_core' ),
+        'section' => 'cyberchimps_social_media',
+        'settings' => 'cyberchimps_options[social_snapchat]',
+        'type' => 'checkbox'
+    ) ) );
+    $wp_customize->add_setting( 'cyberchimps_options[snapchat_url]', array(
+        'sanitize_callback' => 'esc_url_raw',
+        'type' => 'option'
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'snapchat_url', array(
+        'label' => __( 'Snapchat URL', 'cyberchimps_core' ),
+        'section' => 'cyberchimps_social_media',
+        'settings' => 'cyberchimps_options[snapchat_url]'
+    ) ) );
+}
+
+function iRibbon_customize_register( $wp_customize ) {
+   $wp_customize->get_setting( 'blogname' )->transport          = 'postMessage';
+   $wp_customize->get_setting( 'blogdescription' )->transport   = 'postMessage';
+
+   $wp_customize->selective_refresh->add_partial( 'blogname', array(
+'selector' => '.site-title a',
+) );
+
+	$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
+		'selector' => '.blog-description p',
+	) );
+
+	$wp_customize->selective_refresh->add_partial( 'nav_menu_locations[primary]', array(
+		'selector' => '.navbar-inner',
+	) );
+
+	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[footer_copyright_text]', array(
+		'selector' => '#copyright',
+	) );
+
+	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[theme_backgrounds]', array(
+		'selector' => '#social',
+	) );
+
+	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[sidebar_images]', array(
+		'selector' => '#content',
+	) );
+	
+	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[custom_logo]', array(
+		'selector' => '#logo',
+	) );
+		
+	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[searchbar]', array(
+		'selector' => '#navigation #searchform',
+	) );
+
+}
+function iRibbon_customize_partial_blogname() {
+bloginfo( 'name' );
+}
+
+function iRibbon_customize_partial_blogdescription() {
+	bloginfo( 'description' );
+}
+
+add_action( 'customize_register', 'iRibbon_customize_register', 30 );
+add_theme_support( 'customize-selective-refresh-widgets' );
