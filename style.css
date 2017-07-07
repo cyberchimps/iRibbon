@@ -1331,3 +1331,12 @@ a.symbol.snapchat:before {
 	font-family: "FontAwesome";
 	content: "\f2ab";
 }
+
+.legacy-icons a.symbol.snapchat, .round-icons a.symbol.snapchat
+{
+  background-color: #ffff00;
+}
+.legacy-icons a.symbol.instagram, .round-icons a.symbol.instagram
+{
+  background-color: #8B4513;
+}
