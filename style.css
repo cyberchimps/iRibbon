@@ -3,9 +3,9 @@ Theme Name: iRibbon
 Theme URI: http://www.cyberchimps.com/iribbon/
 Author: CyberChimps
 Author URI: http://www.cyberchimps.com/
-Description: iRibbon is a fully Responsive Drag & Drop Starter WordPress Theme that has a unique style, designed to invoke nostalgia. It has a retro vintage style look for hipsters - complete with ribbons and widgets to match. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device.  For Support - <a href=" https://cyberchimps.com/forum/free/iribbon/"> Support Forum</a> ( https://cyberchimps.com/forum/free/iribbon/)
+Description: iRibbon is a fully Responsive Drag & Drop Starter WordPress Theme that has a unique style, designed to invoke nostalgia. It has a retro vintage style look for hipsters - complete with ribbons and widgets to match. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device.  For Support - <a href="https://cyberchimps.com/forum/free/iribbon/"> Support Forum</a> ( https://cyberchimps.com/forum/free/iribbon/). View<a href="https://demos.cyberchimps.com/iribbon/"> iRibbon Demo</a> ( https://demos.cyberchimps.com/iribbon/).
 Version: 2.3
-Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats,footer-widgets,blog, theme-options, sticky-post
+Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats,footer-widgets,blog, theme-options, sticky-post, custom-header, custom-logo, threaded-comments
 Text Domain: iribbon
 License: GNU General Public License version 3
 License URI: http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
@@ -1330,4 +1330,13 @@ table#wp-calendar td {
 a.symbol.snapchat:before {
 	font-family: "FontAwesome";
 	content: "\f2ab";
+}
+
+.legacy-icons a.symbol.snapchat, .round-icons a.symbol.snapchat
+{
+  background-color: #ffff00;
+}
+.legacy-icons a.symbol.instagram, .round-icons a.symbol.instagram
+{
+  background-color: #8B4513;
 }
