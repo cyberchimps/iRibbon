@@ -48,6 +48,7 @@
 <body <?php body_class(); ?>>
 
 <!-- ---------------- Header --------------------- -->
+<div id="header_section">
 <div class="container-full-width" id="header_section">
 	<div class="container">
 		<?php do_action( 'cyberchimps_before_wrapper' ); ?>
@@ -126,5 +127,6 @@
 	<!-- .container -->
 </div>
 <!-- #navigation_menu -->
+</div>
 
 <?php do_action( 'cyberchimps_after_navigation' ); ?>
