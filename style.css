@@ -1340,3 +1340,15 @@ a.symbol.snapchat:before {
 {
   background-color: #8B4513;
 }
+/* ====== Sticky Header ============= */
+
+.sticky-header
+{
+    background-color: #fff;
+    opacity:0.9;
+    height: 20%;
+}
+.sticky-header #cc-header
+{
+    margin: 5px 0;
+}
