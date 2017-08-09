@@ -22,6 +22,14 @@ add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 require_once( get_template_directory() . '/inc/widget.php' );
+require_once( get_template_directory() . '/inc/testimonial_template.php' );
+
+function iribbon_enqueue()
+{
+    $directory_uri  = get_template_directory_uri();
+    wp_enqueue_script( 'jquery-flexslider', $directory_uri . '/inc/js/jquery.flexslider.js', 'jquery', '', true );
+}
+add_action( 'wp_enqueue_scripts', 'iribbon_enqueue' );
 
 // Set the content width based on the theme's design and stylesheet.
 if( !isset( $content_width ) ) {
@@ -466,3 +474,10 @@ function iRibbon_customize_partial_blogdescription() {
 
 add_action( 'customize_register', 'iRibbon_customize_register', 30 );
 add_theme_support( 'customize-selective-refresh-widgets' );
+function iribbon_set_defaults()
+{
+
+remove_action('testimonial', array( CyberChimpsTestimonial::instance(), 'render_display' ));
+add_action('testimonial', 'iribbon_testimonial_render_display');  
+}
+add_action( 'init', 'iribbon_set_defaults' );
