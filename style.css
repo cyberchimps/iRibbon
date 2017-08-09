@@ -1347,8 +1347,22 @@ a.symbol.snapchat:before {
     background-color: #fff;
     opacity:0.9;
     height: 20%;
+    min-height: 140px;
 }
 .sticky-header #cc-header
 {
     margin: 5px 0;
+}
+
+@media all and (max-width: 767px) {
+    .sticky-header{
+        padding: 0 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        transition: none;
+    }
+    .sticky-header #register
+    {
+        display: none;
+    }
 }
