@@ -481,3 +481,74 @@ remove_action('testimonial', array( CyberChimpsTestimonial::instance(), 'render_
 add_action('testimonial', 'iribbon_testimonial_render_display');  
 }
 add_action( 'init', 'iribbon_set_defaults' );
+add_action( 'admin_notices', 'my_admin_notice' );
+function my_admin_notice(){
+
+	$admin_check_screen = get_admin_page_title();
+
+	if( !class_exists('SlideDeckPlugin') )
+	{
+	$plugin='slidedeck/slidedeck.php';
+	$slug = 'slidedeck';
+	$installed_plugins = get_plugins();
+
+	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	{
+		?>
+		<div class="notice notice-info is-dismissible" style="margin-top:15px;">
+		<p>
+			<?php if( isset( $installed_plugins[$plugin] ) )
+			{
+			?>
+				 <a href="<?php echo admin_url( 'plugins.php' ); ?>">Activate the SlideDeck Lite plugin</a>
+			 <?php
+			}
+			else
+			{
+			 ?>
+			 <a href="<?php echo wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=' . $slug ), 'install-plugin_' . $slug ); ?>">Install the SlideDeck Lite plugin</a>
+			 <?php } ?>
+
+		</p>
+		</div>
+		<?php
+	}
+	}
+
+	if( !class_exists('WPForms') )
+	{
+	$plugin = 'wpforms-lite/wpforms.php';
+	$slug = 'wpforms-lite';
+	$installed_plugins = get_plugins();
+	 if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	{
+		?>
+		<div class="notice notice-info is-dismissible" style="margin-top:15px;">
+		<p>
+			<?php if( isset( $installed_plugins[$plugin] ) )
+			{
+			?>
+				 <a href="<?php echo admin_url( 'plugins.php' ); ?>">Activate the WPForms Lite plugin</a>
+			 <?php
+			}
+			else
+			{
+			 ?>
+	 		 <a href="<?php echo wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=' . $slug ), 'install-plugin_' . $slug ); ?>">Install the WP Forms Lite plugin</a>
+			 <?php } ?>
+		</p>
+		</div>
+		<?php
+	}
+	}
+
+	if ( $admin_check_screen == 'Manage Themes' || $admin_check_screen == 'Theme Options Page' )
+	{
+	?>
+		<div class="notice notice-success is-dismissible">
+				<b><p>Liked this theme? <a href="https://wordpress.org/support/theme/iribbon/reviews/#new-post" target="_blank">Leave us</a> a ***** rating. Thank you! </p></b>
+		</div>
+		<?php
+	}
+	
+}
