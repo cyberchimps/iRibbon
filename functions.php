@@ -367,7 +367,8 @@ function cyberchimps_add_header_drag_and_drop_options() {
 		'cyberchimps_logo_description'  => __( 'Logo + Description', 'iribbon' ),
 		'cyberchimps_header_content'    => __( 'Logo + Icons', 'iribbon' ),
 		'cyberchimps_logo_search'       => __( 'Logo + Search', 'iribbon' ),
-		'cyberchimps_logo'              => __( 'Logo', 'iribbon' )
+		'cyberchimps_logo'              => __( 'Logo', 'iribbon' ),
+                'cyberchimps_sitename_contact'  => __( 'Logo + Contact', 'iribbon' ),
 	);
 
 	return $options;

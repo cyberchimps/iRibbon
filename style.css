@@ -1485,6 +1485,11 @@ a.symbol.snapchat:before {
 .contactus_wrapper{
     padding: 6% 0 3% 0;
     color: #fff;
+   
+}
+.contactus_wrapper.span12
+{
+     margin: 0 auto;
 }
 #map_contact_section{
     margin: 60px 0 0 0;
@@ -1535,4 +1540,19 @@ a.symbol.snapchat:before {
 {
     padding: 20px 30px;
 }
+}
+/* ========================== Contact details in header  =========================== */
+
+.contact_details{
+    font-family: lobster,cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.contact_details:before{
+    font-family: "FontAwesome";
+    content: "\f095";
+}
+#register
+{
+    padding: 12px 0 0 0;
 }
