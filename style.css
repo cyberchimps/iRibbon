@@ -97,7 +97,7 @@ header {
 }
 
 .site-title, .box-widget-title, .entry-title, .widget-title, .recent_posts_post_title,
-#callout_section_section, .carousel_caption, .cyberchimps-product-title, .respond-title, .comments-title, #portfolio_pro_section h2, #ht_testimonial_top h2 {
+#callout_section_section, .carousel_caption, .cyberchimps-product-title, .respond-title, .comments-title, #portfolio_pro_section h2, #ht_testimonial_top h2, #contact_us h2 {
   font-family: lobster, cursive;
 }
 
@@ -1481,3 +1481,58 @@ a.symbol.snapchat:before {
     bottom: -10%; }
   #testimonial_section .flexslider#carousel2 {
     width: 100%; } }
+/* =============================== Contact Section  ========================== */
+.contactus_wrapper{
+    padding: 6% 0 3% 0;
+    color: #fff;
+}
+#map_contact_section{
+    margin: 60px 0 0 0;
+}
+#contact_us input[type="text"], #contact_us textarea{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+.contact_left_sec{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.fa
+{
+    font-size: 30px;
+}
+.contact_right_sec input[type="submit"]
+{
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #cd834a 0%, #9e663d 100%) repeat scroll 0 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-family: lobster,cursive;
+    font-size: 17.5px;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 55px;
+    margin: 2% 32%;
+    
+    
+}
+.contact_title{
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;  
+    font-size: 1.8em;
+}
+
+@media all and (max-width: 767px) {
+.contact_left_sec
+{
+    text-align: center;
+}
+.contactus_wrapper.span12
+{
+    padding: 20px 30px;
+}
+}
