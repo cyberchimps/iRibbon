@@ -1495,12 +1495,12 @@ a.symbol.snapchat:before {
     margin: 60px 0 0 0;
 }
 #contact_us input[type="text"], #contact_us textarea{
-    width: 100%;
-    padding: 15px;
+    width: 96%;
+    padding: 10px;
     border: none;
     border-radius: 2px;
     margin-bottom: 12px;
-    box-sizing: border-box;
+   
 }
 .contact_left_sec{
     font-size: 16px;
