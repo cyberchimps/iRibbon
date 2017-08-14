@@ -2,9 +2,9 @@
 /* Testimonial */
 
 // Modifying testimonial fields in page
-add_filter('cyberchimps_testimonial_metabox_fields', 'happy_thoughts_testimonial_page_metabox_fields');
+add_filter('cyberchimps_testimonial_metabox_fields', 'iribbon_testimonial_page_metabox_fields');
 
-function happy_thoughts_testimonial_page_metabox_fields( $fields )
+function iribbon_testimonial_page_metabox_fields( $fields )
 {
 	$fields[] = array(
 			'name'    => __( 'Testimonial title', 'cyberchimps_core' ),
@@ -20,9 +20,9 @@ function happy_thoughts_testimonial_page_metabox_fields( $fields )
 
 
 // Modifying testimonial for each post type- testimonial
-add_filter('cyberchimps_testimonial_single_metabox_fields', 'happy_thoughts_testimonial_each_metabox_fields');
+add_filter('cyberchimps_testimonial_single_metabox_fields', 'iribbon_testimonial_each_metabox_fields');
 
-function happy_thoughts_testimonial_each_metabox_fields( $fields )
+function iribbon_testimonial_each_metabox_fields( $fields )
 {
 	// remove testimonial text as text and add as textarea
 	$elements = count($fields);
