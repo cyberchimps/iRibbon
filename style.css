@@ -4,7 +4,7 @@ Theme URI: http://www.cyberchimps.com/iribbon/
 Author: CyberChimps
 Author URI: http://www.cyberchimps.com/
 Description: iRibbon is a fully Responsive Drag & Drop Starter WordPress Theme that has a unique style, designed to invoke nostalgia. It has a retro vintage style look for hipsters - complete with ribbons and widgets to match. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device.  For Support - <a href="https://cyberchimps.com/forum/free/iribbon/"> Support Forum</a> ( https://cyberchimps.com/forum/free/iribbon/). View<a href="https://demos.cyberchimps.com/iribbon/"> iRibbon Demo</a> ( https://demos.cyberchimps.com/iribbon/).
-Version: 2.4
+Version: 2.5
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats,footer-widgets,blog, theme-options, sticky-post, custom-header, custom-logo, threaded-comments
 Text Domain: iribbon
 License: GNU General Public License version 3
@@ -97,7 +97,7 @@ header {
 }
 
 .site-title, .box-widget-title, .entry-title, .widget-title, .recent_posts_post_title,
-#callout_section_section, .carousel_caption, .cyberchimps-product-title, .respond-title, .comments-title, #portfolio_pro_section h2 {
+#callout_section_section, .carousel_caption, .cyberchimps-product-title, .respond-title, .comments-title, #portfolio_pro_section h2, #ir_testimonial_top h2, #contact_us h2 {
   font-family: lobster, cursive;
 }
 
@@ -1365,4 +1365,194 @@ a.symbol.snapchat:before {
     {
         display: none;
     }
+}
+/*============= Testimonial ==========*/
+
+#testimonial_section
+{
+    margin-bottom: 35px;
+}
+#testimonial_section
+{
+    margin: 5% 0 10% 0;
+}
+.ir_main_title{
+      margin-top: 80px;
+      text-align: center;
+      font-size: 1.8em;
+  }
+@media all and (max-width: 480px) {
+  #testimonial_section
+  {
+       margin-top: 60px; 
+  }  
+}
+
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.slides.ir_carousel {
+  max-width: 100%;
+  display: inline-block;
+  padding-top: 20px;
+  width: auto !important; }
+
+  #testimonial_section .ir_short_desc {
+    margin-top: 80px; }
+
+#testimonial_section {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%; }
+  #testimonial_section .img-responsive {
+    -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+            border-radius: 100%;
+    border: 5px solid #fff; }
+  #testimonial_section .flexslider {
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
+  #testimonial_section .ir_slider_text_img {
+    color: #fff; }
+    #testimonial_section .ir_slider_text_img li {
+      text-align: center; }
+  #testimonial_section .ir_slider_text_img:before {
+    content: url(./lib/images/testimonials01.png);
+    position: absolute;
+    top: 26%;
+    left: 6%; }
+  #testimonial_section .ir_slider_text_img:after {
+    content: url(./lib/images/testimonials02.png);
+    position: absolute;
+    top: 26%;
+    right: 6%; }
+  #testimonial_section .ir_testimonial_author {
+    font-weight: 600;
+    font-size: 1.125em; }
+  #testimonial_section .ir_testimonial_abt_author {
+    font-weight: 500;
+    margin-bottom: 12%; }
+  #testimonial_section .after_testimonial_text {
+    margin: 25px auto;
+    padding: 0;
+    max-width: 84px;
+    border: 0;
+    border-top: solid 2px #cd834a;
+    text-align: center;
+    background: transparent; }
+  #testimonial_section #carousel2.flexslider {
+    position: absolute;
+    bottom: -20%; }
+  #testimonial_section .flex-active-slide img {
+    border-color: #cd834a; }
+  #testimonial_section .flex-active-slide .arrow-top {
+    position: absolute;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #e14c3d;
+    border-left: 10px solid transparent;
+    top: 12px;
+    left: 13%; }
+  #testimonial_section .flex-viewport {
+    text-align: center; }
+  testimonial_section .flexslider .slides {
+    padding-bottom: 30px; }
+  
+  #testimonial_section{
+      color: #fff;
+      position: relative;
+      font-size: 16px;
+  }
+  .ir_main_title{
+      margin-top: 80px;
+      text-align: center;
+  }
+  .flex-direction-nav{
+      display: none;
+  }
+
+@media all and (max-width: 480px) {
+  #testimonial_section #carousel2.flexslider {
+    bottom: -10%; }
+  #testimonial_section .flexslider#carousel2 {
+    width: 100%; } }
+/* =============================== Contact Section  ========================== */
+.contactus_wrapper{
+    padding: 6% 0 3% 0;
+    color: #fff;
+   
+}
+.contactus_wrapper.span12
+{
+     margin: 0 auto;
+}
+#map_contact_section{
+    margin: 60px 0 0 0;
+}
+#contact_us input[type="text"], #contact_us textarea{
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 12px;
+   
+}
+.contact_left_sec{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.fa
+{
+    font-size: 30px;
+}
+.contact_right_sec input[type="submit"]
+{
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #cd834a 0%, #9e663d 100%) repeat scroll 0 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-family: lobster,cursive;
+    font-size: 17.5px;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 55px;
+    margin: 2% 32%;
+    
+    
+}
+.contact_title{
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;  
+    font-size: 1.8em;
+}
+
+@media all and (max-width: 767px) {
+.contact_left_sec
+{
+    text-align: center;
+}
+.contactus_wrapper.span12
+{
+    padding: 20px 30px;
+}
+}
+/* ========================== Contact details in header  =========================== */
+
+.contact_details{
+    font-family: lobster,cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.contact_details:before{
+    font-family: "FontAwesome";
+    content: "\f095";
+}
+#register
+{
+    padding: 12px 0 0 0;
 }

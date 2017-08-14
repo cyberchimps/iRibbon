@@ -2,6 +2,11 @@ iRibbon Changelog
 
 ****************************
 
+Version 2.5 (08/16/17)
+- Added Testimonial Element
+- Added Contact Us Element
+- Added option to display phone number in header
+
 Version 2.4 (08/11/17)
 - Added Sticky Header feature
 
