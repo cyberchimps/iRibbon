@@ -8,7 +8,7 @@ function iribbon_testimonial_page_metabox_fields( $fields )
 {
 	$fields[] = array(
 			'name'    => __( 'Testimonial title', 'cyberchimps_core' ),
-			'id'      => 'ht_testimonial_title',
+			'id'      => 'ir_testimonial_title',
 			'class'   => '',
 			'std'     => '',
 			'type'    => 'text'			
@@ -40,14 +40,14 @@ function iribbon_testimonial_each_metabox_fields( $fields )
 	}
 	$fields[] = array(
 			'name'    => __( 'About the author', 'cyberchimps_core' ),
-			'id'      => 'ht_testimonial_abt_author',
+			'id'      => 'ir_testimonial_abt_author',
 			'class'   => '',
 			'std'     => '',
 			'type'    => 'text'			
 		);
 	$fields[] = array(
 			'name'    => __( 'Testimonial text', 'cyberchimps_core' ),
-			'id'      => 'ht_testimonial_text',
+			'id'      => 'ir_testimonial_text',
 			'class'   => '',
 			'std'     => '',
 			'type'    => 'textarea'			
@@ -63,16 +63,17 @@ function iribbon_testimonial_render_display()
 
 	if(is_page())
 	{
-		$ht_testimonial_title = get_post_meta( $post->ID, 'ht_testimonial_title', true );
-		$ht_testimonial_desc = get_post_meta( $post->ID, 'ht_testimonial_desc', true );
+		$ir_testimonial_title = get_post_meta( $post->ID, 'ir_testimonial_title', true );
+               
+		$ir_testimonial_desc = get_post_meta( $post->ID, 'ir_testimonial_desc', true );
 		$testimonial_background = get_post_meta( $post->ID, 'testimonial_background', true );
 		$testimonial_category = get_post_meta( $post->ID, 'testimonial_category', true );			
 
 	}
 	else
 	{
-		$ht_testimonial_title = cyberchimps_get_option('ht_testimonial_title');
-		$ht_testimonial_desc = cyberchimps_get_option('ht_testimonial_desc');
+		$ir_testimonial_title = cyberchimps_get_option('ir_testimonial_title');
+		$ir_testimonial_desc = cyberchimps_get_option('ir_testimonial_desc');
 		$testimonial_background = cyberchimps_get_option('testimonial_background');
 		$testimonial_category = cyberchimps_get_option( 'testimonial_categories');
 	} 
@@ -154,13 +155,13 @@ function iribbon_testimonial_render_display()
 				$testimonial_posts2 = get_posts( $testimonial_args );
 
 ?>
-	<div id="ht_testimonial_top">
-		<?php if( !empty($ht_testimonial_title) || !empty($ht_testimonial_desc) ) { ?>
+	<div id="ir_testimonial_top">
+		<?php if( !empty($ir_testimonial_title) || !empty($ir_testimonial_desc) ) { ?>
 			
 		
-				<?php if(!empty($ht_testimonial_title)) { ?>
-				<h2 class="ht_main_title">
-					<?php echo $ht_testimonial_title; ?>
+				<?php if(!empty($ir_testimonial_title)) { ?>
+				<h2 class="ir_main_title">
+					<?php echo $ir_testimonial_title; ?>
 				</h2>
 				<?php } ?>
 		
@@ -169,7 +170,7 @@ function iribbon_testimonial_render_display()
 	</div> 
 
 
-      <section class="ht_slider_text_img">
+      <section class="ir_slider_text_img">
         <div id="slider2" class="flexslider">
           <ul class="slides">
 			<?php	foreach( $testimonial_posts2 as $post3 ) {
@@ -177,20 +178,20 @@ function iribbon_testimonial_render_display()
 
 					/* Post-specific variables */
 					$testimonial_author    = get_post_meta( $post3->ID, 'testimonial_author_name', true );
-					$testimonial_text    = get_post_meta( $post3->ID, 'ht_testimonial_text', true );
-					$ht_testimonial_abt_author = get_post_meta( $post3->ID, 'ht_testimonial_abt_author', true ); ?>
+					$testimonial_text    = get_post_meta( $post3->ID, 'ir_testimonial_text', true );
+					$ir_testimonial_abt_author = get_post_meta( $post3->ID, 'ir_testimonial_abt_author', true ); ?>
 
 				<li class="col-md-12">
-					<span class="ht_testimonial_text"><?php echo $testimonial_text; ?></span>
+					<span class="ir_testimonial_text"><?php echo $testimonial_text; ?></span>
 					<?php if(!empty($testimonial_text))
 							{ ?>
 							<hr class="after_testimonial_text"> </hr>
 					<?php } ?>
-					<div class="ht_testimonial_author">
+					<div class="ir_testimonial_author">
 						<?php echo $testimonial_author; ?>
 					</div>
-					<div class="ht_testimonial_abt_author">
-						<?php echo $ht_testimonial_abt_author; ?>
+					<div class="ir_testimonial_abt_author">
+						<?php echo $ir_testimonial_abt_author; ?>
 					</div>
 				</li>
 			<?php  } ?>
@@ -200,7 +201,7 @@ function iribbon_testimonial_render_display()
         </div>
 	<?php $slide_counters = 0; ?>
         <div id="carousel2" class="flexslider">
-          <ul class="slides ht_carousel" >
+          <ul class="slides ir_carousel" >
 			<?php	foreach( $testimonial_posts2 as $post2 ) {
 
 					/* Post-specific variables */
