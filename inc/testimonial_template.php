@@ -12,8 +12,27 @@ function iribbon_testimonial_render_display()
 	{
 		$ir_testimonial_title = get_post_meta( $post->ID, 'ir_testimonial_title', true );
  		$testimonial_background = get_post_meta( $post->ID, 'testimonial_background', true );
-		$testimonial_category = get_post_meta( $post->ID, 'testimonial_category', true );			
-
+		 // Get testimonial images		
+                $testimonials[0]['img'] = get_post_meta( $post->ID, 'cyberchimps_blog_testimonial_image_one', true );
+                $testimonials[1]['img'] = get_post_meta( $post->ID, 'cyberchimps_blog_testimonial_image_two', true );
+                $testimonials[2]['img'] = get_post_meta( $post->ID, 'cyberchimps_blog_testimonial_image_three', true );
+                
+                 // get testimonial clients
+                $testimonials[0]['client'] = get_post_meta( $post->ID, 'cyberchimps_blog_client_one', true );
+                $testimonials[1]['client'] = get_post_meta( $post->ID, 'cyberchimps_blog_client_two', true );
+                $testimonials[2]['client'] = get_post_meta( $post->ID, 'cyberchimps_blog_client_three', true );
+                
+                // get testimonial  - about clients
+                $testimonials[0]['client_abt'] = get_post_meta( $post->ID, 'cyberchimps_blog_client_abt_one', true );
+                $testimonials[1]['client_abt'] = get_post_meta( $post->ID, 'cyberchimps_blog_client_abt_two', true );
+                $testimonials[2]['client_abt'] = get_post_meta( $post->ID, 'cyberchimps_blog_client_abt_three', true );
+                
+                  // get testimonial  - about clients
+                
+                $testimonials[0]['text'] = get_post_meta( $post->ID, 'cyberchimps_testimonial_one_text', true );
+                $testimonials[1]['text'] = get_post_meta( $post->ID, 'cyberchimps_testimonial_two_text', true );
+                $testimonials[2]['text'] = get_post_meta( $post->ID, 'cyberchimps_testimonial_three_text', true );
+                
 	}
 	else
 	{
@@ -141,7 +160,12 @@ function iribbon_testimonial_render_display()
         <div id="slider2" class="flexslider">
           <ul class="slides">
 			<?php	foreach( $testimonials as $testimonial) {
-        					?>
+                           
+
+					/* Post-specific variables */
+					//$testimonial_author    = get_post_meta( $post3->ID, 'testimonial_author_name', true );
+					//$testimonial_text    = get_post_meta( $post3->ID, 'ir_testimonial_text', true );
+					//$ir_testimonial_abt_author = get_post_meta( $post3->ID, 'ir_testimonial_abt_author', true ); ?>
 
 				<li class="col-md-12">
 					<span class="ir_testimonial_text"><?php echo $testimonial['text']; ?></span>
