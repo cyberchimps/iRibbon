@@ -75,7 +75,8 @@ function iribbon_testimonial_render_display()
 		$ir_testimonial_title = cyberchimps_get_option('ir_testimonial_title');
 		$ir_testimonial_desc = cyberchimps_get_option('ir_testimonial_desc');
 		$testimonial_background = cyberchimps_get_option('testimonial_background');
-		$testimonial_category = cyberchimps_get_option( 'testimonial_categories');
+		$testimonial_category_id = cyberchimps_get_option( 'testimonial_categories');
+                $testimonial_category = get_cat_name($testimonial_category_id);
 	} 
         $skin_color = cyberchimps_get_option('cyberchimps_skin_color');
         ?>
