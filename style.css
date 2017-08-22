@@ -1422,16 +1422,7 @@ a.symbol.snapchat:before {
     color: #fff; }
     #testimonial_section .ir_slider_text_img li {
       text-align: center; }
-  #testimonial_section .ir_slider_text_img:before {
-    content: url(./lib/images/testimonials01.png);
-    position: absolute;
-    top: 26%;
-    left: 6%; }
-  #testimonial_section .ir_slider_text_img:after {
-    content: url(./lib/images/testimonials02.png);
-    position: absolute;
-    top: 26%;
-    right: 6%; }
+
   #testimonial_section .ir_testimonial_author {
     font-weight: 600;
     font-size: 1.125em; }
@@ -1480,7 +1471,15 @@ a.symbol.snapchat:before {
   #testimonial_section #carousel2.flexslider {
     bottom: -10%; }
   #testimonial_section .flexslider#carousel2 {
-    width: 100%; } }
+    width: 100%; }
+  header#cc-header .contact_details {
+  float: none;
+    }
+    #testimonial_section .ir_testimonial_abt_author{
+       margin-bottom: 16%; 
+    }
+
+}
 /* =============================== Contact Section  ========================== */
 .contactus_wrapper{
     padding: 6% 0 3% 0;
@@ -1532,14 +1531,20 @@ a.symbol.snapchat:before {
 }
 
 @media all and (max-width: 767px) {
-.contact_left_sec
-{
-    text-align: center;
-}
-.contactus_wrapper.span12
-{
-    padding: 20px 30px;
-}
+    .contact_left_sec
+    {
+        text-align: center;
+    }
+    .contactus_wrapper.span12
+    {
+        padding: 20px 30px;
+    }
+    .contact_addr {
+    padding-bottom: 10px;
+    }
+    .ir_testimonial_text{
+    padding: 0 20px;
+    }
 }
 /* ========================== Contact details in header  =========================== */
 

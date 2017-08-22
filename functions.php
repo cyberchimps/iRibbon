@@ -23,6 +23,7 @@ add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 require_once( get_template_directory() . '/inc/widget.php' );
 require_once( get_template_directory() . '/inc/testimonial_template.php' );
+require( get_template_directory() . '/inc/admin-about.php' );
 
 function iribbon_enqueue()
 {
