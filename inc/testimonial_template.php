@@ -160,24 +160,19 @@ function iribbon_testimonial_render_display()
         <div id="slider2" class="flexslider">
           <ul class="slides">
 			<?php	foreach( $testimonials as $testimonial) {
-                           
-
-					/* Post-specific variables */
-					//$testimonial_author    = get_post_meta( $post3->ID, 'testimonial_author_name', true );
-					//$testimonial_text    = get_post_meta( $post3->ID, 'ir_testimonial_text', true );
-					//$ir_testimonial_abt_author = get_post_meta( $post3->ID, 'ir_testimonial_abt_author', true ); ?>
+        					 ?>
 
 				<li class="col-md-12">
-					<span class="ir_testimonial_text"><?php echo $testimonial['text']; ?></span>
+                                    <span class="ir_testimonial_text"><?php if(!empty($testimonial['text'])){echo $testimonial['text'];} ?></span>
 					<?php if(!empty($testimonial['text']))
 							{ ?>
 							<hr class="after_testimonial_text"> </hr>
 					<?php } ?>
 					<div class="ir_testimonial_author">
-						<?php echo $testimonial['client']; ?>
+                                                <?php  if(!empty($testimonial['client'])){echo $testimonial['client'];} ?>
 					</div>
 					<div class="ir_testimonial_abt_author">
-						<?php echo $testimonial['client_abt']; ?>
+                                                <?php if(!empty($testimonial['client_abt'])){echo $testimonial['client_abt'];} ?>
 					</div>
 				</li>
 			<?php  } ?>
@@ -189,7 +184,7 @@ function iribbon_testimonial_render_display()
         <div id="carousel2" class="flexslider">
           <ul class="slides ir_carousel" >
 			<?php	foreach( $testimonials as $testimonial ) {
-                          
+                          if(!empty($testimonial['img'])){
 
 					/* Post-specific variables */
 					//$image    = get_post_meta( $post2->ID, 'testimonial_post_image', true );
@@ -203,7 +198,9 @@ function iribbon_testimonial_render_display()
 						
 					</li>
 			<?php  $slide_counters++; 
-					} ?>
+					} 
+                        } 
+                                        ?>
   	    		
             
           </ul>
