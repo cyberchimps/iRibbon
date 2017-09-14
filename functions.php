@@ -380,6 +380,8 @@ add_filter( 'header_drag_and_drop_options', 'cyberchimps_add_header_drag_and_dro
 
 function iRibbon_add_icon_theme_options( $fields_list ) {
 
+	$imagepath = get_template_directory_uri() . '/images/ribbons/';
+
 // Snapchat
 	$fields_list[] = array(
 		'name'    => __( 'Snapchat', 'cyberchimps_core' ),
@@ -399,6 +401,20 @@ function iRibbon_add_icon_theme_options( $fields_list ) {
 		'heading' => 'cyberchimps_header_heading'
 	);
 
+	// ribbon style option.
+	$fields_list[] = array(
+		'name'    => __( 'Choose your ribbon style', 'cyberchimps_core' ),
+		'id'      => 'ribbon_style',
+		'std'     => 'default',
+		'type'    => 'images',
+		'options' => apply_filters( 'cyberchimps_ribbon_style_options', array(
+			'default' => $imagepath . 'ribbon-default.png',
+			'dashed'  => $imagepath . 'ribbon-dashed.png'
+		) ),
+		'section' => 'cyberchimps_header_options_section',
+		'heading' => 'cyberchimps_header_heading'
+	);
+
 	return apply_filters( 'cyberchimps_field_filter', $fields_list );
 }
 
@@ -407,6 +423,9 @@ add_filter( 'cyberchimps_field_list', 'iRibbon_add_icon_theme_options', 20 );
 add_action( 'customize_register', 'iRibbon_add_icon_customizer', 20 );
 function iRibbon_add_icon_customizer( $wp_customize )
 {
+
+	$imagepath = get_template_directory_uri() . '/images/ribbons/';
+
 // Add Snapchat Setting
     $wp_customize->add_setting( 'cyberchimps_options[social_snapchat]', array(
         'sanitize_callback' => 'cyberchimps_sanitize_checkbox',
@@ -427,6 +446,24 @@ function iRibbon_add_icon_customizer( $wp_customize )
         'section' => 'cyberchimps_social_media',
         'settings' => 'cyberchimps_options[snapchat_url]'
     ) ) );
+
+	// ribbon style option.
+	$ribbon_styles = apply_filters( 'cyberchimps_ribbon_style_options', array(
+        'default' => $imagepath . 'ribbon-default.png',
+        'dashed' => $imagepath . 'ribbon-dashed.png'
+            ) );
+	$wp_customize->add_setting( 'cyberchimps_options[ribbon_style]', array(
+            'default' => 'default',
+            'type' => 'option',
+            'sanitize_callback' => 'cyberchimps_text_sanitization'
+        ) );
+
+        $wp_customize->add_control( new Cyberchimps_skin_selector( $wp_customize, 'ribbon_style', array(
+            'label' => __( 'Choose your ribbon style', 'cyberchimps_core' ),
+            'section' => 'cyberchimps_header_section',
+            'settings' => 'cyberchimps_options[ribbon_style]',
+            'choices' => $ribbon_styles,
+        ) ) );
 }
 
 function iRibbon_customize_register( $wp_customize ) {
@@ -554,3 +591,14 @@ remove_action('testimonial', array( CyberChimpsTestimonial::instance(), 'render_
 add_action('testimonial', 'iribbon_testimonial_render_display');  
 }
 add_action( 'init', 'iribbon_set_defaults' );
+
+add_action( 'wp_enqueue_scripts', 'iribbon_ribbon_styles', 30 );
+/** 
+ * Add styles for ribbon selection
+ */
+function iribbon_ribbon_styles() {
+	$ribbon_style = cyberchimps_get_option( 'ribbon_style' );
+	if( $ribbon_style != 'default' ) {
+		wp_enqueue_style( 'ribbon-style', get_template_directory_uri() . '/inc/css/ribbons/' . $ribbon_style . '.css', array( 'style' ), '1.0' );
+	}
+}
