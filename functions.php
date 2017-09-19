@@ -626,7 +626,6 @@ add_action('wp_head', 'iribbon_check_searchbar');
  */
 function iribbon_check_searchbar()
 {
-error_log("q");
 	$check_searchbar = cyberchimps_get_option('searchbar');
 	if( $check_searchbar )
 	{
