@@ -2,7 +2,7 @@ iRibbon Changelog
 
 ****************************
 
-Version 2.6 (09/22/17)
+Version 2.6 (09/20/17)
 - Added new ribbon style
 
 Version 2.5 (08/22/17)
