@@ -22,7 +22,6 @@
 #navigation:after, #navigation:before
 {
 	position: absolute;
-	top: 72px;
 	width: 0;
 	height: 0;	
 	border-style: solid;
@@ -34,18 +33,19 @@
 	border-width: 12px 14px 0 0;
 	right:20px;
 	z-index:-1;
+	bottom: 18px;
 }
 #navigation:before
 {
 	border-width: 12px 0 0 14px;
 	border-color: #563535 transparent transparent;
+	top: 72px;
 }
 
 .navbar:before, .navbar:after
 {	
 	content: '';
 	position: absolute;
-	top: 18px;
 	display: block;
 	width: 56px;
 	height: 66px;
@@ -54,12 +54,14 @@
 .navbar:before
 {
 	left: -35px;
+	top: 18px;
 	background: url("../../../images/backgrounds/ribbon-dashed-left-default.png");
 }
 
 .navbar:after
 {
 	right: -35px;
+	bottom: 18px;
 	background: url("../../../images/backgrounds/ribbon-dashed-right-default.png");
 }
 
@@ -76,7 +78,7 @@
 .ribbon-right
 {
 	right: -15px;
-	top: 9px;
+	bottom: -21px;
 }
 
 #navigation .navbar-inner
@@ -117,6 +119,10 @@
 		float: none;
 		display: inline-block;
 	}
+	.dropdown-menu
+	{
+		text-align:left;
+	}
 }
 @media all and (max-width:979px)
 {
@@ -135,6 +141,14 @@
 	.navbar:before, .navbar:after
 	{
 		top:8px;
+	}
+	.main-navigation .nav-collapse
+	{
+		padding:0;
+	}
+	.navbar .nav
+	{
+		text-align:left;
 	}
 }
 @media all and (max-width:767px)

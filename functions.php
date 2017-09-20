@@ -403,7 +403,7 @@ function iRibbon_add_icon_theme_options( $fields_list ) {
 
 	// ribbon style option.
 	$fields_list[] = array(
-		'name'    => __( 'Choose your ribbon style', 'cyberchimps_core' ),
+		'name'    => __( 'Choose your ribbon style for menu', 'cyberchimps_core' ),
 		'id'      => 'ribbon_style',
 		'std'     => 'default',
 		'type'    => 'images',
@@ -459,7 +459,7 @@ function iRibbon_add_icon_customizer( $wp_customize )
         ) );
 
         $wp_customize->add_control( new Cyberchimps_skin_selector( $wp_customize, 'ribbon_style', array(
-            'label' => __( 'Choose your ribbon style', 'cyberchimps_core' ),
+            'label' => __( 'Choose your ribbon style for menu', 'cyberchimps_core' ),
             'section' => 'cyberchimps_header_section',
             'settings' => 'cyberchimps_options[ribbon_style]',
             'choices' => $ribbon_styles,
@@ -600,5 +600,45 @@ function iribbon_ribbon_styles() {
 	$ribbon_style = cyberchimps_get_option( 'ribbon_style' );
 	if( $ribbon_style != 'default' ) {
 		wp_enqueue_style( 'ribbon-style', get_template_directory_uri() . '/inc/css/ribbons/' . $ribbon_style . '.css', array( 'style' ), '1.0' );
+	}
+}
+
+add_filter( 'body_class', 'iribbon_ribbon_style_body_classes' );
+/**
+ * Add ribbon style selector classes to the body classes.
+ *
+ * @param array $classes Current body classes.
+ */
+function iribbon_ribbon_style_body_classes( array $classes ) {
+
+	$ribbon_style_type = cyberchimps_get_option( 'ribbon_style' );
+
+	if ( $ribbon_style_type )
+		$classes[] = 'ribbon-'.$ribbon_style_type;
+
+	return $classes;
+
+}
+
+add_action('wp_head', 'iribbon_check_searchbar');
+/**
+ * Function to check if searchbar is displayed in menu
+ */
+function iribbon_check_searchbar()
+{
+	$check_searchbar = cyberchimps_get_option('searchbar');
+	if( $check_searchbar )
+	{
+		?>
+		<style>
+			@media all and (min-width:980px) {
+				.ribbon-dashed .navbar .nav
+				{
+					float:left;
+				}
+			}
+		</style>
+
+		<?php
 	}
 }

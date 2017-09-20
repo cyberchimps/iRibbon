@@ -141,7 +141,7 @@ function cyberchimps_display_about() {
 			</table>
 		</div>
 		<div class="buy">
-		<a class="button button-primary buylink" target="_blank" href="https://cyberchimps.com/store/iribbon-pro/">Buy iRibbon Pro 2</a>
+		<a class="button button-primary buylink" target="_blank" href="https://cyberchimps.com/store/iribbon-pro/?utm_source=about">Buy iRibbon Pro 2</a>
 		</div>
 	</div>
 <?php
