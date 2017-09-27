@@ -1,6 +1,10 @@
 iRibbon Changelog
 
 ****************************
+Version 2.7 (09/28/17)
+- Fixed Horizontal scrollbar issue for responsive screens
+- Fixed ribbon image thumbnail size issue in the customizer
+- Fixed scrollbar issue in the menu for responsive screens
 
 Version 2.6 (09/20/17)
 - Added new ribbon style

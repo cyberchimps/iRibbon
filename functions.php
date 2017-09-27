@@ -642,3 +642,17 @@ function iribbon_check_searchbar()
 		<?php
 	}
 }
+
+/* To reduce the thumbnail size of the ribbon images */
+add_action( 'admin_menu', 'iribbon_modern_skin_css');
+function iribbon_modern_skin_css()
+{
+?>
+<style>
+#customize-control-ribbon_style img
+{
+    height: 50px;
+}
+</style>
+<?php
+}
