@@ -644,8 +644,8 @@ function iribbon_check_searchbar()
 }
 
 /* To reduce the thumbnail size of the ribbon images */
-add_action( 'admin_menu', 'ifeaturepro_modern_skin_css');
-function ifeaturepro_modern_skin_css()
+add_action( 'admin_menu', 'iribbonpro_modern_skin_css');
+function iribbonpro_modern_skin_css()
 {
 ?>
 <style>
