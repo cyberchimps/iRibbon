@@ -19,6 +19,7 @@
 	<?php
 	//echo ( 'post' == get_post_type() && !is_single() || is_search() );
 
+
 	if( 'page' == get_post_type() ) {
 
 		// get the page title toggle option
@@ -78,7 +79,11 @@
 	?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+<?php
+		if(cyberchimps_get_option('sidebar_images')=="three-column")
+		{
+			iribbon_featured_image(); 
+		}?>
 		<header class="entry-header">
 
 			<?php
@@ -132,7 +137,10 @@
 		<?php
 		elseif( is_page() ): ?>
 			<div class="entry-summary">
-				<?php cyberchimps_featured_image(); ?>
+		<?php		if(cyberchimps_get_option('sidebar_images')!=="three-column")
+				{
+				 cyberchimps_featured_image();
+				}?>
 				<?php the_content(); ?>
 			</div><!-- .entry-summary -->
 
@@ -140,11 +148,18 @@
 		elseif( is_home() ) : // blog post pages ?>
 			<?php if( cyberchimps_get_option( 'post_excerpts', 0 ) ): ?>
 				<div class="entry-summary">
-					<?php cyberchimps_featured_image(); ?>
+		<?php		if(cyberchimps_get_option('sidebar_images')!=="three-column")
+				{
+				 cyberchimps_featured_image();
+				}?>
 					<?php the_excerpt(); ?>
 				</div>
 			<?php else: ?>
 				<div class="entry-content">
+			<?php	if(cyberchimps_get_option('sidebar_images')!=="three-column")
+				{
+				 cyberchimps_featured_image();
+				}?>
 					<?php cyberchimps_featured_image(); ?>
 					<?php the_content( __( 'Continue reading', 'iribbon' ) . ' <span class="meta-nav">&rarr;</span>' ); ?>
 					<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'iribbon' ), 'after' => '</div>' ) ); ?>

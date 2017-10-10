@@ -628,6 +628,11 @@ function iribbon_ribbon_styles() {
 	if( $ribbon_style != 'default' ) {
 		wp_enqueue_style( 'ribbon-style', get_template_directory_uri() . '/inc/css/ribbons/' . $ribbon_style . '.css', array( 'style' ), '1.0' );
 	}
+	
+	if(cyberchimps_get_option('sidebar_images')=="three-column")
+	{
+	wp_enqueue_style( 'three-column-blog', get_template_directory_uri() . '/inc/css/blog-layout/three-column.css', array( 'style' ), '1.0' );
+	}
 }
 
 add_filter( 'body_class', 'iribbon_ribbon_style_body_classes' );
@@ -683,3 +688,36 @@ function iribbon_modern_skin_css()
 </style>
 <?php
 }
+
+add_action( 'blog_layout_options', 'iribbon_blog_templates');
+function iribbon_blog_templates()
+{
+$imagepath = get_template_directory_uri() . '/cyberchimps/lib/images/';
+
+$vat=array(
+			'full_width'    => $imagepath . '1col.png',
+			'right_sidebar' => $imagepath . '2cr.png',
+			'three-column' => get_template_directory_uri() . '/images/3col.png'
+	);
+
+
+return $vat;
+}
+
+function iribbon_featured_image() {
+	global $post;
+
+		$show = ( cyberchimps_get_option( 'post_featured_images', 1 ) ) ? cyberchimps_get_option( 'post_featured_images', 1 ) : false;
+
+
+	if( $show ):
+		if( has_post_thumbnail() ): ?>
+			<div class="featured-image">
+				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'cyberchimps_core' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+					<?php the_post_thumbnail( apply_filters( 'cyberchimps_post_thumbnail_size', 'full' ) ); ?>
+				</a>
+			</div>
+		<?php    endif;
+	endif;
+}
+
