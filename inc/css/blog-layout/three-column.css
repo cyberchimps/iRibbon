@@ -29,7 +29,7 @@
     margin-left: 0;
 }
 
-@media (min-width: 750px) {
+@media screen and (max-width: 980px) and (min-width: 750px) {
 .blog .article-wrapper {
     width: 28%;
     }
