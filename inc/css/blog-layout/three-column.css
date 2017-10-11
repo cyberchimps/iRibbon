@@ -22,6 +22,11 @@
 
 .blog .page-title {
     text-align: center;
+    margin:0;
+}
+
+.blog .page-header {
+    margin-bottom:15px;
 }
 
 .blog article .comments-link, .blog article .no-of-comments {
