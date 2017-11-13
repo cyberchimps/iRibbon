@@ -48,15 +48,19 @@ function cyberchimps_display_about() {
 	$theme      = wp_get_theme();
 	?>
 	<div class="about-container">
-
-		<div class="about-info">
-			<h1><?php echo "iRibbon - ".$theme['Version'] ?></h1>
+		
+			<div>
+					<h1 class="heading"><?php echo "iRibbon - ".$theme['Version'] ?></h1>
+					<a href='https://wordpress.org/support/theme/iribbon/reviews/#new-post' target="_blank" style='margin-top: 22px' class="button button-primary"><?php _e('Leave a star rating')?></a>
+		
 			<?php
 				$directory_uri = get_template_directory_uri();
 
 			?>
-			<span><img src="<?php echo $directory_uri ?>/images/logo.png"></span>
-			<?php printf( '<p>iRibbon is a fully Responsive Drag & Drop Starter WordPress Theme that has a unique style, designed to invoke nostalgia. It has a retro vintage style look for hipsters - complete with ribbons and widgets to match. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device.</p>'
+			</div>
+			<div class="about-info">
+				<span><img src="<?php echo $directory_uri ?>/images/logo.png"></span>
+				<?php printf( '<p>iRibbon is a fully Responsive Drag & Drop Starter WordPress Theme that has a unique style, designed to invoke nostalgia. It has a retro vintage style look for hipsters - complete with ribbons and widgets to match. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device.</p>'
 			); ?>
 		</div>
 

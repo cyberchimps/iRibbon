@@ -172,6 +172,13 @@ function cyberchimps_upgrade_link() {
 add_filter( 'cyberchimps_upgrade_pro_title', 'cyberchimps_upgrade_bar_pro_title' );
 add_filter( 'cyberchimps_upgrade_link', 'cyberchimps_upgrade_link' );
 
+function cyberchimps_rating_link()
+{
+	$link = 'https://wordpress.org/support/theme/iribbon/reviews/#new-post/';
+	return $link.'';
+}
+add_filter( 'cyberchimps_rating_link', 'cyberchimps_rating_link' );
+
 // Help Section
 function cyberchimps_options_help_header() {
 	$text = 'iRibbon';
@@ -611,6 +618,54 @@ function my_admin_notice(){
 	}
 	
 }
+
+function iribbon_custom_category_widget( $arg ) {
+	$excludecat = get_theme_mod( 'cyberchimps_exclude_post_cat' );
+
+	if( $excludecat ){
+		$excludecat = array_diff( array_unique( $excludecat ), array('') );
+		$arg["exclude"] = $excludecat;
+	}
+	return $arg;
+}
+add_filter( "widget_categories_args", "iribbon_custom_category_widget" );
+add_filter( "widget_categories_dropdown_args", "iribbon_custom_category_widget" );
+
+function iribbon_exclude_post_cat_recentpost_widget(){
+	$s = '';
+	$i = 1;
+	$excludecat = get_theme_mod( 'cyberchimps_exclude_post_cat' );
+
+	if( $excludecat ){
+		$excludecat = array_diff( array_unique( $excludecat ), array('') );
+		foreach( $excludecat as $c ){
+			$i++;
+			$s .= '-'.$c;
+			if( count($cat) >= $i )
+				$s .= ', ';
+		}
+	}
+
+	$exclude = array( 'cat' => $s );
+
+	return $exclude;
+}
+add_filter( "widget_posts_args", "iribbon_exclude_post_cat_recentpost_widget" );
+
+if( !function_exists('iribbon_exclude_post_cat') ) :
+function iribbon_exclude_post_cat( $query ){		
+	$excludecat = get_theme_mod( 'cyberchimps_exclude_post_cat' );
+
+	if( $excludecat && ! is_admin() && $query->is_main_query() ){
+		$excludecat = array_diff( array_unique( $excludecat ), array('') );
+		if( $query->is_home() || $query->is_archive() ) {
+			$query->set( 'category__not_in', $excludecat );			
+		}
+	}
+}
+endif;
+add_filter( 'pre_get_posts', 'iribbon_exclude_post_cat' );
+
 function iribbon_set_defaults()
 {
 
