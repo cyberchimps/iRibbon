@@ -24,6 +24,7 @@ require_once( get_template_directory() . '/cyberchimps/init.php' );
 require_once( get_template_directory() . '/inc/widget.php' );
 require_once( get_template_directory() . '/inc/testimonial_template.php' );
 require( get_template_directory() . '/inc/admin-about.php' );
+require( get_template_directory() . '/inc/functions-demodata.php' );
 
 function iribbon_enqueue()
 {
@@ -641,7 +642,7 @@ function iribbon_exclude_post_cat_recentpost_widget(){
 		foreach( $excludecat as $c ){
 			$i++;
 			$s .= '-'.$c;
-			if( count($cat) >= $i )
+			if( count($excludecat) >= $i )
 				$s .= ', ';
 		}
 	}
