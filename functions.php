@@ -175,7 +175,7 @@ add_filter( 'cyberchimps_upgrade_link', 'cyberchimps_upgrade_link' );
 
 function cyberchimps_demodata()
 {
-	$link = 'cyberchimps.com/checkout/?add-to-cart=277266';
+	$link = 'https://cyberchimps.com/checkout/?add-to-cart=277266';
 	return $link.'';
 }
 add_filter( 'cyberchimps_demodata', 'cyberchimps_demodata' );
