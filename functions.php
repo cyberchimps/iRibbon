@@ -24,7 +24,7 @@ require_once( get_template_directory() . '/cyberchimps/init.php' );
 require_once( get_template_directory() . '/inc/widget.php' );
 require_once( get_template_directory() . '/inc/testimonial_template.php' );
 require( get_template_directory() . '/inc/admin-about.php' );
-require( get_template_directory() . '/inc/functions-demodata.php' );
+//require( get_template_directory() . '/inc/functions-demodata.php' );
 
 function iribbon_enqueue()
 {
@@ -173,6 +173,12 @@ function cyberchimps_upgrade_link() {
 add_filter( 'cyberchimps_upgrade_pro_title', 'cyberchimps_upgrade_bar_pro_title' );
 add_filter( 'cyberchimps_upgrade_link', 'cyberchimps_upgrade_link' );
 
+function cyberchimps_demodata()
+{
+	$link = 'cyberchimps.com/checkout/?add-to-cart=277266';
+	return $link.'';
+}
+add_filter( 'cyberchimps_demodata', 'cyberchimps_demodata' );
 function cyberchimps_rating_link()
 {
 	$link = 'https://wordpress.org/support/theme/iribbon/reviews/#new-post/';
@@ -613,7 +619,7 @@ function my_admin_notice(){
 	{
 	?>
 		<div class="notice notice-success is-dismissible">
-				<b><p>Liked this theme? <a href="https://wordpress.org/support/theme/iribbon/reviews/#new-post" target="_blank">Leave us</a> a ***** rating. Thank you! </p></b>
+				<b><p>Liked this theme? <a href="https://wordpress.org/support/theme/iribbon/reviews/#new-post" target="_blank">Leave </a> a ***** rating. Thank you! </p></b>
 		</div>
 		<?php
 	}
