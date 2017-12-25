@@ -24,7 +24,6 @@ require_once( get_template_directory() . '/cyberchimps/init.php' );
 require_once( get_template_directory() . '/inc/widget.php' );
 require_once( get_template_directory() . '/inc/testimonial_template.php' );
 require( get_template_directory() . '/inc/admin-about.php' );
-//require( get_template_directory() . '/inc/functions-demodata.php' );
 
 function iribbon_enqueue()
 {
@@ -638,7 +637,7 @@ function iribbon_custom_category_widget( $arg ) {
 add_filter( "widget_categories_args", "iribbon_custom_category_widget" );
 add_filter( "widget_categories_dropdown_args", "iribbon_custom_category_widget" );
 
-function iribbon_exclude_post_cat_recentpost_widget(){
+function iribbon_exclude_post_cat_recentpost_widget($array){
 	$s = '';
 	$i = 1;
 	$excludecat = get_theme_mod( 'cyberchimps_exclude_post_cat' );
@@ -652,10 +651,9 @@ function iribbon_exclude_post_cat_recentpost_widget(){
 				$s .= ', ';
 		}
 	}
-
-	$exclude = array( 'cat' => $s );
-
-	return $exclude;
+	$array['cat']=array($s);	
+	
+	return $array;
 }
 add_filter( "widget_posts_args", "iribbon_exclude_post_cat_recentpost_widget" );
 
