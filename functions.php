@@ -168,6 +168,12 @@ function cyberchimps_upgrade_link() {
 
 	return $link;
 }
+function cyberchimps_gopro()
+{
+	$link = 'https://cyberchimps.com/store/ifeaturepro#whygopro';
+	return $link;
+}
+add_filter( 'cyberchimps_gopro', 'cyberchimps_gopro' );
 
 add_filter( 'cyberchimps_upgrade_pro_title', 'cyberchimps_upgrade_bar_pro_title' );
 add_filter( 'cyberchimps_upgrade_link', 'cyberchimps_upgrade_link' );
