@@ -170,7 +170,7 @@ function cyberchimps_upgrade_link() {
 }
 function cyberchimps_gopro()
 {
-	$link = 'https://cyberchimps.com/store/ifeaturepro#whygopro';
+	$link = 'https://cyberchimps.com/store/iribbon-pro#whygopro';
 	return $link;
 }
 add_filter( 'cyberchimps_gopro', 'cyberchimps_gopro' );
