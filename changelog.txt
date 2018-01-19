@@ -1,8 +1,11 @@
 iRibbon Changelog
 
 ****************************
+Version 2.12 (01/19/18)
+- Improved admin look and feel
+
 Version 2.11 (12/26/17)
-- Look and feel changes in admin dashboard
+- Visual Improvements to the Admin Dashboard
 - Fixed Recent post widget issue (No of posts field not working)
 
 Version 2.10 (11/20/17)
