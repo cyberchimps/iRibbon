@@ -433,6 +433,20 @@ function iRibbon_add_icon_theme_options( $fields_list ) {
 		'section' => 'cyberchimps_header_options_section',
 		'heading' => 'cyberchimps_header_heading'
 	);
+	
+	$imagefooterpath = get_template_directory_uri() . '/images/footer/';
+	$fields_list[] = array(
+			'name'    => __( 'Choose Footer Widgets Layout', 'cyberchimps_core' ),
+			'id'      => 'site_footer_option',
+			'std'     => 'footer-4-col',
+			'type'    => 'images',
+			'options' => apply_filters( 'cyberchimps_footer_widget_layout', array(
+					'footer-4-col' => $imagefooterpath . 'footer-4-col.png',
+					'footer-3-col'  => $imagefooterpath . 'footer-3-col.png'
+			) ),
+			'section' => 'cyberchimps_footer_section',
+			'heading' => 'cyberchimps_footer_heading'
+	);
 
 	return apply_filters( 'cyberchimps_field_filter', $fields_list );
 }
@@ -444,6 +458,7 @@ function iRibbon_add_icon_customizer( $wp_customize )
 {
 
 	$imagepath = get_template_directory_uri() . '/images/ribbons/';
+	$imagefooterpath = get_template_directory_uri() . '/images/footer/';
 
 // Add Snapchat Setting
     $wp_customize->add_setting( 'cyberchimps_options[social_snapchat]', array(
@@ -483,6 +498,26 @@ function iRibbon_add_icon_customizer( $wp_customize )
             'settings' => 'cyberchimps_options[ribbon_style]',
             'choices' => $ribbon_styles,
         ) ) );
+	
+	// Add footer widget layout option
+	$imagefooterpath = get_template_directory_uri() . '/images/footer/';
+		$footer_layout = apply_filters( 'cyberchimps_footer_widget_layout', array(
+			'footer-4-col' => $imagefooterpath . 'footer-4-col.png',
+			'footer-3-col' => $imagefooterpath . 'footer-3-col.png'
+	) );
+	$wp_customize->add_setting( 'cyberchimps_options[site_footer_option]', array(
+			'default' => 'footer-4-col',
+			'type' => 'option',
+			'sanitize_callback' => 'cyberchimps_text_sanitization'
+	) );
+	
+	$wp_customize->add_control( new Cyberchimps_skin_selector( $wp_customize, 'site_footer_option', array(
+			'label' => __( 'Choose Footer Widgets Layout', 'cyberchimps_core' ),
+			'section' => 'cyberchimps_footer_section',
+			'settings' => 'cyberchimps_options[site_footer_option]',
+			'choices' => $footer_layout,
+	) ) );
+	 
 }
 
 function iRibbon_customize_register( $wp_customize ) {
@@ -631,6 +666,43 @@ function my_admin_notice(){
 	
 }
 
+function iribbon_footer_widget_param( $params ) 
+{
+	global $footer_widget_counter_iribbon;
+	$footer_widget_layout = cyberchimps_get_option('site_footer_option');
+	if(isset($footer_widget_layout) && $footer_widget_layout != '')
+		$layout = $footer_widget_layout;
+	else
+		$layout = '';
+
+	//Check if we are displaying "Footer Sidebar"
+	if ( $params[0]['id'] == 'cyberchimps-footer-widgets' ) {	
+
+			
+			$footer_widget_counter_iribbon++;			
+
+		//Check which footer layout is selcted
+		
+		if ($layout == 'footer-3-col')
+		{
+			// This is 3-col layout
+			$class                      = 'class="span4 ';
+			$divider = 4;
+			$params[0]['before_widget'] = preg_replace('/class="/', $class, $params[0]['before_widget'],1 );
+			//error_log($params[0]['before_widget']);			
+		}
+		else
+			$divider = 5;	
+		
+		if ( $footer_widget_counter_iribbon % $divider == 0 ) {error_log('we');
+			echo '</div> <div class="row-fluid">';
+		}
+	}
+
+	return $params;
+}
+//remove_filter( 'dynamic_sidebar_params', 'cyberchimps_footer_widgets' );
+
 function iribbon_custom_category_widget( $arg ) {
 	$excludecat = get_theme_mod( 'cyberchimps_exclude_post_cat' );
 
@@ -679,7 +751,10 @@ add_filter( 'pre_get_posts', 'iribbon_exclude_post_cat' );
 
 function iribbon_set_defaults()
 {
-
+	remove_filter( 'dynamic_sidebar_params', 'cyberchimps_footer_widgets' );
+	add_filter( 'dynamic_sidebar_params', 'iribbon_footer_widget_param' );
+	
+	
 remove_action('testimonial', array( CyberChimpsTestimonial::instance(), 'render_display' ));
 add_action('testimonial', 'iribbon_testimonial_render_display');  
 }
@@ -771,4 +846,3 @@ function iribbon_featured_image() {
 		<?php    endif;
 	endif;
 }
-
