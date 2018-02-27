@@ -677,26 +677,26 @@ function iribbon_footer_widget_param( $params )
 
 	//Check if we are displaying "Footer Sidebar"
 	if ( $params[0]['id'] == 'cyberchimps-footer-widgets' ) {	
-
-			
-			$footer_widget_counter_iribbon++;			
-
+		
+		
 		//Check which footer layout is selcted
 		
 		if ($layout == 'footer-3-col')
 		{
 			// This is 3-col layout
 			$class                      = 'class="span4 ';
-			$divider = 4;
+			$divider = 3;
 			$params[0]['before_widget'] = preg_replace('/class="/', $class, $params[0]['before_widget'],1 );
 						
 		}
 		else
-			$divider = 5;	
+			$divider = 4;	
 		
-		if ( $footer_widget_counter_iribbon % $divider == 0 ) {error_log('we');
+		if ( $footer_widget_counter_iribbon % $divider == 0 ) {
+
 			echo '</div> <div class="row-fluid">';
-		}
+		}				
+		$footer_widget_counter_iribbon++;
 	}
 
 	return $params;
