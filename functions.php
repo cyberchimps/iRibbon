@@ -689,7 +689,7 @@ function iribbon_footer_widget_param( $params )
 			$class                      = 'class="span4 ';
 			$divider = 4;
 			$params[0]['before_widget'] = preg_replace('/class="/', $class, $params[0]['before_widget'],1 );
-			//error_log($params[0]['before_widget']);			
+						
 		}
 		else
 			$divider = 5;	
@@ -701,7 +701,6 @@ function iribbon_footer_widget_param( $params )
 
 	return $params;
 }
-//remove_filter( 'dynamic_sidebar_params', 'cyberchimps_footer_widgets' );
 
 function iribbon_custom_category_widget( $arg ) {
 	$excludecat = get_theme_mod( 'cyberchimps_exclude_post_cat' );
@@ -753,10 +752,8 @@ function iribbon_set_defaults()
 {
 	remove_filter( 'dynamic_sidebar_params', 'cyberchimps_footer_widgets' );
 	add_filter( 'dynamic_sidebar_params', 'iribbon_footer_widget_param' );
-	
-	
-remove_action('testimonial', array( CyberChimpsTestimonial::instance(), 'render_display' ));
-add_action('testimonial', 'iribbon_testimonial_render_display');  
+	remove_action('testimonial', array( CyberChimpsTestimonial::instance(), 'render_display' ));
+	add_action('testimonial', 'iribbon_testimonial_render_display');  
 }
 add_action( 'init', 'iribbon_set_defaults' );
 
