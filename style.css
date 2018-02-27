@@ -1582,3 +1582,9 @@ a.symbol.snapchat:before {
 	width: 31.623931623931625%;
 }
 }
+@media (min-width: 768px) and (max-width: 979px)
+{
+#footer-widget-container .row-fluid .span4  { 
+	width: 31.46%;
+}
+}
