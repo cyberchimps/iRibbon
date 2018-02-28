@@ -40,21 +40,21 @@ if( cyberchimps_get_option( 'footer_show_toggle' ) == '1' ) {
 									
 							?>
 										<div class="row-fluid">
-										<aside class="widget-container span3">
+										<aside class="widget-container span4">
 										<h3 class="widget-title"><?php _e( 'Pages', 'iribbon' ); ?></h3>
 										<ul>
 											<?php wp_list_pages( 'title_li=' ); ?>
 										</ul>
 										</aside>
 		
-										<aside class="widget-container span3">
+										<aside class="widget-container span4">
 											<h3 class="widget-title"><?php _e( 'Archives', 'iribbon' ); ?></h3>
 											<ul>
 												<?php wp_get_archives( 'type=monthly' ); ?>
 											</ul>
 										</aside>
 		
-										<aside class="widget-container span3">
+										<aside class="widget-container span4">
 											<h3 class="widget-title"><?php _e( 'Categories', 'iribbon' ); ?></h3>
 											<ul>
 												<?php wp_list_categories( 'show_count=1&title_li=' ); ?>
@@ -62,7 +62,7 @@ if( cyberchimps_get_option( 'footer_show_toggle' ) == '1' ) {
 										</aside>
 									</div>
 									<div class="row-fluid">
-									<aside class="widget-container span3">
+									<aside class="widget-container span4">
 									<h3 class="widget-title"><?php _e( 'WordPress', 'iribbon' ); ?></h3>
 									<ul>
 										<?php wp_register(); ?>
