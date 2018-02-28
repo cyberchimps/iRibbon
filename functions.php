@@ -676,11 +676,9 @@ function iribbon_footer_widget_param( $params )
 		$layout = '';
 
 	//Check if we are displaying "Footer Sidebar"
-	if ( $params[0]['id'] == 'cyberchimps-footer-widgets' ) {	
+	if ( $params[0]['id'] == 'cyberchimps-footer-widgets' ) {		
 		
-		
-		//Check which footer layout is selcted
-		
+		//Check which footer layout is selcted		
 		if ($layout == 'footer-3-col')
 		{
 			// This is 3-col layout
