@@ -442,7 +442,8 @@ function iRibbon_add_icon_theme_options( $fields_list ) {
 			'type'    => 'images',
 			'options' => apply_filters( 'cyberchimps_footer_widget_layout', array(
 					'footer-4-col' => $imagefooterpath . 'footer-4-col.png',
-					'footer-3-col'  => $imagefooterpath . 'footer-3-col.png'
+					'footer-3-col'  => $imagefooterpath . 'footer-3-col.png',
+					'footer-2-col'  => $imagefooterpath . 'footer-2-col.png'
 			) ),
 			'section' => 'cyberchimps_footer_section',
 			'heading' => 'cyberchimps_footer_heading'
@@ -503,7 +504,8 @@ function iRibbon_add_icon_customizer( $wp_customize )
 	$imagefooterpath = get_template_directory_uri() . '/images/footer/';
 		$footer_layout = apply_filters( 'cyberchimps_footer_widget_layout', array(
 			'footer-4-col' => $imagefooterpath . 'footer-4-col.png',
-			'footer-3-col' => $imagefooterpath . 'footer-3-col.png'
+			'footer-3-col' => $imagefooterpath . 'footer-3-col.png',
+			'footer-2-col'  => $imagefooterpath . 'footer-2-col.png'
 	) );
 	$wp_customize->add_setting( 'cyberchimps_options[site_footer_option]', array(
 			'default' => 'footer-4-col',
@@ -677,7 +679,7 @@ function iribbon_footer_widget_param( $params )
 
 	//Check if we are displaying "Footer Sidebar"
 	if ( $params[0]['id'] == 'cyberchimps-footer-widgets' ) {		
-		
+
 		//Check which footer layout is selcted		
 		if ($layout == 'footer-3-col')
 		{
@@ -687,8 +689,17 @@ function iribbon_footer_widget_param( $params )
 			$params[0]['before_widget'] = preg_replace('/class="/', $class, $params[0]['before_widget'],1 );
 						
 		}
-		else
-			$divider = 4;	
+		else if ($layout == 'footer-4-col')
+		{
+			// This is 4-col layout
+			$divider = 4;
+		}
+		else if ($layout == 'footer-2-col') 
+		{ 			
+			$class                      = 'class="span6 ';
+			$divider = 2;
+			$params[0]['before_widget'] = preg_replace('/class="/', $class, $params[0]['before_widget'],1 );
+		}			
 		
 		if ( $footer_widget_counter_iribbon % $divider == 0 ) {
 

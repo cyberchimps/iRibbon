@@ -1,6 +1,9 @@
 iRibbon Changelog
 
 ****************************
+Version 2.14 (03/16/18)
+- Added new 2 column footer layout
+
 Version 2.13 (02/28/18)
 - Added new 3 column footer layout 
 
