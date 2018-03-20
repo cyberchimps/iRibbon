@@ -3,7 +3,7 @@ Theme Name: iRibbon
 Theme URI: http://www.cyberchimps.com/iribbon/
 Author: CyberChimps
 Author URI: http://www.cyberchimps.com/
-Description: iRibbon is a fully Responsive Drag & Drop Starter WordPress Theme that has a unique style, designed to invoke nostalgia. It has a retro vintage style look for hipsters - complete with ribbons and widgets to match. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device. It has option available to exclude categories from blog page. Two types of footer widgets layout available. For Support - <a href="https://cyberchimps.com/forum/free/iribbon/"> Support Forum</a> ( https://cyberchimps.com/forum/free/iribbon/). View<a href="https://demos.cyberchimps.com/iribbon/"> iRibbon Demo</a> ( https://demos.cyberchimps.com/iribbon/).
+Description: iRibbon is a fully Responsive Drag & Drop Starter WordPress Theme that has a unique style, designed to invoke nostalgia. It has a retro vintage style look for hipsters - complete with ribbons and widgets to match. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device. It has option available to exclude categories from blog page. Three types of footer widgets layout available. For Support - <a href="https://cyberchimps.com/forum/free/iribbon/"> Support Forum</a> ( https://cyberchimps.com/forum/free/iribbon/). View<a href="https://demos.cyberchimps.com/iribbon/"> iRibbon Demo</a> ( https://demos.cyberchimps.com/iribbon/).
 Version: 2.14
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats,footer-widgets,blog, theme-options, sticky-post, custom-header, custom-logo, threaded-comments
 Text Domain: iribbon
@@ -1577,6 +1577,9 @@ a.symbol.snapchat:before {
 	height:330px !important;
 	overflow-y:auto;
 }
+#footer-widgets .widget-container select {
+	width:100%;
+}
 @media (min-width: 1200px) {
 #footer-widget-container .row-fluid .span4  { 
 	width: 31.623931623931625%;
@@ -1585,12 +1588,18 @@ a.symbol.snapchat:before {
 	width: 48.717948717948715%;
 }
 }
+@media (max-width: 768px)
+{
+.site-footer #copyright {
+	padding-right: 4px;
+}
+}
 @media (min-width: 768px) and (max-width: 979px)
 {
 #footer-widget-container .row-fluid .span4  { 
 	width: 31.46%;
 }
 #footer-widget-container .row-fluid .span6  { 
-	width: 48.717948717948715%;
+	width: 48.6%;
 }
 }

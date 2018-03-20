@@ -676,7 +676,8 @@ function iribbon_footer_widget_param( $params )
 		$layout = $footer_widget_layout;
 	else
 		$layout = '';
-
+	$divider = '';
+	
 	//Check if we are displaying "Footer Sidebar"
 	if ( $params[0]['id'] == 'cyberchimps-footer-widgets' ) {		
 
