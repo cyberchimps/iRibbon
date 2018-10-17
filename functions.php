@@ -827,7 +827,7 @@ function iribbon_ribbon_styles() {
  *  Enqueue block styles  in editor
  */
 function iribbon_block_styles() {
-	wp_enqueue_style( 'mytheme-blocks', get_stylesheet_directory_uri() . '/css/blocks.css', array(), '1.0' );
+	wp_enqueue_style( 'mytheme-blocks', get_stylesheet_directory_uri() . '/inc/css/blocks.css', array(), '1.0' );
 }
 add_action( 'enqueue_block_editor_assets', 'iribbon_block_styles' );
 
