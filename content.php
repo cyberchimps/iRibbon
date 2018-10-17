@@ -82,7 +82,7 @@
 <?php
 		if(cyberchimps_get_option('sidebar_images')=="three-column")
 		{
-			iribbon_featured_image(); 
+			iribbon_featured_image();
 		}?>
 		<header class="entry-header">
 
@@ -158,7 +158,7 @@
 				<div class="entry-content">
 			<?php	if(cyberchimps_get_option('sidebar_images')!=="three-column")
 				{
-				 cyberchimps_featured_image();
+				 //cyberchimps_featured_image();
 				}?>
 					<?php cyberchimps_featured_image(); ?>
 					<?php the_content( __( 'Continue reading', 'iribbon' ) . ' <span class="meta-nav">&rarr;</span>' ); ?>
@@ -170,7 +170,7 @@
 			<div class="entry-content">
 				<?php the_content(); ?>
 			</div><!-- .entry-content -->
-		
+
 		<?php endif; ?>
 
 		<footer class="entry-meta">

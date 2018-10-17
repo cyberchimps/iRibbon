@@ -4,7 +4,7 @@ Theme URI: http://www.cyberchimps.com/iribbon/
 Author: CyberChimps
 Author URI: http://www.cyberchimps.com/
 Description: iRibbon is a fully Responsive Drag & Drop Starter WordPress Theme that has a unique style, designed to invoke nostalgia. It has a retro vintage style look for hipsters - complete with ribbons and widgets to match. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device. It has option available to exclude categories from blog page. Three types of footer widgets layout available. For Support - <a href="https://cyberchimps.com/forum/free/iribbon/"> Support Forum</a> ( https://cyberchimps.com/forum/free/iribbon/). View<a href="https://demos.cyberchimps.com/iribbon/"> iRibbon Demo</a> ( https://demos.cyberchimps.com/iribbon/).
-Version: 2.14
+Version: 2.15
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats,footer-widgets,blog, theme-options, sticky-post, custom-header, custom-logo, threaded-comments
 Text Domain: iribbon
 License: GNU General Public License version 3
@@ -66,7 +66,7 @@ ul, ol {
 }
 
 ol, ul {
- 
+
   list-style-position: inside;
 }
 
@@ -1384,8 +1384,8 @@ a.symbol.snapchat:before {
 @media all and (max-width: 480px) {
   #testimonial_section
   {
-       margin-top: 60px; 
-  }  
+       margin-top: 60px;
+  }
 }
 
 .flexslider .slides > li {
@@ -1453,7 +1453,7 @@ a.symbol.snapchat:before {
     text-align: center; }
   testimonial_section .flexslider .slides {
     padding-bottom: 30px; }
-  
+
   #testimonial_section{
       color: #fff;
       position: relative;
@@ -1476,7 +1476,7 @@ a.symbol.snapchat:before {
   float: none;
     }
     #testimonial_section .ir_testimonial_abt_author{
-       margin-bottom: 16%; 
+       margin-bottom: 16%;
     }
 
 }
@@ -1484,7 +1484,7 @@ a.symbol.snapchat:before {
 .contactus_wrapper{
     padding: 6% 0 3% 0;
     color: #fff;
-   
+
 }
 .contactus_wrapper.span12
 {
@@ -1499,7 +1499,7 @@ a.symbol.snapchat:before {
     border: none;
     border-radius: 2px;
     margin-bottom: 12px;
-   
+
 }
 .contact_left_sec{
     font-size: 16px;
@@ -1520,13 +1520,13 @@ a.symbol.snapchat:before {
     border-radius: 3px;
     padding: 15px 55px;
     margin: 2% 32%;
-    
-    
+
+
 }
 .contact_title{
     text-align: center;
     color: #fff;
-    padding-top: 20px;  
+    padding-top: 20px;
     font-size: 1.8em;
 }
 
@@ -1581,10 +1581,10 @@ a.symbol.snapchat:before {
 	width:100%;
 }
 @media (min-width: 1200px) {
-#footer-widget-container .row-fluid .span4  { 
+#footer-widget-container .row-fluid .span4  {
 	width: 31.623931623931625%;
 }
-#footer-widget-container .row-fluid .span6  { 
+#footer-widget-container .row-fluid .span6  {
 	width: 48.717948717948715%;
 }
 }
@@ -1596,10 +1596,47 @@ a.symbol.snapchat:before {
 }
 @media (min-width: 768px) and (max-width: 979px)
 {
-#footer-widget-container .row-fluid .span4  { 
+#footer-widget-container .row-fluid .span4  {
 	width: 31.46%;
 }
-#footer-widget-container .row-fluid .span6  { 
+#footer-widget-container .row-fluid .span6  {
 	width: 48.6%;
 }
 }
+
+/*
+	changes according gutenberg plugin --START
+
+ */
+.entry-content ol,
+.entry-content ul,
+.entry-summary ol,
+.entry-summary ul{
+	margin-left: 2.9em;
+}
+
+.entry-content ol.wp-block-gallery,
+.entry-content ul.wp-block-gallery,
+.entry-summary ol.wp-block-gallery,
+.entry-summary ul.wp-block-gallery {
+	display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+audio, canvas, video {
+    display: inline-block;
+    width: 100%;
+}
+
+.wp-block-column p {
+    padding: 0 14px;
+}
+
+.wp-block-gallery .blocks-gallery-item figcaption {
+        padding: 40px 0;
+}
+/*
+	changes according gutenberg plugin --END
+
+ */

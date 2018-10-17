@@ -1,11 +1,14 @@
 iRibbon Changelog
 
 ****************************
+Version 2.15 (10/17/18)
+- Added Gutenberg compatibility
+
 Version 2.14 (03/20/18)
 - Added new 2 column footer layout
 
 Version 2.13 (02/28/18)
-- Added new 3 column footer layout 
+- Added new 3 column footer layout
 
 Version 2.12 (01/19/18)
 - Improved admin look and feel
@@ -47,7 +50,7 @@ Version 2.2 (15-6-17)
 - Added Recent post widget
 
 Version 2.1 (13-04-17)
-- Fixed issue with PHP 7.1 
+- Fixed issue with PHP 7.1
 - Fixed issue with loading google fonts (used protocol relative link)
 
 Version 2.0.66 (29-09-16)
@@ -141,7 +144,7 @@ Version 2.0.42 (5-9-14)
 - Added FooBox as recommended plugin.
 
 Version 2.0.41 (5-2-14)
-- Fixed byline toggle issue. 
+- Fixed byline toggle issue.
 
 Version 2.0.40 (4-24-14)
 - Added recommendation for clef plugin.
