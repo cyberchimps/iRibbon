@@ -378,11 +378,18 @@ function cyberchimps_add_google_font() {
 add_action( 'wp_head', 'cyberchimps_add_google_font' );
 
 // enabling theme support for title tag
-function iribbon_title_setup() 
+function iribbon_title_setup()
 {
 	add_theme_support( 'title-tag' );
+
+	// Add support for full and wide align images.
+	add_theme_support( 'align-wide' );
+
+
+
 }
 add_action( 'after_setup_theme', 'iribbon_title_setup' );
+
 
 
 //add header drag and drop options
@@ -437,7 +444,7 @@ function iRibbon_add_icon_theme_options( $fields_list ) {
 		'section' => 'cyberchimps_header_options_section',
 		'heading' => 'cyberchimps_header_heading'
 	);
-	
+
 	$imagefooterpath = get_template_directory_uri() . '/images/footer/';
 	$fields_list[] = array(
 			'name'    => __( 'Choose Footer Widgets Layout', 'cyberchimps_core' ),
@@ -503,7 +510,7 @@ function iRibbon_add_icon_customizer( $wp_customize )
             'settings' => 'cyberchimps_options[ribbon_style]',
             'choices' => $ribbon_styles,
         ) ) );
-	
+
 	// Add footer widget layout option
 	$imagefooterpath = get_template_directory_uri() . '/images/footer/';
 		$footer_layout = apply_filters( 'cyberchimps_footer_widget_layout', array(
@@ -516,14 +523,14 @@ function iRibbon_add_icon_customizer( $wp_customize )
 			'type' => 'option',
 			'sanitize_callback' => 'cyberchimps_text_sanitization'
 	) );
-	
+
 	$wp_customize->add_control( new Cyberchimps_skin_selector( $wp_customize, 'site_footer_option', array(
 			'label' => __( 'Choose Footer Widgets Layout', 'cyberchimps_core' ),
 			'section' => 'cyberchimps_footer_section',
 			'settings' => 'cyberchimps_options[site_footer_option]',
 			'choices' => $footer_layout,
 	) ) );
-	 
+
 }
 
 function iRibbon_customize_register( $wp_customize ) {
@@ -553,11 +560,11 @@ function iRibbon_customize_register( $wp_customize ) {
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[sidebar_images]', array(
 		'selector' => '#content',
 	) );
-	
+
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[custom_logo]', array(
 		'selector' => '#logo',
 	) );
-		
+
 	$wp_customize->selective_refresh->add_partial( 'cyberchimps_options[searchbar]', array(
 		'selector' => '#navigation #searchform',
 	) );
@@ -633,7 +640,7 @@ function my_admin_notice(){
 		<?php
 	}
 	}
-	
+
 	$plugin = 'elementor/elementor.php';
 	$slug = 'elementor';
 	$installed_plugins = get_plugins();
@@ -647,7 +654,7 @@ function my_admin_notice(){
 					<a href="<?php echo admin_url( 'plugins.php' ); ?>">Activate the Elementor plugin</a>
 					</p>
 					</div>
-			<?php 		
+			<?php
 			}
 			}
 			else {
@@ -657,10 +664,10 @@ function my_admin_notice(){
 				<a href="<?php echo wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=' . $slug ), 'install-plugin_' . $slug ); ?>">Install the Elementor plugin</a>
 				</p>
 				</div>
-		<?php 	
-			}	
+		<?php
+			}
 		}
-	
+
 	if( !class_exists('WP_Legal_Pages') )
 	{
 	$plugin = 'wplegalpages/legal-pages.php';
@@ -696,48 +703,48 @@ function my_admin_notice(){
 		</div>
 		<?php
 	}
-	
+
 }
 
-function iribbon_footer_widget_param( $params ) 
+function iribbon_footer_widget_param( $params )
 {
 	global $footer_widget_counter_iribbon;
 	$footer_widget_layout = cyberchimps_get_option('site_footer_option');
-	
+
 	if(isset($footer_widget_layout) && $footer_widget_layout != '')
 		$layout = $footer_widget_layout;
 	else
 		$layout = '';
 	$divider = 4;
-	
-	//Check if we are displaying "Footer Sidebar"
-	if ( $params[0]['id'] == 'cyberchimps-footer-widgets' ) {		
 
-		//Check which footer layout is selcted		
+	//Check if we are displaying "Footer Sidebar"
+	if ( $params[0]['id'] == 'cyberchimps-footer-widgets' ) {
+
+		//Check which footer layout is selcted
 		if ($layout == 'footer-3-col')
 		{
 			// This is 3-col layout
 			$class                      = 'class="span4 ';
 			$divider = 3;
 			$params[0]['before_widget'] = preg_replace('/class="/', $class, $params[0]['before_widget'],1 );
-						
+
 		}
 		else if ($layout == 'footer-4-col')
 		{
 			// This is 4-col layout
 			$divider = 4;
 		}
-		else if ($layout == 'footer-2-col') 
-		{ 			
+		else if ($layout == 'footer-2-col')
+		{
 			$class                      = 'class="span6 ';
 			$divider = 2;
 			$params[0]['before_widget'] = preg_replace('/class="/', $class, $params[0]['before_widget'],1 );
-		}			
-		
+		}
+
 		if ( $footer_widget_counter_iribbon % $divider == 0 ) {
 
 			echo '</div> <div class="row-fluid">';
-		}				
+		}
 		$footer_widget_counter_iribbon++;
 	}
 
@@ -770,20 +777,20 @@ function iribbon_exclude_post_cat_recentpost_widget($array){
 				$s .= ', ';
 		}
 	}
-	$array['cat']=array($s);	
-	
+	$array['cat']=array($s);
+
 	return $array;
 }
 add_filter( "widget_posts_args", "iribbon_exclude_post_cat_recentpost_widget" );
 
 if( !function_exists('iribbon_exclude_post_cat') ) :
-function iribbon_exclude_post_cat( $query ){		
+function iribbon_exclude_post_cat( $query ){
 	$excludecat = get_theme_mod( 'cyberchimps_exclude_post_cat' );
 
 	if( $excludecat && ! is_admin() && $query->is_main_query() ){
 		$excludecat = array_diff( array_unique( $excludecat ), array('') );
 		if( $query->is_home() || $query->is_archive() ) {
-			$query->set( 'category__not_in', $excludecat );			
+			$query->set( 'category__not_in', $excludecat );
 		}
 	}
 }
@@ -795,12 +802,12 @@ function iribbon_set_defaults()
 	remove_filter( 'dynamic_sidebar_params', 'cyberchimps_footer_widgets' );
 	add_filter( 'dynamic_sidebar_params', 'iribbon_footer_widget_param' );
 	remove_action('testimonial', array( CyberChimpsTestimonial::instance(), 'render_display' ));
-	add_action('testimonial', 'iribbon_testimonial_render_display');  
+	add_action('testimonial', 'iribbon_testimonial_render_display');
 }
 add_action( 'init', 'iribbon_set_defaults' );
 
 add_action( 'wp_enqueue_scripts', 'iribbon_ribbon_styles', 30 );
-/** 
+/**
  * Add styles for ribbon selection
  */
 function iribbon_ribbon_styles() {
@@ -808,12 +815,22 @@ function iribbon_ribbon_styles() {
 	if( $ribbon_style != 'default' ) {
 		wp_enqueue_style( 'ribbon-style', get_template_directory_uri() . '/inc/css/ribbons/' . $ribbon_style . '.css', array( 'style' ), '1.0' );
 	}
-	
+
 	if(cyberchimps_get_option('sidebar_images')=="three-column")
 	{
 	wp_enqueue_style( 'three-column-blog', get_template_directory_uri() . '/inc/css/blog-layout/three-column.css', array( 'style' ), '1.0' );
 	}
 }
+
+
+/**
+ *  Enqueue block styles  in editor
+ */
+function iribbon_block_styles() {
+	wp_enqueue_style( 'mytheme-blocks', get_stylesheet_directory_uri() . '/css/blocks.css', array(), '1.0' );
+}
+add_action( 'enqueue_block_editor_assets', 'iribbon_block_styles' );
+
 
 add_filter( 'body_class', 'iribbon_ribbon_style_body_classes' );
 /**
