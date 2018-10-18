@@ -1,6 +1,9 @@
 iRibbon Changelog
 
 ****************************
+Version 2.16 (10/18/18)
+- Minor change in description 
+
 Version 2.15 (10/18/18)
 - Added Gutenberg compatibility
 
