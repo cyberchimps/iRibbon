@@ -1,7 +1,14 @@
 iRibbon Changelog
 
 ****************************
-Version 2.15 (10/17/18)
+Version 2.17 (12/17/18)
+- Added customizer support for Gutenberg
+- Fixed cyberchimps page elements issue in wordpress 5.0
+
+Version 2.16 (10/18/18)
+- Minor change in description
+
+Version 2.15 (10/18/18)
 - Added Gutenberg compatibility
 
 Version 2.14 (03/20/18)
