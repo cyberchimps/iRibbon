@@ -824,10 +824,72 @@ function iribbon_ribbon_styles() {
 
 
 /**
+ * [customizer_css description].
+ *
+ * @return string.
+ */
+function customizer_css() {
+
+	$typography_options   = cyberchimps_get_option( 'typography_options' );
+	$font_family_headings = cyberchimps_get_option( 'font_family_headings' );
+
+	$font_family                = $typography_options['face'] ? $typography_options['face'] : 'Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif';
+	$font_size                  = $typography_options['size'] ? $typography_options['size'] : '14px';
+	$font_weight                = $typography_options['style'] ? $typography_options['style'] : 'Normal';
+	$color                      = cyberchimps_get_option( 'text_colorpicker' ) ? cyberchimps_get_option( 'text_colorpicker' ) : '#333333';
+	$link_colorpicker           = cyberchimps_get_option( 'link_colorpicker' ) ? cyberchimps_get_option( 'link_colorpicker' ) : '#7fa6a6';
+	$link_hover_colorpicker     = cyberchimps_get_option( 'link_hover_colorpicker' ) ? cyberchimps_get_option( 'link_hover_colorpicker' ) : '#cd834a';
+	$neuro_font_family_headings = $font_family_headings['face'] ? $font_family_headings['face'] : 'Arial, Helvetica, sans-serif';
+
+	$custom_css = ".editor-writing-flow,
+	.editor-styles-wrapper{
+		font-family: {$font_family};
+		font-size: {$font_size};
+		font-weight: {$font_weight};
+		color: {$color};
+		line-height: 1.5;
+	}
+	.wp-block-freeform.block-library-rich-text__tinymce h1,
+	.wp-block-freeform.block-library-rich-text__tinymce h2,
+	.wp-block-freeform.block-library-rich-text__tinymce h3,
+	.wp-block-freeform.block-library-rich-text__tinymce h4,
+	.wp-block-freeform.block-library-rich-text__tinymce h5,
+	.wp-block-freeform.block-library-rich-text__tinymce h6,
+	.wp-block-heading h1.editor-rich-text__tinymce,
+	.wp-block-heading h2.editor-rich-text__tinymce,
+	.wp-block-heading h3.editor-rich-text__tinymce,
+	.wp-block-heading h4.editor-rich-text__tinymce,
+	.wp-block-heading h5.editor-rich-text__tinymce,
+	.wp-block-heading h6.editor-rich-text__tinymce {
+		font-family: {$neuro_font_family_headings};
+		font-weight: normal;
+		margin-bottom: 15px;
+	}
+
+	.wp-block-freeform.block-library-rich-text__tinymce a,
+	.editor-writing-flow a{
+		color: {$link_colorpicker};
+		text-decoration: none;
+	}
+
+	.wp-block-freeform.block-library-rich-text__tinymce a:hover,
+	.wp-block-freeform.block-library-rich-text__tinymce a:focus,
+	.editor-writing-flow a:hover,
+	.editor-writing-flow a:focus{
+		color:  {$link_hover_colorpicker};
+	}";
+	return $custom_css;
+}
+
+/**
  *  Enqueue block styles  in editor
  */
 function iribbon_block_styles() {
-	wp_enqueue_style( 'mytheme-blocks', get_stylesheet_directory_uri() . '/inc/css/blocks.css', array(), '1.0' );
+	wp_enqueue_style( 'iribbon-google-font', 'https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web|Lobster', array(), '1.0' );
+
+	wp_add_inline_style( 'iribbon-google-font', customizer_css() );
+
+	wp_enqueue_style( 'iribbon-blocks', get_stylesheet_directory_uri() . '/inc/css/blocks.css', array(), '1.0' );
 }
 add_action( 'enqueue_block_editor_assets', 'iribbon_block_styles' );
 
