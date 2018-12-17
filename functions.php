@@ -839,7 +839,7 @@ function customizer_css() {
 	$color                      = cyberchimps_get_option( 'text_colorpicker' ) ? cyberchimps_get_option( 'text_colorpicker' ) : '#333333';
 	$link_colorpicker           = cyberchimps_get_option( 'link_colorpicker' ) ? cyberchimps_get_option( 'link_colorpicker' ) : '#7fa6a6';
 	$link_hover_colorpicker     = cyberchimps_get_option( 'link_hover_colorpicker' ) ? cyberchimps_get_option( 'link_hover_colorpicker' ) : '#cd834a';
-	$neuro_font_family_headings = $font_family_headings['face'] ? $font_family_headings['face'] : 'Arial, Helvetica, sans-serif';
+	$ir_font_family_headings = $font_family_headings['face'] ? $font_family_headings['face'] : 'Arial, Helvetica, sans-serif';
 
 	$custom_css = ".editor-writing-flow,
 	.editor-styles-wrapper{
@@ -861,7 +861,7 @@ function customizer_css() {
 	.wp-block-heading h4.editor-rich-text__tinymce,
 	.wp-block-heading h5.editor-rich-text__tinymce,
 	.wp-block-heading h6.editor-rich-text__tinymce {
-		font-family: {$neuro_font_family_headings};
+		font-family: {$ir_font_family_headings};
 		font-weight: normal;
 		margin-bottom: 15px;
 	}
